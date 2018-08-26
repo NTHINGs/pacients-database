@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Participants Database 1.4.4\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tag/pacients-database\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/members-databes\n"
 "POT-Creation-Date: 2013-12-27 17:36:25+00:00\n"
 "PO-Revision-Date: 2014-06-01 16:04-1000\n"
 "Last-Translator: Roland Barker <webdesign@xnau.com>\n"
@@ -176,16 +176,16 @@ msgstr "Hľadať"
 msgid "Record delete successful."
 msgstr ""
 
-#: classes/PDb_List_Admin.class.php:360 pacients-database.php:508
+#: classes/PDb_List_Admin.class.php:360 members-databes.php:508
 msgid "Do you really want to delete the selected record?"
 msgstr "Naozaj chcete odstrániť vybraný záznam?"
 
-#: classes/PDb_List_Admin.class.php:361 pacients-database.php:509
+#: classes/PDb_List_Admin.class.php:361 members-databes.php:509
 msgid "Do you really want to delete the selected records?"
 msgstr "Naozaj chcete odstrániť vybrané záznamy?"
 
-#: classes/PDb_List_Admin.class.php:426 pacients-database.php:416
-#: pacients-database.php:417
+#: classes/PDb_List_Admin.class.php:426 members-databes.php:416
+#: members-databes.php:417
 msgid "List Participants"
 msgstr "Zoznam účastníkov"
 
@@ -269,11 +269,11 @@ msgstr ""
 msgid "First"
 msgstr "Prvý"
 
-#: classes/PDb_Pagination.class.php:365 pacients-database.php:2820
+#: classes/PDb_Pagination.class.php:365 members-databes.php:2820
 msgid "Previous"
 msgstr "Predchádzajúci"
 
-#: classes/PDb_Pagination.class.php:382 pacients-database.php:2819
+#: classes/PDb_Pagination.class.php:382 members-databes.php:2819
 msgid "Next"
 msgstr "Ďalší"
 
@@ -365,7 +365,7 @@ msgid ""
 "get deleted when the plugin is updated."
 msgstr ""
 "Toto definuje, kde nahrané súbory pôjde, relatívna ku koreňu WordPress. "
-"Predvolené umiestnenie je \"/ wp-content/uploads/pacients-database '<br /"
+"Predvolené umiestnenie je \"/ wp-content/uploads/members-databes '<br /"
 "> Nedávajte ho do zložky plugin, snímky môžu a súbory mazané, keď je "
 "aktualizovaný plugin."
 
@@ -1302,8 +1302,8 @@ msgstr "Editor"
 msgid "Admin"
 msgstr "Admin"
 
-#: classes/PDb_Settings.class.php:1216 pacients-database.php:452
-#: pacients-database.php:453 pacients-database.php:2979
+#: classes/PDb_Settings.class.php:1216 members-databes.php:452
+#: members-databes.php:453 members-databes.php:2979
 msgid "Settings"
 msgstr "Nastavenia"
 
@@ -1590,8 +1590,8 @@ msgstr "Nemožno pridať pole s rovnakým názvom"
 msgid "This name is reserved; please choose another. Reserved names are"
 msgstr "Tento názov je vyhradený; Vyberte iný. Vyhradené názvy sú"
 
-#: manage_fields.php:236 pacients-database.php:434
-#: pacients-database.php:435
+#: manage_fields.php:236 members-databes.php:434
+#: members-databes.php:435
 msgid "Manage Database Fields"
 msgstr "Spravovanie databázových polí"
 
@@ -1964,64 +1964,64 @@ msgstr ""
 "hodnotu poľa, ale nemôže upravovať. Pole bude upravovať v admin."
 
 #. Plugin Name of the plugin/theme
-#: pacients-database.php:338
+#: members-databes.php:338
 msgid "Participants Database"
 msgstr "Účastníci databázy"
 
-#: pacients-database.php:425 pacients-database.php:426
+#: members-databes.php:425 members-databes.php:426
 msgid "Add Participant"
 msgstr "Pridať účastníka"
 
-#: pacients-database.php:443 pacients-database.php:444
+#: members-databes.php:443 members-databes.php:444
 #: upload_csv.php:8
 msgid "Import CSV File"
 msgstr "Import CSV súboru"
 
-#: pacients-database.php:461 pacients-database.php:462
+#: members-databes.php:461 members-databes.php:462
 msgid "Setup Guide"
 msgstr "Sprievodca inštaláciou"
 
-#: pacients-database.php:470 pacients-database.php:471
+#: members-databes.php:470 members-databes.php:471
 msgid "Edit Record"
 msgstr "Upraviť záznam"
 
 #. translators: don't translate the words in brackets {}
-#: pacients-database.php:520
+#: members-databes.php:520
 msgid "You must remove all fields from the {name} group before deleting it."
 msgstr ""
 
-#: pacients-database.php:521
+#: members-databes.php:521
 msgid "Delete the \"{name}\" {thing}?"
 msgstr ""
 
-#: pacients-database.php:2383
+#: members-databes.php:2383
 msgid ""
 "There is something wrong with the file you tried to upload. Try another."
 msgstr ""
 "Tam je niečo v neporiadku s súboru, ktorý sa snažil nahrať. Skúste iné."
 
-#: pacients-database.php:2399 pacients-database.php:2427
+#: members-databes.php:2399 members-databes.php:2427
 msgid "For \"%s\", you may only upload image files like JPEGs, GIFs or PNGs."
 msgstr ""
 
-#: pacients-database.php:2401
+#: members-databes.php:2401
 msgid "The file selected for \"%s\" must be one of these types: %s. "
 msgstr ""
 
-#: pacients-database.php:2433
+#: members-databes.php:2433
 msgid ""
 "The file you tried to upload is too large. The file must be smaller than %sK."
 msgstr ""
 
-#: pacients-database.php:2440
+#: members-databes.php:2440
 msgid "The file could not be saved."
 msgstr "Súbor sa neuložili."
 
-#: pacients-database.php:2468
+#: members-databes.php:2468
 msgid "The uploads directory (%s) could not be created."
 msgstr "Nebolo možné vytvoriť obrázky adresár (% s)."
 
-#: pacients-database.php:2727
+#: members-databes.php:2727
 msgid ""
 "The date for \"%s\" was invalid. Please input the date with the exact format "
 "shown"
@@ -2029,43 +2029,43 @@ msgstr ""
 "Dátum pre\"%s\" je neplatné. Zadajte, prosím, dátum s presným zobrazenom "
 "formáte"
 
-#: pacients-database.php:2817 templates/pdb-retrieve-default.php:45
+#: members-databes.php:2817 templates/pdb-retrieve-default.php:45
 msgid "Submit"
 msgstr ""
 
-#: pacients-database.php:2818
+#: members-databes.php:2818
 msgid "Apply"
 msgstr ""
 
-#: pacients-database.php:2821
+#: members-databes.php:2821
 msgid "The record has been updated."
 msgstr ""
 
-#: pacients-database.php:2822
+#: members-databes.php:2822
 #, fuzzy
 msgid "The new record has been added."
 msgstr "Súbor %s bol nahraný."
 
-#: pacients-database.php:2940
+#: members-databes.php:2940
 msgid "WordPress Plugin"
 msgstr "WordPress Plugin"
 
-#: pacients-database.php:2941
+#: members-databes.php:2941
 msgid ""
 "Helping organizations manage their volunteers, members and participants."
 msgstr ""
 "Pomáha organizáciám spravovať svoje dobrovoľníkov, členov a účastníkov."
 
-#: pacients-database.php:2944
+#: members-databes.php:2944
 msgid "Developed by"
 msgstr "Vyvinutý"
 
-#: pacients-database.php:2945
+#: members-databes.php:2945
 msgid ""
 "Suggestions or crticisms of this plugin? I&#39;d love to hear them: email "
 msgstr "Návrhy alebo crticisms tohto pluginu? Rád by som počuť: e-mail"
 
-#: pacients-database.php:2948
+#: members-databes.php:2948
 msgid ""
 "Please consider contributing to the continued support and development of "
 "this software by visiting %1$sthis plugin&#39;s page,%3$s giving the plugin "
@@ -2215,8 +2215,8 @@ msgid "Upload File"
 msgstr "Nahrať súbor"
 
 #. Plugin URI of the plugin/theme
-msgid "http://xnau.com/wordpress-plugins/pacients-database"
-msgstr "http://xnau.com/Wordpress-plugins/pacients-database"
+msgid "http://xnau.com/wordpress-plugins/members-databes"
+msgstr "http://xnau.com/Wordpress-plugins/members-databes"
 
 #. Description of the plugin/theme
 msgid "Plugin for managing a database of participants, members or volunteers"

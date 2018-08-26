@@ -1,13 +1,13 @@
 <?php
 /**
  * Plugin Name: Participants Database
- * Plugin URI: https://xnau.com/wordpress-plugins/pacients-database
+ * Plugin URI: https://xnau.com/wordpress-plugins/members-databes
  * Description: Plugin for managing a database of participants, members or volunteers
  * Author: Roland Barker, xnau webdesign
  * Version: 1.7.9.8
  * Author URI: https://xnau.com
  * License: GPL3
- * Text Domain: pacients-database
+ * Text Domain: members-databes
  * Domain Path: /languages
  */
 /*
@@ -59,7 +59,7 @@ class Participants_Db extends PDb_Base {
    * 
    * @var string unique slug for the plugin
    */
-  const PLUGIN_NAME = 'pacients-database';
+  const PLUGIN_NAME = 'members-databes';
 
   /**
    * @var string name of the single record query var
@@ -380,7 +380,7 @@ class Participants_Db extends PDb_Base {
 
     /*
      * any plugins that require Participants Database should initialize on this action
-     * 'pacients-database_activated'
+     * 'members-databes_activated'
      */
     do_action( self::PLUGIN_NAME . '_activated' );
   }
@@ -524,7 +524,7 @@ class Participants_Db extends PDb_Base {
 
     self::load_plugin_textdomain( __FILE__ );
 
-    self::$plugin_title = self::apply_filters( 'plugin_title', __( 'Participants Database', 'pacients-database' ) );
+    self::$plugin_title = self::apply_filters( 'plugin_title', __( 'Participants Database', 'members-databes' ) );
 
     self::_set_i18n();
     /**
@@ -554,7 +554,7 @@ class Participants_Db extends PDb_Base {
      * any plugins that require Participants Database settings/database should use this hook
      * 
      * @version 1.6.3
-     * @action pacients-database_initialized
+     * @action members-databes_initialized
      */
     do_action( self::PLUGIN_NAME . '_initialized' );
   }
@@ -577,7 +577,7 @@ class Participants_Db extends PDb_Base {
     /*
      * register frontend scripts and stylesheets
      */
-    wp_register_style( self::$prefix . 'frontend', plugins_url( '/css/pacients-database.css', __FILE__ ), array('dashicons'), self::$plugin_version );
+    wp_register_style( self::$prefix . 'frontend', plugins_url( '/css/members-databes.css', __FILE__ ), array('dashicons'), self::$plugin_version );
     wp_register_style( 'custom_plugin_css', plugins_url( '/css/' . $custom_css_file, __FILE__ ), null, self::$Settings->option_version() );
 
     wp_register_script( self::$prefix . 'shortcode', plugins_url( 'js/shortcodes.js', __FILE__ ), array('jquery'), self::$plugin_version );
@@ -641,45 +641,45 @@ class Participants_Db extends PDb_Base {
     }
     wp_register_style( self::$prefix . 'utility', plugins_url( '/css/xnau-utility.css', __FILE__ ), null, self::$plugin_version );
     wp_register_style( self::$prefix . 'global-admin', plugins_url( '/css/PDb-admin-global.css', __FILE__ ), false, self::$plugin_version );
-    wp_register_style( self::$prefix . 'frontend', plugins_url( '/css/pacients-database.css', __FILE__ ), null, self::$plugin_version );
+    wp_register_style( self::$prefix . 'frontend', plugins_url( '/css/members-databes.css', __FILE__ ), null, self::$plugin_version );
     
     wp_register_style( self::$prefix . 'admin', plugins_url( '/css/PDb-admin.css', __FILE__ ), array( 'custom_plugin_admin_css' ), self::$plugin_version );
 
-    if ( false !== stripos( $hook, 'pacients-database' ) ) {
+    if ( false !== stripos( $hook, 'members-databes' ) ) {
 //      wp_enqueue_script( self::$prefix . 'jq-placeholder' );
       wp_enqueue_script( self::$prefix . 'admin' );
       wp_enqueue_script( self::$prefix . 'otherselect' );
     }
 
-    if ( false !== stripos( $hook, 'pacients-database-list_participants' ) ) {
+    if ( false !== stripos( $hook, 'members-databes-list_participants' ) ) {
 //      wp_localize_script(self::$prefix.'list-admin', 'list_adminL10n', array(
 //          'delete' => PDb_List_Admin::$i18n['delete_checked'],
 //          'cancel' => PDb_List_Admin::$i18n['change'],
-//          "record" => __("Do you really want to delete the selected record?", 'pacients-database' ),
-//          "records" => __("Do you really want to delete the selected records?", 'pacients-database' ),
+//          "record" => __("Do you really want to delete the selected record?", 'members-databes' ),
+//          "records" => __("Do you really want to delete the selected records?", 'members-databes' ),
 //      ));
 //      wp_enqueue_script(self::$prefix.'list-admin');
     }
 
-    if ( false !== stripos( $hook, 'pacients-database_settings_page' ) ) {
+    if ( false !== stripos( $hook, 'members-databes_settings_page' ) ) {
       wp_enqueue_script( self::$prefix . 'settings_script' );
     }
 
-    if ( false !== stripos( $hook, 'pacients-database-edit_participant' ) ) {
+    if ( false !== stripos( $hook, 'members-databes-edit_participant' ) ) {
       //wp_enqueue_script(self::$prefix.'record_edit_script');
     }
 
-    if ( false !== stripos( $hook, 'pacients-database-manage_fields' ) ) {
+    if ( false !== stripos( $hook, 'members-databes-manage_fields' ) ) {
       wp_localize_script( self::$prefix . 'manage_fields', 'manageFields', array('uri' => $_SERVER['REQUEST_URI']) );
       wp_localize_script( self::$prefix . 'manage_fields', 'PDb_L10n', array(
           /* translators: don't translate the words in brackets {} */
-          'must_remove' => '<h4>' . __( 'You must remove all fields from the {name} group before deleting it.', 'pacients-database' ) . '</h4>',
+          'must_remove' => '<h4>' . __( 'You must remove all fields from the {name} group before deleting it.', 'members-databes' ) . '</h4>',
           /* translators: don't translate the words in brackets {} */
-          'delete_confirm' => '<h4>' . __( 'Delete the "{name}" {thing}?', 'pacients-database' ) . '</h4>',
-          'unsaved_changes' => __( "The changes you made will be lost if you navigate away from this page.", 'pacients-database' ),
-          'datatype_confirm' => '<h4 class="dashicons-before dashicons-info warning">' . __( 'Changing the form element on a field that has stored data can result in data loss.', 'pacients-database' ) .'</h4><p><a href="https://wp.me/p48Sj5-Zb" target="_blank">' . __( 'More information here…', 'pacients-database' ) . '</a></p>',
-          'datatype_confirm_button' => __( 'Yes, change the form element', 'pacients-database' ),
-          'datatype_cancel_button' => __( 'No, don\'t change the form element', 'pacients-database' ),
+          'delete_confirm' => '<h4>' . __( 'Delete the "{name}" {thing}?', 'members-databes' ) . '</h4>',
+          'unsaved_changes' => __( "The changes you made will be lost if you navigate away from this page.", 'members-databes' ),
+          'datatype_confirm' => '<h4 class="dashicons-before dashicons-info warning">' . __( 'Changing the form element on a field that has stored data can result in data loss.', 'members-databes' ) .'</h4><p><a href="https://wp.me/p48Sj5-Zb" target="_blank">' . __( 'More information here…', 'members-databes' ) . '</a></p>',
+          'datatype_confirm_button' => __( 'Yes, change the form element', 'members-databes' ),
+          'datatype_cancel_button' => __( 'No, don\'t change the form element', 'members-databes' ),
       ) );
       wp_enqueue_script( self::$prefix . 'manage_fields' );
     }
@@ -689,7 +689,7 @@ class Participants_Db extends PDb_Base {
     wp_enqueue_style( 'pdb-utility' );
 
     // only incude these stylesheets on the plugin admin pages
-    if ( false !== stripos( $hook, 'pacients-database' ) ) {
+    if ( false !== stripos( $hook, 'members-databes' ) ) {
       wp_enqueue_style( 'pdb-frontend' );
       wp_enqueue_style( 'pdb-admin' );
       wp_enqueue_style( 'custom_plugin_admin_css' );
@@ -3272,7 +3272,7 @@ class Participants_Db extends PDb_Base {
     if ( mkdir( Participants_Db::base_files_path() . $dir, 0755, true ) === false ) {
 
       if ( is_object( self::$validation_errors ) )
-        self::$validation_errors->add_error( '', sprintf( __( 'The uploads directory (%s) could not be created.', 'pacients-database' ), $dir ) );
+        self::$validation_errors->add_error( '', sprintf( __( 'The uploads directory (%s) could not be created.', 'members-databes' ), $dir ) );
 
       $status = false;
     }
@@ -3321,7 +3321,7 @@ class Participants_Db extends PDb_Base {
   public static function get_admin_record_link( $id )
   {
 
-    $path = 'admin.php?page=pacients-database-edit_participant&action=edit&id=' . $id;
+    $path = 'admin.php?page=members-databes-edit_participant&action=edit&id=' . $id;
 
     return get_admin_url( NULL, $path );
   }
@@ -3462,14 +3462,14 @@ class Participants_Db extends PDb_Base {
   {
 
     self::$i18n = array(
-        'submit' => __( 'Submit', 'pacients-database' ),
-        'apply' => __( 'Apply', 'pacients-database' ),
-        'next' => __( 'Next', 'pacients-database' ),
-        'previous' => __( 'Previous', 'pacients-database' ),
-        'updated' => __( 'The record has been updated.', 'pacients-database' ),
-        'added' => __( 'The new record has been added.', 'pacients-database' ),
-        'zero_rows_error' => __( 'No record was added on query: %s', 'pacients-database' ),
-        'database_error' => __( 'Database Error: %2$s on query: %1$s', 'pacients-database' )
+        'submit' => __( 'Submit', 'members-databes' ),
+        'apply' => __( 'Apply', 'members-databes' ),
+        'next' => __( 'Next', 'members-databes' ),
+        'previous' => __( 'Previous', 'members-databes' ),
+        'updated' => __( 'The record has been updated.', 'members-databes' ),
+        'added' => __( 'The new record has been added.', 'members-databes' ),
+        'zero_rows_error' => __( 'No record was added on query: %s', 'members-databes' ),
+        'database_error' => __( 'Database Error: %2$s on query: %1$s', 'members-databes' )
     );
   }
 
@@ -3499,7 +3499,7 @@ class Participants_Db extends PDb_Base {
     global $post;
     $shortcodes = is_object( $post ) ? self::get_plugin_shortcodes( $post->post_content ) : '';
     if ( !empty( $shortcodes ) ) {
-      $classes[] = 'pacients-database-shortcode';
+      $classes[] = 'members-databes-shortcode';
       foreach ( $shortcodes as $shortcode ) {
         $classes[] = $shortcode;
       }
@@ -3540,7 +3540,7 @@ class Participants_Db extends PDb_Base {
   public static function plugin_menu()
   {
     global $pagenow;
-    if ( ($pagenow == 'admin.php' && filter_input( INPUT_GET, 'page' ) === 'pacients-database_settings_page') || $pagenow == 'options.php' ) {
+    if ( ($pagenow == 'admin.php' && filter_input( INPUT_GET, 'page' ) === 'members-databes_settings_page') || $pagenow == 'options.php' ) {
       /*
        * intialize the plugin settings for the plugin settings pages
        */
@@ -3615,15 +3615,15 @@ class Participants_Db extends PDb_Base {
     <?php if ( self::apply_filters( 'show_plugin_colophon', true ) ) : ?>
     <div id="PDb_footer" class="pdb-footer widefat redfade postbox">
       <div class="section">
-        <h4><?php echo 'Participants Database ', self::$plugin_version ?><br /><?php _e( 'WordPress Plugin', 'pacients-database' ) ?></h4>
-        <p><em><?php _e( 'Helping organizations manage their volunteers, members and participants.', 'pacients-database' ) ?></em></p>
+        <h4><?php echo 'Participants Database ', self::$plugin_version ?><br /><?php _e( 'WordPress Plugin', 'members-databes' ) ?></h4>
+        <p><em><?php _e( 'Helping organizations manage their volunteers, members and participants.', 'members-databes' ) ?></em></p>
       </div>
       <div class="section">
-        <h4><a class="glyph-link" href="http://xnau.com"><span class="icon-xnau-glyph"></span></a><?php _e( 'Developed by', 'pacients-database' ) ?><br /><a href="http://xnau.com">xn<span class="lowast">&lowast;</span>au webdesign</a></h4>
-        <p><?php _e( 'Suggestions or criticisms of this plugin? I&#39;d love to hear them: email ', 'pacients-database' ) ?><a href="mailto:support@xnau.com">support@xnau.com.</a>
+        <h4><a class="glyph-link" href="http://xnau.com"><span class="icon-xnau-glyph"></span></a><?php _e( 'Developed by', 'members-databes' ) ?><br /><a href="http://xnau.com">xn<span class="lowast">&lowast;</span>au webdesign</a></h4>
+        <p><?php _e( 'Suggestions or criticisms of this plugin? I&#39;d love to hear them: email ', 'members-databes' ) ?><a href="mailto:support@xnau.com">support@xnau.com.</a>
       </div>
       <div class="section">
-        <p><?php printf( __( 'Please consider contributing to the continued support and development of this software by visiting %1$sthis plugin&#39;s page,%3$s giving the plugin a %2$srating%3$s or review, or dropping something in the %1$stip jar.%3$s Thanks!', 'pacients-database' ), '<a href="http://xnau.com/wordpress-plugins/pacients-database#donation-link">', '<a href="http://wordpress.org/extend/plugins/pacients-database/">', '</a>' ) ?></p>
+        <p><?php printf( __( 'Please consider contributing to the continued support and development of this software by visiting %1$sthis plugin&#39;s page,%3$s giving the plugin a %2$srating%3$s or review, or dropping something in the %1$stip jar.%3$s Thanks!', 'members-databes' ), '<a href="http://xnau.com/wordpress-plugins/members-databes#donation-link">', '<a href="http://wordpress.org/extend/plugins/members-databes/">', '</a>' ) ?></p>
       </div>
     </div>
     <?php
@@ -3639,17 +3639,17 @@ class Participants_Db extends PDb_Base {
   public static function plugin_label( $key )
   {
     $labels = self::apply_filters('plugin_labels', array(
-        'add_participant' => __( 'Add Participant', 'pacients-database' ),
-        'list_participants' => __( 'List Participants', 'pacients-database' ),
-        'manage_fields' => __( 'Manage Database Fields', 'pacients-database' ),
-        'upload_csv' => __( 'Import CSV File', 'pacients-database' ),
-        'plugin_settings' => '<span class="dashicons dashicons-admin-generic"></span>' . __( 'Settings', 'pacients-database' ),
-        'setup_guide' => __( 'Setup Guide', 'pacients-database' ),
-        'add_record_title' => __( 'Add New Participant Record', 'pacients-database' ),
-        'edit_record_title' => __( 'Edit Existing Participant Record', 'pacients-database' ),
-        'list_participants_title' => __( 'List Participants', 'pacients-database' ),
-        'export_csv_title' => __( 'Export CSV', 'pacients-database' ),
-        'manage_list_columns' => __( 'Manage List Columns', 'pacients-database' ),
+        'add_participant' => __( 'Add Participant', 'members-databes' ),
+        'list_participants' => __( 'List Participants', 'members-databes' ),
+        'manage_fields' => __( 'Manage Database Fields', 'members-databes' ),
+        'upload_csv' => __( 'Import CSV File', 'members-databes' ),
+        'plugin_settings' => '<span class="dashicons dashicons-admin-generic"></span>' . __( 'Settings', 'members-databes' ),
+        'setup_guide' => __( 'Setup Guide', 'members-databes' ),
+        'add_record_title' => __( 'Add New Participant Record', 'members-databes' ),
+        'edit_record_title' => __( 'Edit Existing Participant Record', 'members-databes' ),
+        'list_participants_title' => __( 'List Participants', 'members-databes' ),
+        'export_csv_title' => __( 'Export CSV', 'members-databes' ),
+        'manage_list_columns' => __( 'Manage List Columns', 'members-databes' ),
     ) );
     return isset( $labels[$key] ) ? $labels[$key] : $key;
   }
@@ -3705,7 +3705,7 @@ class Participants_Db extends PDb_Base {
    */
   public static function add_plugin_action_links( $links )
   {
-    return array_merge( $links, array('settings' => '<a href="' . admin_url( 'admin.php?page=pacients-database_settings_page' ) . '">' . __( 'Settings', 'pacients-database' ) . '</a>') );
+    return array_merge( $links, array('settings' => '<a href="' . admin_url( 'admin.php?page=members-databes_settings_page' ) . '">' . __( 'Settings', 'members-databes' ) . '</a>') );
   }
 
   /**
@@ -3724,8 +3724,8 @@ class Participants_Db extends PDb_Base {
       //error_log( ' meta links: '.print_r( $links,1 ));
 
       $links[1] = str_replace( self::_get_plugin_data( 'Author' ), 'xn*au webdesign', $links[1] );
-//      $links[] = '<a href="http://wordpress.org/support/view/plugin-reviews/pacients-database">' . __( 'Submit a rating or review', 'pacients-database' ) . ' </a>';
-//      $links[] = '<span style="color:#6B4001;">' . __( 'Free tech support and continued development relies on your support:', 'pacients-database' ) . ' <a class="button xnau-contribute" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6C7FSX2DQFWY4">' . __( 'contribute', 'pacients-database' ) . '</a></span>';
+//      $links[] = '<a href="http://wordpress.org/support/view/plugin-reviews/members-databes">' . __( 'Submit a rating or review', 'members-databes' ) . ' </a>';
+//      $links[] = '<span style="color:#6B4001;">' . __( 'Free tech support and continued development relies on your support:', 'members-databes' ) . ' <a class="button xnau-contribute" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6C7FSX2DQFWY4">' . __( 'contribute', 'members-databes' ) . '</a></span>';
     }
     return $links;
   }
@@ -3783,7 +3783,7 @@ function pdb_deactivate_plugin()
 
 function pdb_handle_php_version_error()
 {
-  echo '<div class="notice notice-error is-dismissible"><p><span class="dashicons dashicons-warning"></span>' . sprintf( __( 'Participants Database requires PHP version %s to function properly, you have PHP version %s. Please upgrade PHP. The Plugin has been auto-deactivated.', 'pacients-database' ), Participants_Db::min_php_version, PHP_VERSION ) . '</p></div>';
+  echo '<div class="notice notice-error is-dismissible"><p><span class="dashicons dashicons-warning"></span>' . sprintf( __( 'Participants Database requires PHP version %s to function properly, you have PHP version %s. Please upgrade PHP. The Plugin has been auto-deactivated.', 'members-databes' ), Participants_Db::min_php_version, PHP_VERSION ) . '</p></div>';
   if ( isset( $_GET['activate'] ) ) {
     unset( $_GET['activate'] );
   }

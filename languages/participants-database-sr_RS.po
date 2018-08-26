@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Participants Database 1.4.9.2\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tag/pacients-database\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/members-databes\n"
 "POT-Creation-Date: 2013-12-27 17:36:25+00:00\n"
 "PO-Revision-Date: 2014-06-01 16:02-1000\n"
 "Last-Translator: Roland Barker <webdesign@xnau.com>\n"
@@ -186,16 +186,16 @@ msgstr "Pretraga"
 msgid "Record delete successful."
 msgstr "Izmena Zapisa Nivo Pristupa"
 
-#: classes/PDb_List_Admin.class.php:360 pacients-database.php:508
+#: classes/PDb_List_Admin.class.php:360 members-databes.php:508
 msgid "Do you really want to delete the selected record?"
 msgstr "Da li zaista želite da obrišete izabrani zapis ?"
 
-#: classes/PDb_List_Admin.class.php:361 pacients-database.php:509
+#: classes/PDb_List_Admin.class.php:361 members-databes.php:509
 msgid "Do you really want to delete the selected records?"
 msgstr "Da li zaista želite da obrišete izabrane zapise ?"
 
-#: classes/PDb_List_Admin.class.php:426 pacients-database.php:416
-#: pacients-database.php:417
+#: classes/PDb_List_Admin.class.php:426 members-databes.php:416
+#: members-databes.php:417
 msgid "List Participants"
 msgstr "Lista Učesnika"
 
@@ -280,11 +280,11 @@ msgstr ""
 msgid "First"
 msgstr "Prvi"
 
-#: classes/PDb_Pagination.class.php:365 pacients-database.php:2820
+#: classes/PDb_Pagination.class.php:365 members-databes.php:2820
 msgid "Previous"
 msgstr "Prethodni"
 
-#: classes/PDb_Pagination.class.php:382 pacients-database.php:2819
+#: classes/PDb_Pagination.class.php:382 members-databes.php:2819
 msgid "Next"
 msgstr "Sledeći"
 
@@ -378,7 +378,7 @@ msgid ""
 "get deleted when the plugin is updated."
 msgstr ""
 "Ovo definiše gde će ići primljene (uploaded) datoteke u odnosu na WordPress "
-"root. Standardna lokacija je '/wp-content/uploads/pacients-database'<br /"
+"root. Standardna lokacija je '/wp-content/uploads/members-databes'<br /"
 ">Nemojte ih stavljati u direktorijum dodatka, jer će slike i datoteke mogle "
 "biti obrisane prilikom ažuriranja dodatka."
 
@@ -1372,8 +1372,8 @@ msgstr "Urednik"
 msgid "Admin"
 msgstr "Admin"
 
-#: classes/PDb_Settings.class.php:1216 pacients-database.php:452
-#: pacients-database.php:453 pacients-database.php:2979
+#: classes/PDb_Settings.class.php:1216 members-databes.php:452
+#: members-databes.php:453 members-databes.php:2979
 msgid "Settings"
 msgstr "Podešavanja"
 
@@ -1681,8 +1681,8 @@ msgid "This name is reserved; please choose another. Reserved names are"
 msgstr ""
 "ovo ime je rezervisano; molim Vas da izaberete drugo. Rezervisana imena su "
 
-#: manage_fields.php:236 pacients-database.php:434
-#: pacients-database.php:435
+#: manage_fields.php:236 members-databes.php:434
+#: members-databes.php:435
 msgid "Manage Database Fields"
 msgstr "Upravljanje Poljima Baze Podataka"
 
@@ -2056,54 +2056,54 @@ msgstr ""
 "delu."
 
 #. Plugin Name of the plugin/theme
-#: pacients-database.php:338
+#: members-databes.php:338
 msgid "Participants Database"
 msgstr "Baza Podataka Učesnika"
 
-#: pacients-database.php:425 pacients-database.php:426
+#: members-databes.php:425 members-databes.php:426
 msgid "Add Participant"
 msgstr "Dodaj Učesnika"
 
-#: pacients-database.php:443 pacients-database.php:444
+#: members-databes.php:443 members-databes.php:444
 #: upload_csv.php:8
 msgid "Import CSV File"
 msgstr "Prenesi (Import) CSV Datoteku"
 
-#: pacients-database.php:461 pacients-database.php:462
+#: members-databes.php:461 members-databes.php:462
 msgid "Setup Guide"
 msgstr "Vodič Za Podešavanje"
 
-#: pacients-database.php:470 pacients-database.php:471
+#: members-databes.php:470 members-databes.php:471
 msgid "Edit Record"
 msgstr "Izmeni Zapis"
 
 #. translators: don't translate the words in brackets {}
-#: pacients-database.php:520
+#: members-databes.php:520
 msgid "You must remove all fields from the {name} group before deleting it."
 msgstr ""
 
-#: pacients-database.php:521
+#: members-databes.php:521
 msgid "Delete the \"{name}\" {thing}?"
 msgstr ""
 
-#: pacients-database.php:2383
+#: members-databes.php:2383
 msgid ""
 "There is something wrong with the file you tried to upload. Try another."
 msgstr ""
 "Nešto nije u redu sa datotekom koju ste pokušali da pošaljete (Upload). "
 "Probajte sa drugom datotekom."
 
-#: pacients-database.php:2399 pacients-database.php:2427
+#: members-databes.php:2399 members-databes.php:2427
 #, fuzzy
 msgid "For \"%s\", you may only upload image files like JPEGs, GIFs or PNGs."
 msgstr ""
 "Možete poslati (Upload) samo slike sa ekstenzijom .JPEG, .GIF ili .PNG."
 
-#: pacients-database.php:2401
+#: members-databes.php:2401
 msgid "The file selected for \"%s\" must be one of these types: %s. "
 msgstr ""
 
-#: pacients-database.php:2433
+#: members-databes.php:2433
 #, fuzzy
 msgid ""
 "The file you tried to upload is too large. The file must be smaller than %sK."
@@ -2111,15 +2111,15 @@ msgstr ""
 "Slika koju ste pokušali da pošaljete (Upload) je prevelika. Datoteka mora "
 "biti manja od %sK."
 
-#: pacients-database.php:2440
+#: members-databes.php:2440
 msgid "The file could not be saved."
 msgstr "Datoteka nije mogla biti sačuvana."
 
-#: pacients-database.php:2468
+#: members-databes.php:2468
 msgid "The uploads directory (%s) could not be created."
 msgstr "Pošalji (Uploads) direktorijum (%s) ne može biti napravljen."
 
-#: pacients-database.php:2727
+#: members-databes.php:2727
 msgid ""
 "The date for \"%s\" was invalid. Please input the date with the exact format "
 "shown"
@@ -2127,46 +2127,46 @@ msgstr ""
 "Datum za \"%s\" je nevažeći. Molimo da unesete datum u tačno prikazanom "
 "obliku"
 
-#: pacients-database.php:2817 templates/pdb-retrieve-default.php:45
+#: members-databes.php:2817 templates/pdb-retrieve-default.php:45
 msgid "Submit"
 msgstr "Dostavi"
 
-#: pacients-database.php:2818
+#: members-databes.php:2818
 msgid "Apply"
 msgstr "Primeniti"
 
-#: pacients-database.php:2821
+#: members-databes.php:2821
 #, fuzzy
 msgid "The record has been updated."
 msgstr "Zapis je upravo ažuriran na %s"
 
-#: pacients-database.php:2822
+#: members-databes.php:2822
 #, fuzzy
 msgid "The new record has been added."
 msgstr "Datoteka %s je otpremljena."
 
-#: pacients-database.php:2940
+#: members-databes.php:2940
 msgid "WordPress Plugin"
 msgstr "WordPress Dodatak"
 
-#: pacients-database.php:2941
+#: members-databes.php:2941
 msgid ""
 "Helping organizations manage their volunteers, members and participants."
 msgstr ""
 "Pomaže organizacijama da upravljaju svojim volonterima, članovima i "
 "učesnicima."
 
-#: pacients-database.php:2944
+#: members-databes.php:2944
 msgid "Developed by"
 msgstr "Razvijen od strane"
 
-#: pacients-database.php:2945
+#: members-databes.php:2945
 msgid ""
 "Suggestions or crticisms of this plugin? I&#39;d love to hear them: email "
 msgstr ""
 "Imate predloge ili kritike na ovaj dodatak? Biće mi drago da ih čujem: email"
 
-#: pacients-database.php:2948
+#: members-databes.php:2948
 msgid ""
 "Please consider contributing to the continued support and development of "
 "this software by visiting %1$sthis plugin&#39;s page,%3$s giving the plugin "
@@ -2321,8 +2321,8 @@ msgid "Upload File"
 msgstr "Pošalji (Upload) datoteku"
 
 #. Plugin URI of the plugin/theme
-msgid "http://xnau.com/wordpress-plugins/pacients-database"
-msgstr "http://xnau.com/wordpress-plugins/pacients-database"
+msgid "http://xnau.com/wordpress-plugins/members-databes"
+msgstr "http://xnau.com/wordpress-plugins/members-databes"
 
 #. Description of the plugin/theme
 msgid "Plugin for managing a database of participants, members or volunteers"

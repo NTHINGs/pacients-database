@@ -363,7 +363,7 @@ class PDb_Pagination {
           ($currentPage > 1 ? $glyph_pattern : $disabled_glyph_pattern),
           $this->_sprintf($link, 1),
           ($currentPage > 1 ? 'firstpage' : $this->disabled_class),
-          __('First', 'pacients-database'),
+          __('First', 'members-databes'),
           'first-page',
           1
 );
@@ -374,7 +374,7 @@ class PDb_Pagination {
             ($currentPage > 1 ? $glyph_pattern : $disabled_glyph_pattern), 
             $this->_sprintf($link, $currentPage - 1), 
             ($currentPage > 1 ? 'nextpage' : $this->disabled_class), 
-            __('Previous', 'pacients-database'),
+            __('Previous', 'members-databes'),
             'previous-page',
             $currentPage - 1
     );
@@ -393,7 +393,7 @@ class PDb_Pagination {
             ($currentPage < $totalPages ? $glyph_pattern : $disabled_glyph_pattern), 
             $this->_sprintf($link, $currentPage + 1), 
             ($currentPage < $totalPages ? 'nextpage' : $this->disabled_class), 
-            __('Next', 'pacients-database'),
+            __('Next', 'members-databes'),
             'next-page',
             $currentPage + 1
     );
@@ -406,7 +406,7 @@ class PDb_Pagination {
           ($currentPage < $totalPages ? $glyph_pattern : $disabled_glyph_pattern),
           $this->_sprintf($link, $totalPages),
           ($currentPage < $totalPages ? 'lastpage' : $this->disabled_class),
-          __('Last', 'pacients-database'),
+          __('Last', 'members-databes'),
           'last-page',
           $totalPages
 );

@@ -7,14 +7,14 @@ $mode = isset( $_POST['action'] ) && $_POST['action'] == 'success' ? 'success' :
  ?>
 <div class="wrap <?php echo $this->wrap_class .  'mode-' . $mode ?> " >
   
-  <h4><?php _e( 'Request your Private Link', 'pacients-database' ) ?></h4>
+  <h4><?php _e( 'Request your Private Link', 'members-databes' ) ?></h4>
 
   <?php // output any validation errors
   $this->print_errors(); ?>
   
   <?php if ($mode == 'success') : ?>
   
-    <h5><?php _e('Success: your private link has been emailed to you.','pacients-database') ?></h5>
+    <h5><?php _e('Success: your private link has been emailed to you.','members-databes') ?></h5>
   
   <?php else : ?>
 
@@ -57,7 +57,7 @@ $mode = isset( $_POST['action'] ) && $_POST['action'] == 'success' ? 'success' :
         <tr>
           <td class="submit-buttons">
             
-           <?php $this->print_submit_button('button-primary',__('Submit','pacients-database')); // you can specify a class for the button ?>
+           <?php $this->print_submit_button('button-primary',__('Submit','members-databes')); // you can specify a class for the button ?>
            
           </td>
         </tr>

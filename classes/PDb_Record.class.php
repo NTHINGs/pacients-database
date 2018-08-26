@@ -150,7 +150,7 @@ class PDb_Record extends PDb_Shortcode {
    */
   public function print_back_button() {
     if (strlen($this->previous_multipage) > 0) {
-      printf('<a type="button" class="button button-secondary" href="%s" >%s</a>', $this->previous_multipage, __('back', 'pacients-database'));
+      printf('<a type="button" class="button button-secondary" href="%s" >%s</a>', $this->previous_multipage, __('back', 'members-databes'));
     }
   }
 

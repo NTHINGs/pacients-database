@@ -16,7 +16,7 @@
  * @copyright  2015 xnau webdesign
  * @license    GPL2
  * @version    Release: 1.10
- * @link       http://wordpress.org/extend/plugins/pacients-database/
+ * @link       http://wordpress.org/extend/plugins/members-databes/
  */
 if ( !defined( 'ABSPATH' ) )
   die;
@@ -123,26 +123,26 @@ class PDb_List_Admin {
 
     $apply_confirm_messages = Participants_Db::apply_filters( 'admin_list_with_selected_action_conf_messages', array(
                 'delete' => array(
-                    "singular" => __( "Do you really want to delete the selected record?", 'pacients-database' ),
-                    "plural" => __( "Do you really want to delete the selected records?", 'pacients-database' ),
+                    "singular" => __( "Do you really want to delete the selected record?", 'members-databes' ),
+                    "plural" => __( "Do you really want to delete the selected records?", 'members-databes' ),
                 ),
                 'approve' => array(
-                    "singular" => __( "Approve the selected record?", 'pacients-database' ),
-                    "plural" => __( "Approve the selected records?", 'pacients-database' ),
+                    "singular" => __( "Approve the selected record?", 'members-databes' ),
+                    "plural" => __( "Approve the selected records?", 'members-databes' ),
                 ),
                 'unapprove' => array(
-                    "singular" => __( "Unapprove the selected record?", 'pacients-database' ),
-                    "plural" => __( "Unapprove the selected records?", 'pacients-database' ),
+                    "singular" => __( "Unapprove the selected record?", 'members-databes' ),
+                    "plural" => __( "Unapprove the selected records?", 'members-databes' ),
                 ),
                 'send_signup_email' => array(
-                    "singular" => __( "Send the signup email to the selected record?", 'pacients-database' ),
-                    "plural" => __( "Send the signup email to the selected records?", 'pacients-database' ),
+                    "singular" => __( "Send the signup email to the selected record?", 'members-databes' ),
+                    "plural" => __( "Send the signup email to the selected records?", 'members-databes' ),
                 ),
                 'send_resend_link_email' => array(
-                    "singular" => __( 'Send the "resend link" email to the selected record?', 'pacients-database' ),
-                    "plural" => __( 'Send the "resend link" email to the selected records?', 'pacients-database' ),
+                    "singular" => __( 'Send the "resend link" email to the selected record?', 'members-databes' ),
+                    "plural" => __( 'Send the "resend link" email to the selected records?', 'members-databes' ),
                 ),
-                'recipient_count_exceeds_limit' => sprintf( __( 'The number of selected records exceeds the %s email send limit.%s Only the first %s will be sent.', 'pacients-database'), '<a href="https://xnau.com/product_support/email-expansion-kit/#email_session_send_limit" target="_blank" >', '</a>', '{limit}'),
+                'recipient_count_exceeds_limit' => sprintf( __( 'The number of selected records exceeds the %s email send limit.%s Only the first %s will be sent.', 'members-databes'), '<a href="https://xnau.com/product_support/email-expansion-kit/#email_session_send_limit" target="_blank" >', '</a>', '{limit}'),
                     )
     );
 
@@ -228,7 +228,7 @@ class PDb_List_Admin {
         'page' => $current_page,
         'size' => self::$page_list_limit,
         'total_records' => self::$num_records,
-//        'wrap_tag' => '<div class="pdb-list"><div class="pagination"><label>' . _x('Page', 'noun; page number indicator', 'pacients-database') . ':</label> ',
+//        'wrap_tag' => '<div class="pdb-list"><div class="pagination"><label>' . _x('Page', 'noun; page number indicator', 'members-databes') . ':</label> ',
 //        'wrap_tag_close' => '</div></div>',
         'add_variables' => '#pdb-list-admin',
             ) );
@@ -426,7 +426,7 @@ class PDb_List_Admin {
                 $sql = "DELETE FROM " . Participants_Db::$participants_table . " WHERE id " . $pattern;
                 $result = $wpdb->query( $wpdb->prepare( $sql, $selected_ids ) );
                 if ( $result > 0 ) {
-                  Participants_Db::set_admin_message( __( 'Record delete successful.', 'pacients-database' ), 'updated' );
+                  Participants_Db::set_admin_message( __( 'Record delete successful.', 'members-databes' ), 'updated' );
                 }
                 $last_query = $wpdb->last_query;
               }
@@ -447,7 +447,7 @@ class PDb_List_Admin {
                 $result = $wpdb->query( $wpdb->prepare( $sql, $selected_ids ) );
                 if ( $result > 0 ) {
                   do_action( 'pdb-list_admin_with_selected_' . $selected_action, $selected_ids );
-                  Participants_Db::set_admin_message( Participants_Db::apply_filters('admin_list_action_feedback', sprintf( _x( 'Approval status for %d records has been updated.', 'number of records with approval statuses set', 'pacients-database' ), $selected_count ) ), 'updated' );
+                  Participants_Db::set_admin_message( Participants_Db::apply_filters('admin_list_action_feedback', sprintf( _x( 'Approval status for %d records has been updated.', 'number of records with approval statuses set', 'members-databes' ), $selected_count ) ), 'updated' );
                 }
                 $last_query = $wpdb->last_query;
               }
@@ -472,7 +472,7 @@ class PDb_List_Admin {
                 
               }
               $message_type = $send_count > 0 ? 'success' : 'warning';
-              $message = sprintf( _nx( '%d email was sent.', '%d emails were sent.', $send_count, 'number of emails sent', 'pacients-database' ), $send_count );
+              $message = sprintf( _nx( '%d email was sent.', '%d emails were sent.', $send_count, 'number of emails sent', 'members-databes' ), $send_count );
               Participants_Db::set_admin_message( $message, $message_type );
               break;
 
@@ -494,7 +494,7 @@ class PDb_List_Admin {
                 do_action( 'pdb-list_admin_with_selected_send_resend_link', $data );
               }
               $message_type = $send_count > 0 ? 'success' : 'warning';
-              $message = sprintf( _nx( '%d email was sent.', '%d emails were sent.', $send_count, 'number of emails sent', 'pacients-database' ), $send_count );
+              $message = sprintf( _nx( '%d email was sent.', '%d emails were sent.', $send_count, 'number of emails sent', 'members-databes' ), $send_count );
               Participants_Db::set_admin_message( $message, $message_type );
               break;
 
@@ -798,7 +798,7 @@ query: '.($last_query?:$wpdb->last_query));
                         ?>
                         <fieldset class="widefat inline-controls">
                           <?php if ( $i === 0 ): ?>
-                            <legend><?php _e( 'Show only records with', 'pacients-database' ) ?>:</legend>
+                            <legend><?php _e( 'Show only records with', 'members-databes' ) ?>:</legend>
                             <?php
                           endif;
 
@@ -809,19 +809,19 @@ query: '.($last_query?:$wpdb->last_query));
                               'options' => array('' => 'none') + $filter_columns,
                           );
                           PDb_FormElement::print_element( $element );
-                          _ex( 'that', 'joins two search terms, such as in "Show only records with last name that is Smith"', 'pacients-database' );
+                          _ex( 'that', 'joins two search terms, such as in "Show only records with last name that is Smith"', 'members-databes' );
                           $element = array(
                               'type' => 'dropdown',
                               'name' => 'operator[' . $i . ']',
                               'value' => $filter_set['operator'],
                               'options' => array(
                                   'null_select' => false,
-                                  __( 'is', 'pacients-database' ) => '=',
-                                  __( 'is not', 'pacients-database' ) => '!=',
-                                  __( 'contains', 'pacients-database' ) => 'LIKE',
-                                  __( 'doesn&#39;t contain', 'pacients-database' ) => 'NOT LIKE',
-                                  __( 'is greater than', 'pacients-database' ) => 'gt',
-                                  __( 'is less than', 'pacients-database' ) => 'lt',
+                                  __( 'is', 'members-databes' ) => '=',
+                                  __( 'is not', 'members-databes' ) => '!=',
+                                  __( 'contains', 'members-databes' ) => 'LIKE',
+                                  __( 'doesn&#39;t contain', 'members-databes' ) => 'NOT LIKE',
+                                  __( 'is greater than', 'members-databes' ) => 'gt',
+                                  __( 'is less than', 'members-databes' ) => 'lt',
                               ),
                           );
                           PDb_FormElement::print_element( $element );
@@ -835,8 +835,8 @@ query: '.($last_query?:$wpdb->last_query));
                                 'name' => 'logic[' . $i . ']',
                                 'value' => $filter_set['logic'],
                                 'options' => array(
-                                    __( 'and', 'pacients-database' ) => 'AND',
-                                    __( 'or', 'pacients-database' ) => 'OR',
+                                    __( 'and', 'members-databes' ) => 'AND',
+                                    __( 'or', 'members-databes' ) => 'OR',
                                 ),
                             );
                           } else {
@@ -855,12 +855,12 @@ query: '.($last_query?:$wpdb->last_query));
                         <input class="button button-default" name="submit-button" type="submit" value="<?php echo self::$i18n['filter'] ?>">
                         <input class="button button-default" name="submit-button" type="submit" value="<?php echo self::$i18n['clear'] ?>">
                         <div class="widefat inline-controls filter-count">
-                          <label for="list_filter_count"><?php _e( 'Number of filters to use: ', 'pacients-database' ) ?><input id="list_filter_count" name="list_filter_count" class="number-entry single-digit" type="number" max="5" min="1" value="<?php echo $filter_count ?>"  /></label>
+                          <label for="list_filter_count"><?php _e( 'Number of filters to use: ', 'members-databes' ) ?><input id="list_filter_count" name="list_filter_count" class="number-entry single-digit" type="number" max="5" min="1" value="<?php echo $filter_count ?>"  /></label>
                         </div>
                       </fieldset>
                     </td></tr><tr><td>
                       <fieldset class="widefat inline-controls">
-                        <legend><?php _e( 'Sort by', 'pacients-database' ) ?>:</legend>
+                        <legend><?php _e( 'Sort by', 'members-databes' ) ?>:</legend>
                         <?php
                         $element = array(
                             'type' => 'dropdown',
@@ -875,8 +875,8 @@ query: '.($last_query?:$wpdb->last_query));
                             'name' => 'ascdesc',
                             'value' => strtolower( self::$filter['ascdesc'] ),
                             'options' => array(
-                                __( 'Ascending', 'pacients-database' ) => 'asc',
-                                __( 'Descending', 'pacients-database' ) => 'desc'
+                                __( 'Ascending', 'members-databes' ) => 'asc',
+                                __( 'Descending', 'members-databes' ) => 'desc'
                             ),
                         );
                         PDb_FormElement::print_element( $element );
@@ -887,7 +887,7 @@ query: '.($last_query?:$wpdb->last_query));
             </form>
           </div>
 
-          <h3><?php printf( _n( '%s record found, sorted by: %s.', '%s records found, sorted by: %s.', self::$num_records, 'pacients-database' ), self::$num_records, Participants_Db::column_title( self::$filter['sortBy'] ) ) ?></h3>
+          <h3><?php printf( _n( '%s record found, sorted by: %s.', '%s records found, sorted by: %s.', self::$num_records, 'members-databes' ), self::$num_records, Participants_Db::column_title( self::$filter['sortBy'] ) ) ?></h3>
           <?php
         }
 
@@ -913,12 +913,12 @@ query: '.($last_query?:$wpdb->last_query));
 //            do_action(Participants_Db::$prefix . 'admin_list_form_top', $this);
             do_action( Participants_Db::$prefix . 'admin_list_form_top' );
             $with_selection_actions = array(
-                        __( 'approve', 'pacients-database' ) => 'approve',
-                        __( 'unapprove', 'pacients-database' ) => 'unapprove',
+                        __( 'approve', 'members-databes' ) => 'approve',
+                        __( 'unapprove', 'members-databes' ) => 'unapprove',
                     );
             if ( current_user_can( Participants_Db::plugin_capability( 'plugin_admin_capability', 'delete participants' ) ) ) {
               $with_selection_actions = array(
-                        __( 'delete', 'pacients-database' ) => 'delete'
+                        __( 'delete', 'members-databes' ) => 'delete'
                     ) + $with_selection_actions;
             }
             /**
@@ -959,7 +959,7 @@ query: '.($last_query?:$wpdb->last_query));
                                       )
                               )
                       ?>
-                      <?php printf( __( 'Show %s items per page.', 'pacients-database' ), $list_limit ) ?>
+                      <?php printf( __( 'Show %s items per page.', 'members-databes' ), $list_limit ) ?>
                       <?php PDb_FormElement::print_element( array('type' => 'submit', 'name' => 'submit-button', 'class' => 'button button-default', 'value' => self::$i18n['change']) ) ?>
 
                     </fieldset>
@@ -1018,7 +1018,7 @@ query: '.($last_query?:$wpdb->last_query));
                             <?php if ( self::user_can_use_with_selected() ) : ?>
                               <input type="checkbox" class="delete-check" name="pid[]" value="<?php echo $value['id'] ?>" />
                             <?php endif ?>
-                            <a href="admin.php?page=<?php echo 'pacients-database' ?>-edit_participant&amp;action=edit&amp;id=<?php echo $value['id'] ?>" title="<?php _e( 'Edit', 'pacients-database' ) ?>"><span class="dashicons dashicons-edit"></span></a>
+                            <a href="admin.php?page=<?php echo 'members-databes' ?>-edit_participant&amp;action=edit&amp;id=<?php echo $value['id'] ?>" title="<?php _e( 'Edit', 'members-databes' ) ?>"><span class="dashicons dashicons-edit"></span></a>
                           </td>
                           <?php
                           foreach ( self::$display_columns as $column ) {
@@ -1112,7 +1112,7 @@ query: '.($last_query?:$wpdb->last_query));
                     ?>
                     <tbody>
                       <tr>
-                        <td><?php _e( 'No records found', 'pacients-database' ) ?></td>
+                        <td><?php _e( 'No records found', 'members-databes' ) ?></td>
                       </tr>
                     </tbody>
                   <?php
@@ -1148,13 +1148,13 @@ query: '.($last_query?:$wpdb->last_query));
                 $namelength = round( strlen( $suggested_filename ) * 0.9 );
                 ?>
                 <fieldset class="inline-controls">
-                  <?php _e( 'File Name', 'pacients-database' ) ?>:
+                  <?php _e( 'File Name', 'members-databes' ) ?>:
                   <input type="text" name="filename" value="<?php echo $suggested_filename ?>" size="<?php echo $namelength ?>" />
-                  <input type="submit" name="submit-button" value="<?php _e( 'Download CSV for this list', 'pacients-database' ) ?>" class="button button-primary" />
-                  <label for="include_csv_titles"><input type="checkbox" name="include_csv_titles" value="1"><?php _e( 'Include field titles', 'pacients-database' ) ?></label>
+                  <input type="submit" name="submit-button" value="<?php _e( 'Download CSV for this list', 'members-databes' ) ?>" class="button button-primary" />
+                  <label for="include_csv_titles"><input type="checkbox" name="include_csv_titles" value="1"><?php _e( 'Include field titles', 'members-databes' ) ?></label>
                 </fieldset>
                 <p>
-                  <?php _e( 'This will download the whole list of participants that match your search terms, and in the order specified by the sort. The export will include records on all list pages. The fields included in the export are defined in the "CSV" column on the Manage Database Fields page.', 'pacients-database' ) ?>
+                  <?php _e( 'This will download the whole list of participants that match your search terms, and in the order specified by the sort. The export will include records on all list pages. The fields included in the export are defined in the "CSV" column on the Manage Database Fields page.', 'members-databes' ) ?>
                 </p>
               </form>
             </div>
@@ -1189,7 +1189,7 @@ query: '.($last_query?:$wpdb->last_query));
     ?>
     <th scope="col" style="width:3em">
       <?php if ( self::user_can_use_with_selected() ) : ?>
-        <?php /* translators: uses the check symbol in a phrase that means "check all"  printf('<span class="checkmark" >&#10004;</span>%s', __('all', 'pacients-database'))s */ ?>
+        <?php /* translators: uses the check symbol in a phrase that means "check all"  printf('<span class="checkmark" >&#10004;</span>%s', __('all', 'members-databes'))s */ ?>
         <input type="checkbox" name="checkall" id="checkall" ><span class="dashicons dashicons-edit" style="opacity: 0"></span>
       <?php endif ?>
     </th>
@@ -1417,12 +1417,12 @@ query: '.($last_query?:$wpdb->last_query));
    */
   public static function register_admin_list_events( $list )
   {
-    $prefix = __('PDb Admin List With Selected: ', 'pacients-database');
+    $prefix = __('PDb Admin List With Selected: ', 'members-databes');
     $admin_list_events = array(
-        'pdb-list_admin_with_selected_delete' => $prefix . __( 'delete', 'pacients-database' ),
-        'pdb-list_admin_with_selected_approve' => $prefix . __( 'approve', 'pacients-database' ),
-        'pdb-list_admin_with_selected_unapprove' => $prefix . __( 'unapprove', 'pacients-database' ),
-        'pdb-list_admin_with_selected_send_signup_email' => $prefix . __( 'send signup email', 'pacients-database' ),
+        'pdb-list_admin_with_selected_delete' => $prefix . __( 'delete', 'members-databes' ),
+        'pdb-list_admin_with_selected_approve' => $prefix . __( 'approve', 'members-databes' ),
+        'pdb-list_admin_with_selected_unapprove' => $prefix . __( 'unapprove', 'members-databes' ),
+        'pdb-list_admin_with_selected_send_signup_email' => $prefix . __( 'send signup email', 'members-databes' ),
     );
     return $list + $admin_list_events;
   }
@@ -1477,14 +1477,14 @@ query: '.($last_query?:$wpdb->last_query));
 
     /* translators: the following 5 strings are used in logic matching, please test after translating in case special characters cause problems */
     self::$i18n = array(
-        'delete_checked' => _x( 'Delete Checked', 'submit button label', 'pacients-database' ),
-        'change' => _x( 'Change', 'submit button label', 'pacients-database' ),
-        'sort' => _x( 'Sort', 'submit button label', 'pacients-database' ),
-        'filter' => _x( 'Filter', 'submit button label', 'pacients-database' ),
-        'clear' => _x( 'Clear', 'submit button label', 'pacients-database' ),
-        'search' => _x( 'Search', 'search button label', 'pacients-database' ),
+        'delete_checked' => _x( 'Delete Checked', 'submit button label', 'members-databes' ),
+        'change' => _x( 'Change', 'submit button label', 'members-databes' ),
+        'sort' => _x( 'Sort', 'submit button label', 'members-databes' ),
+        'filter' => _x( 'Filter', 'submit button label', 'members-databes' ),
+        'clear' => _x( 'Clear', 'submit button label', 'members-databes' ),
+        'search' => _x( 'Search', 'search button label', 'members-databes' ),
         'apply' => __( 'Apply' ),
-        'with_selected' => _x( 'With selected', 'phrase used just before naming the action to perform on the selected items', 'pacients-database' ),
+        'with_selected' => _x( 'With selected', 'phrase used just before naming the action to perform on the selected items', 'members-databes' ),
     );
   }
 

@@ -1,4 +1,4 @@
-// pacients-database admin support scripts
+// members-databes admin support scripts
 PDbAdmin = (function ($) {
   var precontent = function (el) {
     el.wrap('<span class="pdb-added-content"></span>');

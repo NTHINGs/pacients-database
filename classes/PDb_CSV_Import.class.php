@@ -71,7 +71,7 @@ class PDb_CSV_Import extends xnau_CSV_Import {
 
       $this->column_names = $this->CSV->titles;
 
-      $this->errors[] = __('New columns imported from the CSV file.', 'pacients-database');
+      $this->errors[] = __('New columns imported from the CSV file.', 'members-databes');
 
       // remove enclosure characters
       array_walk($this->column_names, array($this, '_enclosure_trim'), $this->CSV->enclosure);

@@ -13,7 +13,7 @@
  * @copyright  2012 xnau webdesign
  * @license    GPL2
  * @version    1.7
- * @link       http://wordpress.org/extend/plugins/pacients-database/
+ * @link       http://wordpress.org/extend/plugins/members-databes/
  */
 if ( !defined( 'ABSPATH' ) )
   die;
@@ -50,10 +50,10 @@ class PDb_FormValidation extends xnau_FormValidation {
   public static function validation_methods()
   {
     return Participants_Db::apply_filters( 'validation_methods', array(
-                'no' => __( 'Not Required', 'pacients-database' ),
-                'yes' => __( 'Required', 'pacients-database' ),
-                'email-regex' => __( 'Email', 'pacients-database' ),
-                'other' => __( 'regex/match', 'pacients-database' ),
+                'no' => __( 'Not Required', 'members-databes' ),
+                'yes' => __( 'Required', 'members-databes' ),
+                'email-regex' => __( 'Email', 'members-databes' ),
+                'other' => __( 'regex/match', 'members-databes' ),
                 'captcha' => 'CAPTCHA',
             ) );
   }

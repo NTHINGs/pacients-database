@@ -14,8 +14,8 @@ this template demonstrates a "table-less" reponsive layout for the list of recor
   
     <div class="alert alert-block" style="display:none">
     	<a class="close" data-dismiss="alert" href="#">X</a>
-      <p class="search_field_error"><?php _e( 'Please select a column to search in.', 'pacients-database' )?></p>
-      <p class="value_error"><?php _e( 'Please type in something to search for.', 'pacients-database' )?></p>
+      <p class="search_field_error"><?php _e( 'Please select a column to search in.', 'members-databes' )?></p>
+      <p class="value_error"><?php _e( 'Please type in something to search for.', 'members-databes' )?></p>
     </div>
 
     <?php $this->search_sort_form_top( false, 'form-horizontal' ); ?>
@@ -23,7 +23,7 @@ this template demonstrates a "table-less" reponsive layout for the list of recor
     <?php if ( $filter_mode == 'filter' || $filter_mode == 'both' ) : ?>
     
       <div class="control-group">
-      	<label class="control-label"><?php _e('Search', 'pacients-database' )?>:</label>
+      	<label class="control-label"><?php _e('Search', 'members-databes' )?>:</label>
       	<div class="controls">
         
 				<?php
@@ -43,7 +43,7 @@ this template demonstrates a "table-less" reponsive layout for the list of recor
       
 			
       <div class="control-group">
-      	<label class="control-label"><?php _e('Sort by', 'pacients-database' )?>:</label>
+      	<label class="control-label"><?php _e('Sort by', 'members-databes' )?>:</label>
       	<div class="controls">
 
       		<?php $this->sort_form() ?>

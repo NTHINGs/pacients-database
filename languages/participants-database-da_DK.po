@@ -416,7 +416,7 @@ msgstr "PDb Admin listen med valgte: "
 msgid "send signup email"
 msgstr "send tilmeldings e-mail"
 
-#: classes/PDb_List_Admin.class.php:1455 pacients-database.php:3401
+#: classes/PDb_List_Admin.class.php:1455 members-databes.php:3401
 msgid "Apply"
 msgstr "Aktiver"
 
@@ -426,7 +426,7 @@ msgctxt ""
 msgid "With selected"
 msgstr "Med udvalgte"
 
-#: classes/PDb_Manage_Fields.class.php:86 pacients-database.php:3575
+#: classes/PDb_Manage_Fields.class.php:86 members-databes.php:3575
 msgid "Manage Database Fields"
 msgstr "Administrer databasefelter"
 
@@ -626,11 +626,11 @@ msgstr "Beskrivelse"
 msgid "First"
 msgstr "Første"
 
-#: classes/PDb_Pagination.class.php:377 pacients-database.php:3403
+#: classes/PDb_Pagination.class.php:377 members-databes.php:3403
 msgid "Previous"
 msgstr "Forrige"
 
-#: classes/PDb_Pagination.class.php:396 pacients-database.php:3402
+#: classes/PDb_Pagination.class.php:396 members-databes.php:3402
 msgid "Next"
 msgstr "Næste"
 
@@ -638,7 +638,7 @@ msgstr "Næste"
 msgid "Last"
 msgstr "Sidste"
 
-#: classes/PDb_Path.class.php:159 pacients-database.php:3226
+#: classes/PDb_Path.class.php:159 members-databes.php:3226
 #, php-format
 msgid "The uploads directory (%s) could not be created."
 msgstr "Kunne ikke oprettes uploads mappen (% s)."
@@ -732,7 +732,7 @@ msgstr "Fil Upload placering"
 #: classes/PDb_Settings.class.php:129
 msgid ""
 "This defines where the uploaded files will go, relative to the WordPress root. "
-"The default location is '/wp-content/uploads/pacients-database'<br />Don't "
+"The default location is '/wp-content/uploads/members-databes'<br />Don't "
 "put it in the plugin folder, the images and files could get deleted when the "
 "plugin is updated."
 msgstr ""
@@ -1859,8 +1859,8 @@ msgstr "Redaktør"
 msgid "Admin"
 msgstr "Admin"
 
-#: classes/PDb_Settings.class.php:1499 pacients-database.php:3577
-#: pacients-database.php:3638
+#: classes/PDb_Settings.class.php:1499 members-databes.php:3577
+#: members-databes.php:3638
 msgid "Settings"
 msgstr "Indstillinger"
 
@@ -2485,23 +2485,23 @@ msgstr ""
 "men kan ikke redigere det. Feltet kan redigeres i admin."
 
 #. Plugin Name of the plugin/theme
-#: pacients-database.php:501
+#: members-databes.php:501
 msgid "Participants Database"
 msgstr "Participants Database"
 
-#: pacients-database.php:643
+#: members-databes.php:643
 msgid "You must remove all fields from the {name} group before deleting it."
 msgstr "Du skal fjerne alle felter fra {navn} gruppen før du sletter den."
 
-#: pacients-database.php:645
+#: members-databes.php:645
 msgid "Delete the \"{name}\" {thing}?"
 msgstr "Slet \"{name}\" {thing}?"
 
-#: pacients-database.php:646
+#: members-databes.php:646
 msgid "The changes you made will be lost if you navigate away from this page."
 msgstr "Ændringerne, du har lavet, mistes, hvis du navigerer væk fra denne side."
 
-#: pacients-database.php:647
+#: members-databes.php:647
 msgid ""
 "Changing the form element on a field that has stored data can result in data "
 "loss."
@@ -2509,86 +2509,86 @@ msgstr ""
 "Ændre formular elementet på et felt, der har lagret data kan resultere i tab "
 "af data."
 
-#: pacients-database.php:647
+#: members-databes.php:647
 msgid "More information here…"
 msgstr "Mere information her..."
 
-#: pacients-database.php:648
+#: members-databes.php:648
 msgid "Yes, change the form element"
 msgstr "Ja, ændre formular-elementet"
 
-#: pacients-database.php:649
+#: members-databes.php:649
 msgid "No, don't change the form element"
 msgstr "Nej, ændre ikke formular-elementet"
 
-#: pacients-database.php:3122
+#: members-databes.php:3122
 msgid "There is something wrong with the file you tried to upload. Try another."
 msgstr "Der er noget galt med den fil, du har forsøgt at uploade. Prøv en anden."
 
-#: pacients-database.php:3138 pacients-database.php:3166
+#: members-databes.php:3138 members-databes.php:3166
 #, php-format
 msgid "For \"%s\", you may only upload image files like JPEGs, GIFs or PNGs."
 msgstr "\"%s\", kan du kun uploade billed-filer som JPEG, GIF eller PNG."
 
-#: pacients-database.php:3140
+#: members-databes.php:3140
 #, php-format
 msgid "The file selected for \"%s\" must be one of these types: %s. "
 msgstr "Filen valgt til \"%s\" skal være af en af disse typer: %s. "
 
-#: pacients-database.php:3173
+#: members-databes.php:3173
 #, php-format
 msgid ""
 "The file you tried to upload is too large. The file must be smaller than %sK."
 msgstr ""
 "Filen du forsøgte at uploade er for stor. Filen skal være mindre end % sK."
 
-#: pacients-database.php:3180
+#: members-databes.php:3180
 msgid "The file could not be saved."
 msgstr "Filen kunne ikke gemmes."
 
-#: pacients-database.php:3400 templates/pdb-retrieve-bootstrap.php:69
+#: members-databes.php:3400 templates/pdb-retrieve-bootstrap.php:69
 #: templates/pdb-retrieve-default.php:60
 msgid "Submit"
 msgstr "Send"
 
-#: pacients-database.php:3404
+#: members-databes.php:3404
 msgid "The record has been updated."
 msgstr "Posten er blevet opdateret."
 
-#: pacients-database.php:3405
+#: members-databes.php:3405
 msgid "The new record has been added."
 msgstr "Den nye post er blevet tilføjet."
 
-#: pacients-database.php:3406
+#: members-databes.php:3406
 #, php-format
 msgid "No record was added on query: %s"
 msgstr "Ingen post blev tilføjet på forespørgsel: %s"
 
-#: pacients-database.php:3407
+#: members-databes.php:3407
 #, php-format
 msgid "Database Error: %2$s on query: %1$s"
 msgstr "Databasefejl: %2$s på forespørgslen: %1$s"
 
-#: pacients-database.php:3549
+#: members-databes.php:3549
 msgid "WordPress Plugin"
 msgstr "WordPress Plugin"
 
-#: pacients-database.php:3550
+#: members-databes.php:3550
 msgid "Helping organizations manage their volunteers, members and participants."
 msgstr ""
 "Hjælpe organisationer med at forvalte deres frivillige, medlemmer og deltagere."
 
-#: pacients-database.php:3553
+#: members-databes.php:3553
 msgid "Developed by"
 msgstr "Udviklet af"
 
-#: pacients-database.php:3554
+#: members-databes.php:3554
 msgid ""
 "Suggestions or criticisms of this plugin? I&#39;d love to hear them: email "
 msgstr ""
 "Forslag eller kritik af dette plugin? Jeg vil meget gerne høre dem: e-mail "
 
-#: pacients-database.php:3557
+#: members-databes.php:3557
 #, php-format
 msgid ""
 "Please consider contributing to the continued support and development of this "
@@ -2599,35 +2599,35 @@ msgstr ""
 "software ved at besøge%1$sdenne plugins side,%3$s og giv din %2$svurdering%3$s "
 "eller anmeldelse, eller smid  noget i%1$stip krukke .%3$s Tak!"
 
-#: pacients-database.php:3573
+#: members-databes.php:3573
 msgid "Add Participant"
 msgstr "Tilføj ny post til DB"
 
-#: pacients-database.php:3574 pacients-database.php:3581
+#: members-databes.php:3574 members-databes.php:3581
 msgid "List Participants"
 msgstr "List DB poster"
 
-#: pacients-database.php:3576 upload_csv.php:40
+#: members-databes.php:3576 upload_csv.php:40
 msgid "Import CSV File"
 msgstr "Importér CSV-fil"
 
-#: pacients-database.php:3578
+#: members-databes.php:3578
 msgid "Setup Guide"
 msgstr "Opsætningsguide"
 
-#: pacients-database.php:3579
+#: members-databes.php:3579
 msgid "Add New Participant Record"
 msgstr "Tilføj ny deltager Post"
 
-#: pacients-database.php:3580
+#: members-databes.php:3580
 msgid "Edit Existing Participant Record"
 msgstr "Rediger eksisterende deltager Post"
 
-#: pacients-database.php:3582
+#: members-databes.php:3582
 msgid "Export CSV"
 msgstr "Eksporter CSV"
 
-#: pacients-database.php:3708
+#: members-databes.php:3708
 #, php-format
 msgid ""
 "Participants Database requires PHP version %s to function properly, you have "
@@ -2823,8 +2823,8 @@ msgid "There is no changelog available."
 msgstr "Der findes ingen changelog."
 
 #. Plugin URI of the plugin/theme
-msgid "https://xnau.com/wordpress-plugins/pacients-database"
-msgstr "https://xnau.com/WordPress-plugins/pacients-database"
+msgid "https://xnau.com/wordpress-plugins/members-databes"
+msgstr "https://xnau.com/WordPress-plugins/members-databes"
 
 #. Description of the plugin/theme
 msgid "Plugin for managing a database of participants, members or volunteers"

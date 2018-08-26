@@ -10,7 +10,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.11\n"
 "X-Poedit-Basepath: .\n"
-"X-Poedit-WPHeader: pacients-database.php\n"
+"X-Poedit-WPHeader: members-databes.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: classes/PDb_Aux_Plugin.class.php:321 pacients-database.php:3478
+#: classes/PDb_Aux_Plugin.class.php:321 members-databes.php:3478
 msgid "Submit a rating or review"
 msgstr "ارسال یک نظر یا امتیاز"
 
@@ -284,7 +284,7 @@ msgctxt "number of emails sent"
 msgid "%d emails were sent."
 msgstr "%d ایمیل ارسال شد."
 
-#: classes/PDb_List_Admin.class.php:706 pacients-database.php:3363
+#: classes/PDb_List_Admin.class.php:706 members-databes.php:3363
 msgid "List Participants"
 msgstr "لیست مشترکین"
 
@@ -398,7 +398,7 @@ msgstr "لیست مدیریت دیتابیس مشترکین انتخاب شده 
 msgid "send signup email"
 msgstr "ارسال ایمیل ثبت نام"
 
-#: classes/PDb_List_Admin.class.php:1391 pacients-database.php:3268
+#: classes/PDb_List_Admin.class.php:1391 members-databes.php:3268
 msgid "Apply"
 msgstr "اعمال"
 
@@ -408,7 +408,7 @@ msgctxt ""
 msgid "With selected"
 msgstr "با انتخاب"
 
-#: classes/PDb_Manage_Fields.class.php:86 pacients-database.php:3378
+#: classes/PDb_Manage_Fields.class.php:86 members-databes.php:3378
 msgid "Manage Database Fields"
 msgstr "مدیریت فیلد های دیتابیس"
 
@@ -622,11 +622,11 @@ msgstr "توضیحات"
 msgid "First"
 msgstr "اولین"
 
-#: classes/PDb_Pagination.class.php:377 pacients-database.php:3270
+#: classes/PDb_Pagination.class.php:377 members-databes.php:3270
 msgid "Previous"
 msgstr "قبلی"
 
-#: classes/PDb_Pagination.class.php:396 pacients-database.php:3269
+#: classes/PDb_Pagination.class.php:396 members-databes.php:3269
 msgid "Next"
 msgstr "بعدی"
 
@@ -634,7 +634,7 @@ msgstr "بعدی"
 msgid "Last"
 msgstr "آخرین"
 
-#: classes/PDb_Path.class.php:167 pacients-database.php:3093
+#: classes/PDb_Path.class.php:167 members-databes.php:3093
 #, php-format
 msgid "The uploads directory (%s) could not be created."
 msgstr "محل ذخیره فایل های آپلودی (%s) نمی تواند ایجاد شود."
@@ -1842,8 +1842,8 @@ msgstr "ویرایشگر"
 msgid "Admin"
 msgstr "مدیریت"
 
-#: classes/PDb_Settings.class.php:1474 pacients-database.php:3386
-#: pacients-database.php:3457
+#: classes/PDb_Settings.class.php:1474 members-databes.php:3386
+#: members-databes.php:3457
 msgid "Settings"
 msgstr "تنظیمات"
 
@@ -2406,43 +2406,43 @@ msgid ""
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-#: pacients-database.php:435
+#: members-databes.php:435
 msgid "Participants Database"
 msgstr "دیتابیس مشترکین"
 
-#: pacients-database.php:574
+#: members-databes.php:574
 msgid "You must remove all fields from the {name} group before deleting it."
 msgstr "شما باید تمامی فیلد های گروه {name} را قبل از حذف آن، پاک کنید."
 
-#: pacients-database.php:576
+#: members-databes.php:576
 msgid "Delete the \"{name}\" {thing}?"
 msgstr "آیا \"{name}\" {thing} حذف شود?"
 
-#: pacients-database.php:577
+#: members-databes.php:577
 msgid "The changes you made will be lost if you navigate away from this page."
 msgstr ""
 "تغییرات اعمال شده شما در صورتی که از این صفحه خارج شوید، از بین خواهد رفت."
 
-#: pacients-database.php:2989
+#: members-databes.php:2989
 msgid ""
 "There is something wrong with the file you tried to upload. Try another."
 msgstr ""
 "مشکلی در زمان آپلود فایل انتخابی شما رخ داده است. لطفا فایل دیگری را امتحان "
 "کنید."
 
-#: pacients-database.php:3005 pacients-database.php:3033
+#: members-databes.php:3005 members-databes.php:3033
 #, php-format
 msgid "For \"%s\", you may only upload image files like JPEGs, GIFs or PNGs."
 msgstr ""
 "برای \"%s\", شما تنها می توانید فایل هایی شبیه به JPEGs, GIFs یا PNGs آپلود "
 "نمایید."
 
-#: pacients-database.php:3007
+#: members-databes.php:3007
 #, php-format
 msgid "The file selected for \"%s\" must be one of these types: %s. "
 msgstr "فایل انتخاب شده برای \"%s\" باید یکی از این نوع فایل ها باشد: %s. "
 
-#: pacients-database.php:3040
+#: members-databes.php:3040
 #, php-format
 msgid ""
 "The file you tried to upload is too large. The file must be smaller than %sK."
@@ -2450,66 +2450,66 @@ msgstr ""
 "فایل آپلودی مورد نظر شما بزرگ است. اندازه فایل باید کوچتر از %s کیلوبایت "
 "باشد."
 
-#: pacients-database.php:3047
+#: members-databes.php:3047
 msgid "The file could not be saved."
 msgstr "فایل ذخیره نمی شود."
 
-#: pacients-database.php:3267 templates/pdb-retrieve-bootstrap.php:69
+#: members-databes.php:3267 templates/pdb-retrieve-bootstrap.php:69
 #: templates/pdb-retrieve-default.php:60
 msgid "Submit"
 msgstr "ارسال"
 
-#: pacients-database.php:3271
+#: members-databes.php:3271
 msgid "The record has been updated."
 msgstr "رکورد بروزرسانی شد."
 
-#: pacients-database.php:3272
+#: members-databes.php:3272
 msgid "The new record has been added."
 msgstr "رکورد جدید اضافه شد."
 
-#: pacients-database.php:3273
+#: members-databes.php:3273
 #, php-format
 msgid "No record was added on query: %s"
 msgstr "هیچ رکوردی با این دستور اضافه نشد: %s"
 
-#: pacients-database.php:3274
+#: members-databes.php:3274
 #, php-format
 msgid "Database Error: %2$s on query: %1$s"
 msgstr "خطای دیتابیس: %2$s در دستور: %1$s"
 
-#: pacients-database.php:3374
+#: members-databes.php:3374
 msgid "Add Participant"
 msgstr "افزودن مشترک"
 
-#: pacients-database.php:3382 upload_csv.php:40
+#: members-databes.php:3382 upload_csv.php:40
 msgid "Import CSV File"
 msgstr "درون ریزی فایل CSV"
 
-#: pacients-database.php:3390
+#: members-databes.php:3390
 msgid "Setup Guide"
 msgstr "راهنمای راه اندازی"
 
-#: pacients-database.php:3415
+#: members-databes.php:3415
 msgid "WordPress Plugin"
 msgstr "افزونه وردپرس"
 
-#: pacients-database.php:3416
+#: members-databes.php:3416
 msgid ""
 "Helping organizations manage their volunteers, members and participants."
 msgstr "کمک به سازمان ها برای مدیریت اعضا و مشترکین آن ها"
 
-#: pacients-database.php:3419
+#: members-databes.php:3419
 msgid "Developed by"
 msgstr "توسعه یافته توسط"
 
-#: pacients-database.php:3420
+#: members-databes.php:3420
 msgid ""
 "Suggestions or criticisms of this plugin? I&#39;d love to hear them: email "
 msgstr ""
 "آیا پیشنهاد و یا انتقادی از این پلاگین دارید؟ با کمال میل مایل به شنیدن آن "
 "ها هستم: ایمیل "
 
-#: pacients-database.php:3423
+#: members-databes.php:3423
 #, php-format
 msgid ""
 "Please consider contributing to the continued support and development of "
@@ -2522,16 +2522,16 @@ msgstr ""
 "آن و یا ارایه چیزی در %1$sاین لینک%3$s اعلام فرمایید. سپاسگزاریم <br /> "
 "<strong> ویرایش و ترجمه به زبان فارسی: </strong>محسن آذرتیمور | کـدهــا "
 
-#: pacients-database.php:3479
+#: members-databes.php:3479
 msgid "Free tech support and continued development relies on your support:"
 msgstr ""
 "پشتیبانی فنی رایگان و ادامه یافتن توسعه نرم افزار به حمایت شما بستگی دارد:"
 
-#: pacients-database.php:3479
+#: members-databes.php:3479
 msgid "contribute"
 msgstr "حمایت از ما"
 
-#: pacients-database.php:3527
+#: members-databes.php:3527
 #, php-format
 msgid ""
 "Participants Database requires PHP version %s to function properly, you have "
@@ -2706,7 +2706,7 @@ msgid "Upload File"
 msgstr "آپلود فایل"
 
 #. Plugin URI of the plugin/theme
-msgid "https://xnau.com/wordpress-plugins/pacients-database"
+msgid "https://xnau.com/wordpress-plugins/members-databes"
 msgstr ""
 
 #. Description of the plugin/theme

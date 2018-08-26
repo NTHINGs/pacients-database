@@ -7,10 +7,10 @@ date 5-2017
 */
 
 /*** PARTICIPANT LIST ***/
-body[class*='pacients-database'] .widefat td {
+body[class*='members-databes'] .widefat td {
   vertical-align:middle;
 }
-body[class*='pacients-database']  .widefat tr:nth-child(even) {
+body[class*='members-databes']  .widefat tr:nth-child(even) {
   background-color:#f6f6f6;
 }
 .participants_db input[type='text'],
@@ -272,13 +272,13 @@ input.focused[readonly] {
   background-color: #ffffff;
   border: 1px solid #999;
 }
-body[class*='pacients-database'] a.delete {
+body[class*='members-databes'] a.delete {
   /*  display:block;
     width:12px;
     height:26px;
     background:url('../ui/delete.png') no-repeat center center;*/
 }
-body[class*='pacients-database'] .form-table {
+body[class*='members-databes'] .form-table {
   /*  margin-bottom:4em;*/
 }
 #manage_main_fields .dashicons {
@@ -378,7 +378,7 @@ input[type="checkbox"],
   font-weight: normal;
   text-transform: uppercase;
 }
-body[class*='pacients-database'] .selectother input[type=text] {
+body[class*='members-databes'] .selectother input[type=text] {
   width:auto;
 }
 table.spreadsheet {
@@ -389,13 +389,13 @@ table.spreadsheet {
   border:1px dashed #AAAAAA;
   padding:3px;
 }
-body[class*='pacients-database'] .text-block {
+body[class*='members-databes'] .text-block {
   max-width: 35em;
   font-size: 1.3em;
   line-height: 1;
 }
-body[class*='pacients-database'] .text-block p,
-body[class*='pacients-database'] .text-block li {
+body[class*='members-databes'] .text-block p,
+body[class*='members-databes'] .text-block li {
   line-height: 1.2;
 }
 /* now using WP defaults
@@ -439,10 +439,10 @@ body[class*='pacients-database'] .text-block li {
 .edit-participant textarea, .participants_db textarea, .edit-participant select, .participants_db select, .participants_db input, .edit-participant input, .link-element label {
   /*  vertical-align: top;*/
 }
-[class*="pacients-database"] .wp-editor-wrap {
+[class*="members-databes"] .wp-editor-wrap {
   max-width: 600px;
 }
-[class*="pacients-database"] .wp-editor-area {
+[class*="members-databes"] .wp-editor-area {
   background-color: #FFFFFF;
   border: 2px solid #DFDFDF;
   color: #333333;
@@ -505,7 +505,7 @@ div.manage-fields-wrap {
 .id, .order, .persistent, .sortable, .admin_column, .display_column, .CSV {
   text-align:center;
 }
-body[class*="pacients-database"] .manage-fields tr.highlighted {
+body[class*="members-databes"] .manage-fields tr.highlighted {
   background-color:#E0EDF9;
 }
 th.vertical-title  {
@@ -637,10 +637,10 @@ a.dragger {
   padding-bottom: 3px;
   border-bottom: 1px solid #aaa;
 }
-[class*=pacients-database] h2 {
+[class*=members-databes] h2 {
   border-bottom: 10px solid rgba( 0,0,0,0.08);
 }
-[class*=pacients-database] .wrap [class$="icon32"] + h2 {
+[class*=members-databes] .wrap [class$="icon32"] + h2 {
   border-bottom: none;
 }
 
@@ -810,7 +810,7 @@ a.dragger {
   /* hide it by default */
   display:none;
 }
-.pacients-database-confirm.ui-dialog.ui-widget {
+.members-databes-confirm.ui-dialog.ui-widget {
   font-family: inherit;
   font-size:1.1em;
   line-height: 1.4;
@@ -823,10 +823,10 @@ a.dragger {
   z-index:500000;
   display:none;
 }
-.pacients-database-confirm.ui-dialog {
+.members-databes-confirm.ui-dialog {
   padding:20px 40px;
 }
-.pacients-database-confirm.ui-dialog a.button{
+.members-databes-confirm.ui-dialog a.button{
   /*stylesforbutton*/
   margin:10px auto 0 auto;
   text-align:center;
@@ -852,13 +852,13 @@ a.dragger {
   position:relative;
   cursor:pointer;
 }
-.pacients-database-confirm.ui-dialog a.button:hover{
+.members-databes-confirm.ui-dialog a.button:hover{
   background-color:#c33100;
 }
-.pacients-database-confirm.ui-dialog .ui-widget-header {
+.members-databes-confirm.ui-dialog .ui-widget-header {
   display: none;
 }
-.pacients-database-confirm.ui-dialog .ui-dialog-buttonpane {
+.members-databes-confirm.ui-dialog .ui-dialog-buttonpane {
   border: none;
   display: block;
   padding: 0;
@@ -870,7 +870,7 @@ a.dragger {
 .ui-dialog .ui-widget, .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
   font-family: inherit;
 }
-.pacients-database-confirm.ui-dialog .ui-state-default {
+.members-databes-confirm.ui-dialog .ui-state-default {
   background: #E6E6E6;
   border: 1px solid #D3D3D3;
   font-weight: normal;    
@@ -878,17 +878,17 @@ a.dragger {
   margin: 0.5em 0.4em 0.5em 0;
   line-height: 1.8;
 }
-.pacients-database-confirm.ui-dialog .ui-state-hover {
+.members-databes-confirm.ui-dialog .ui-state-hover {
   border: 1px solid #b3b3b3;
 }
-.pacients-database-confirm.ui-dialog .ui-icon {
+.members-databes-confirm.ui-dialog .ui-icon {
   vertical-align: middle;
   text-indent: 0;
 }
-.pacients-database-confirm.ui-dialog .ui-icon.dashicons[class*="no"] {
+.members-databes-confirm.ui-dialog .ui-icon.dashicons[class*="no"] {
   color: #D54E21;
 }
-.pacients-database-confirm.ui-dialog .ui-icon.dashicons[class*="yes"] {
+.members-databes-confirm.ui-dialog .ui-icon.dashicons[class*="yes"] {
 }
 #confirmation-dialog p{
 }

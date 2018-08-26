@@ -9,7 +9,7 @@
 PDbManageFields = (function ($) {
   "use strict";
   var dialogOptions = {
-    dialogClass : 'pacients-database-confirm',
+    dialogClass : 'members-databes-confirm',
     autoOpen : false,
     height : 'auto',
     minHeight : '20'

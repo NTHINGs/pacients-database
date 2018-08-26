@@ -14,7 +14,7 @@ msgstr ""
 "Language-Team: Natasha Dyatko\n"
 "Language: be_BY\n"
 
-#: pacients-database.php:3718
+#: members-databes.php:3718
 msgid "Participants Database requires PHP version %s to function properly. Please upgrade PHP. The Plugin has been auto-deactivated."
 msgstr "Удзельнікі базы дадзеных патрабуе PHP версіі% S, каб нармальна функцыянаваць. Калі ласка, абнавіце PHP. Убудова будзе аўтаматычна дэактывіравана."
 
@@ -75,8 +75,8 @@ msgid "Upload File"
 msgstr "Загрузіць файл"
 
 #. Plugin URI of the plugin/theme
-msgid "http://xnau.com/wordpress-plugins/pacients-database"
-msgstr "http://xnau.com/wordpress-plugins/pacients-database"
+msgid "http://xnau.com/wordpress-plugins/members-databes"
+msgstr "http://xnau.com/wordpress-plugins/members-databes"
 
 #. Description of the plugin/theme
 msgid "Plugin for managing a database of participants, members or volunteers"
@@ -131,8 +131,8 @@ msgid "File Upload Location"
 msgstr "Размяшчэнне загружанага файла"
 
 #: classes/PDb_Settings.class.php:96
-msgid "This defines where the uploaded files will go, relative to the WordPress root. The default location is '/wp-content/uploads/pacients-database'<br />Don't put it in the plugin folder, the images and files could get deleted when the plugin is updated."
-msgstr "Гэта вызначае месца, куды патрапяць загружаныя файлы, адносна каранёвага каталога WordPress. Размяшчэнне па змаўчанні -  '/wp-content/uploads/pacients-database'<br />То і не давайце іх у тэчку убудоў, так як выявы і файлы могуць быць выдаленыя падчас абнаўлення плагіна."
+msgid "This defines where the uploaded files will go, relative to the WordPress root. The default location is '/wp-content/uploads/members-databes'<br />Don't put it in the plugin folder, the images and files could get deleted when the plugin is updated."
+msgstr "Гэта вызначае месца, куды патрапяць загружаныя файлы, адносна каранёвага каталога WordPress. Размяшчэнне па змаўчанні -  '/wp-content/uploads/members-databes'<br />То і не давайце іх у тэчку убудоў, так як выявы і файлы могуць быць выдаленыя падчас абнаўлення плагіна."
 
 #: classes/PDb_Settings.class.php:103
 msgid "File Upload Limit"
@@ -923,8 +923,8 @@ msgstr "рэдактар"
 msgid "Admin"
 msgstr "адміністратар"
 
-#: classes/PDb_Settings.class.php:1392 pacients-database.php:603
-#: pacients-database.php:604 pacients-database.php:3658
+#: classes/PDb_Settings.class.php:1392 members-databes.php:603
+#: members-databes.php:604 members-databes.php:3658
 msgid "Settings"
 msgstr "Налады"
 
@@ -1191,121 +1191,121 @@ msgstr "<strong> Рэгістрацыя </ strong> выбірае дадзена
 msgid "<strong>Readonly</strong> means that plugin users can see the value of the field, but cannot edit it. The field will be editable in the admin."
 msgstr "<strong> Толькі для чытання </ strong> азначае, што карыстальнікі ўбудовы могуць бачыць значэнне поля, але не могуць яго рэдагаваць. Палі будуць даступныя для рэдагавання ў ўліковым запісу адміністратара."
 
-#. #-#-#-#-#  tmp-pacients-database.pot (Participants Database 1.6.2.8)
+#. #-#-#-#-#  tmp-members-databes.pot (Participants Database 1.6.2.8)
 #. Plugin Name of the plugin/theme
-#: pacients-database.php:414
+#: members-databes.php:414
 msgid "Participants Database"
 msgstr "База ўдзельнікаў"
 
-#: pacients-database.php:576 pacients-database.php:577
+#: members-databes.php:576 members-databes.php:577
 msgid "Add Participant"
 msgstr "Дадаць ўдзельніка"
 
-#: pacients-database.php:594 pacients-database.php:595
+#: members-databes.php:594 members-databes.php:595
 #: upload_csv.php:40
 msgid "Import CSV File"
 msgstr "Імпартаваць CSV файл"
 
-#: pacients-database.php:612 pacients-database.php:613
+#: members-databes.php:612 members-databes.php:613
 msgid "Setup Guide"
 msgstr "Інструкцыя па ўстаноўцы"
 
 #. translators: don't translate the words in brackets {}
-#: pacients-database.php:666
+#: members-databes.php:666
 msgid "You must remove all fields from the {name} group before deleting it."
 msgstr "Вы павінны выдаліць усе палі з групы {name} перад тым як выдаліць яе"
 
 #. translators: don't translate the words in brackets {}
-#: pacients-database.php:668
+#: members-databes.php:668
 msgid "Delete the \"{name}\" {thing}?"
 msgstr "Выдаліць \"{name}\" {thing}?"
 
-#: pacients-database.php:669
+#: members-databes.php:669
 msgid "The changes you made will be lost if you navigate away from this page."
 msgstr "Унесеныя змяненні будуць страчаныя, калі вы пойдзеце з гэтай старонкі."
 
-#: pacients-database.php:2949
+#: members-databes.php:2949
 msgid "There is something wrong with the file you tried to upload. Try another."
 msgstr "Пры загрузцы файла адбыліся праблемы. Паспрабуйце загрузіць іншы"
 
-#: pacients-database.php:2965 pacients-database.php:2993
+#: members-databes.php:2965 members-databes.php:2993
 msgid "For \"%s\", you may only upload image files like JPEGs, GIFs or PNGs."
 msgstr "Для \"% s\", паказанай ніжэй, можна толькі такія файлы малюнкаў, як JPEG, GIF ці PNG."
 
-#: pacients-database.php:2967
+#: members-databes.php:2967
 msgid "The file selected for \"%s\" must be one of these types: %s. "
 msgstr "Файл, абраны для \"% s\" павінен быць адным з гэтых тыпаў:% s."
 
-#: pacients-database.php:3000
+#: members-databes.php:3000
 msgid "The file you tried to upload is too large. The file must be smaller than %sK."
 msgstr "Файл, які вы паспрабавалі загрузіць не з'яўляецца дазволенага тыпу."
 
-#: pacients-database.php:3007
+#: members-databes.php:3007
 msgid "The file could not be saved."
 msgstr "Файл не можа быць захаваны."
 
-#: classes/PDb_Path.class.php:167 pacients-database.php:3053
+#: classes/PDb_Path.class.php:167 members-databes.php:3053
 msgid "The uploads directory (%s) could not be created."
 msgstr "Няма каталога для загрузкі файлаў (% с) не можа быць створана."
 
-#: pacients-database.php:3400
+#: members-databes.php:3400
 msgid "The date for \"%s\" was invalid. Please input the date with the exact format shown"
 msgstr "Тэрмінам \"%s\" быў прызнаны несапраўдным. Калі ласка, увядзіце дату з дакладным фарматам, паказаным"
 
-#: pacients-database.php:3536 templates/pdb-retrieve-bootstrap.php:69
+#: members-databes.php:3536 templates/pdb-retrieve-bootstrap.php:69
 #: templates/pdb-retrieve-default.php:60
 msgid "Submit"
 msgstr "Пацвердзіць"
 
-#: pacients-database.php:3537
+#: members-databes.php:3537
 msgid "Apply"
 msgstr "Прямяніць"
 
-#: pacients-database.php:3540
+#: members-databes.php:3540
 msgid "The record has been updated."
 msgstr "Запіс абноўлены"
 
-#: pacients-database.php:3541
+#: members-databes.php:3541
 msgid "The new record has been added."
 msgstr "Запіс дададзены"
 
-#: pacients-database.php:3542
+#: members-databes.php:3542
 msgid "No record was added on query: %s"
 msgstr "Ні адна запіс не быў дададзена па запыце: %s"
 
-#: pacients-database.php:3543
+#: members-databes.php:3543
 msgid "Database Error: %2$s on query: %1$s"
 msgstr "Памылка базы дадзеных:%2$s па запыце: %1$s"
 
-#: pacients-database.php:3616
+#: members-databes.php:3616
 msgid "WordPress Plugin"
 msgstr "Убудова Вордпресс"
 
-#: pacients-database.php:3617
+#: members-databes.php:3617
 msgid "Helping organizations manage their volunteers, members and participants."
 msgstr "Дапамагаючы арганізацыям кіраваць валанцёрамі і ўдзельнікамі"
 
-#: pacients-database.php:3620
+#: members-databes.php:3620
 msgid "Developed by"
 msgstr "Распрацавана"
 
-#: pacients-database.php:3621
+#: members-databes.php:3621
 msgid "Suggestions or criticisms of this plugin? I&#39;d love to hear them: email "
 msgstr "Прапановы і крытыка гэтага плагіна? Я хацеў бы іх пачуць: электронная пошта"
 
-#: pacients-database.php:3624
+#: members-databes.php:3624
 msgid "Please consider contributing to the continued support and development of this software by visiting %1$sthis plugin&#39;s page,%3$s giving the plugin a %2$srating%3$s or review, or dropping something in the %1$stip jar.%3$s Thanks!"
 msgstr "Калі ласка, разгледзіце магчымасць унясення узносаў на далейшую падтрымку і развіццё дадзенага праграмнага забеспячэння, наведаўшы% 1 $ s дадзеную старонку убудоў,% 3 $ s падаўшы плягіну% 2 $ s адзнаку% 3 $ s ці водгук, або пакінуўшы што-то ў% 1 $ sкоробке для чаявых. % 3 $ s Дзякуй!"
 
-#: pacients-database.php:3679
+#: members-databes.php:3679
 msgid "Submit a rating or review"
 msgstr "Пакіньце свой водгук ці рэйтынг"
 
-#: pacients-database.php:3680
+#: members-databes.php:3680
 msgid "Free tech support and continued development relies on your support:"
 msgstr "Бясплатная тэхнічная падтрымка і далейшае развіццё залежыць ад вашай падтрымкі:"
 
-#: pacients-database.php:3680
+#: members-databes.php:3680
 msgid "contribute"
 msgstr "спрыяць"
 
@@ -1557,8 +1557,8 @@ msgstr "Вы сапраўды жадаеце выдаліць абраныя з�
 msgid "Record delete successful."
 msgstr "Выдаленне прайшло паспяхова"
 
-#: classes/PDb_List_Admin.class.php:560 pacients-database.php:556
-#: pacients-database.php:557
+#: classes/PDb_List_Admin.class.php:560 members-databes.php:556
+#: members-databes.php:557
 msgid "List Participants"
 msgstr "спіс удзельнікаў"
 
@@ -1646,8 +1646,8 @@ msgstr "Уключыць палі загалоўкаў"
 msgid "This will download the whole list of participants that match your search terms, and in the order specified by the sort. The export will include records on all list pages. The fields included in the export are defined in the \"CSV\" column on the Manage Database Fields page."
 msgstr "Гэта дазволіць загрузіць увесь спіс удзельнікаў, якія адпавядаюць крытэрам пошуку, і ў парадку, устаноўленым дадзенай сартыроўкай. Экспарт будзе ўключаць у сябе запіс аб усіх старонках спісу. Паля, уключаныя ў экспарт, вызначаны ў калонцы \"CSV\" на старонцы кіравання палямі базы дадзеных."
 
-#: classes/PDb_Manage_Fields.class.php:82 pacients-database.php:585
-#: pacients-database.php:586
+#: classes/PDb_Manage_Fields.class.php:82 members-databes.php:585
+#: members-databes.php:586
 msgid "Manage Database Fields"
 msgstr "Поля кіравання базай дадзеных"
 
@@ -1853,11 +1853,11 @@ msgstr "Апісанне"
 msgid "First"
 msgstr "першы"
 
-#: classes/PDb_Pagination.class.php:377 pacients-database.php:3539
+#: classes/PDb_Pagination.class.php:377 members-databes.php:3539
 msgid "Previous"
 msgstr "папярэдні"
 
-#: classes/PDb_Pagination.class.php:396 pacients-database.php:3538
+#: classes/PDb_Pagination.class.php:396 members-databes.php:3538
 msgid "Next"
 msgstr "наступны"
 

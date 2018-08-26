@@ -9,7 +9,7 @@
  * @copyright  2015 xnau webdesign
  * @license    GPL2
  * @version    1.12
- * @link       http://wordpress.org/extend/plugins/pacients-database/
+ * @link       http://wordpress.org/extend/plugins/members-databes/
  */
 if ( !defined( 'ABSPATH' ) )
   die;
@@ -83,9 +83,9 @@ class PDb_Manage_Fields {
     ?>
     <div class="wrap participants_db">
       <?php Participants_Db::admin_page_heading() ?>
-      <h3><?php _e( 'Manage Database Fields', 'pacients-database' ) ?></h3>
+      <h3><?php _e( 'Manage Database Fields', 'members-databes' ) ?></h3>
       <?php Participants_Db::admin_message(); ?>
-      <h4><?php _e( 'Field Groups', 'pacients-database' ) ?>:</h4>
+      <h4><?php _e( 'Field Groups', 'members-databes' ) ?>:</h4>
       <div id="fields-tabs">
         <ul>
           <?php
@@ -93,8 +93,8 @@ class PDb_Manage_Fields {
           foreach ( $this->groups as $group ) {
             echo '<li><a href="#' . $group . '" id="tab_' . $group . '">' . $this->group_titles[$group] . '</a>' . $mask . '</li>';
           }
-          echo '<li class="utility"><a href="#field_groups">' . __( 'Field Groups', 'pacients-database' ) . '</a>' . $mask . '</li>';
-          echo '<li class="utility"><a href="#help">' . __( 'Help', 'pacients-database' ) . '</a>' . $mask . '</li>';
+          echo '<li class="utility"><a href="#field_groups">' . __( 'Field Groups', 'members-databes' ) . '</a>' . $mask . '</li>';
+          echo '<li class="utility"><a href="#help">' . __( 'Help', 'members-databes' ) . '</a>' . $mask . '</li>';
           ?>
         </ul>
         <?php
@@ -189,7 +189,7 @@ class PDb_Manage_Fields {
                     <?php
                     if ( $num_group_rows < 1 ) { // there are no rows in this group to show
                       ?>
-                      <tr><td colspan="<?php echo count( $this->attribute_columns[$group] ) + 1 ?>"><?php _e( 'No fields in this group', 'pacients-database' ) ?></td></tr>
+                      <tr><td colspan="<?php echo count( $this->attribute_columns[$group] ) + 1 ?>"><?php _e( 'No fields in this group', 'members-databes' ) ?></td></tr>
                       <?php
                     } else {
                       // add the rows of the group
@@ -219,7 +219,7 @@ class PDb_Manage_Fields {
                             ) );
                             if ( !$internal_group ) :
                               ?>
-                              <a href="javascript:return false" title="<?php echo $database_row['id'] ?>" data-thing-name="delete_<?php echo $database_row['id'] ?>" class="delete" data-thing="<?php _e( 'field', 'pacients-database' ) ?>"><span class="dashicons dashicons-no"></span></a>
+                              <a href="javascript:return false" title="<?php echo $database_row['id'] ?>" data-thing-name="delete_<?php echo $database_row['id'] ?>" class="delete" data-thing="<?php _e( 'field', 'members-databes' ) ?>"><span class="dashicons dashicons-no"></span></a>
                             </td>
                             <?php
                           endif; // internal group test
@@ -305,7 +305,7 @@ class PDb_Manage_Fields {
         <div id="field_groups" class="manage-fields-wrap">
           <form id="manage_field_groups" method="post">
             <input type="hidden" name="action" value="<?php echo $this->i18n['update groups'] ?>" />
-            <h3><?php _e( 'Edit / Add / Remove Field Groups', 'pacients-database' ) ?></h3>
+            <h3><?php _e( 'Edit / Add / Remove Field Groups', 'members-databes' ) ?></h3>
             <p>
               <?php
               // "add group" functionality
@@ -336,8 +336,8 @@ class PDb_Manage_Fields {
             <table class="wp-list-table widefat fixed manage-fields manage-field-groups" >
               <thead>
                 <tr>
-                  <th scope="col" class="fields vertical-title"><span><?php echo $this->table_header( __( 'fields', 'pacients-database' ) ) ?></span></th>
-                  <th scope="col" class="delete vertical-title"><span><?php echo $this->table_header( __( 'delete', 'pacients-database' ) ) ?></span></th>
+                  <th scope="col" class="fields vertical-title"><span><?php echo $this->table_header( __( 'fields', 'members-databes' ) ) ?></span></th>
+                  <th scope="col" class="delete vertical-title"><span><?php echo $this->table_header( __( 'delete', 'members-databes' ) ) ?></span></th>
                   <?php
                   foreach ( current( $this->group_values ) as $column => $value ) {
 
@@ -360,7 +360,7 @@ class PDb_Manage_Fields {
                   <tr>
                     <td id="field_count_<?php echo $group ?>"><?php echo $group_count ?></td>
                     <td>
-                      <a href="<?php echo $group_count ?>" data-thing-name="delete_<?php echo $group ?>" class="delete" data-thing="<?php _e( 'group', 'pacients-database' ) ?>"><span class="dashicons dashicons-no"></span></a>
+                      <a href="<?php echo $group_count ?>" data-thing-name="delete_<?php echo $group ?>" class="delete" data-thing="<?php _e( 'group', 'members-databes' ) ?>"><span class="dashicons dashicons-no"></span></a>
                     </td>
                     <?php
                     foreach ( $group_values as $column => $value ) {
@@ -652,8 +652,8 @@ class PDb_Manage_Fields {
 
             Participants_Db::set_admin_message( sprintf(
                     '<strong>%s</strong> %s: %s', 
-                    __( 'Cannot add a field with that name', 'pacients-database' ), 
-                    __( 'This name is reserved; please choose another. Reserved names are', 'pacients-database' ), implode( ', ', Participants_Db::$reserved_names ) 
+                    __( 'Cannot add a field with that name', 'members-databes' ), 
+                    __( 'This name is reserved; please choose another. Reserved names are', 'members-databes' ), implode( ', ', Participants_Db::$reserved_names ) 
                     ), 'error' );
             break;
           }
@@ -662,8 +662,8 @@ class PDb_Manage_Fields {
 
             Participants_Db::set_admin_message( sprintf(
                     '<strong>%s</strong> %s', 
-                    __( 'Cannot add a field with that name', 'pacients-database' ), 
-                    __( 'The name must be unique: a field with that name has been previously defined.', 'pacients-database' ) 
+                    __( 'Cannot add a field with that name', 'members-databes' ), 
+                    __( 'The name must be unique: a field with that name has been previously defined.', 'members-databes' ) 
                     ), 'error' );
             break;
           }
@@ -672,17 +672,17 @@ class PDb_Manage_Fields {
 
             Participants_Db::set_admin_message( sprintf(
                     '<strong>%s</strong> %s', 
-                    __( 'The name cannot begin with a number', 'pacients-database' ), 
-                    __( 'Please choose another.', 'pacients-database' )
+                    __( 'The name cannot begin with a number', 'members-databes' ), 
+                    __( 'Please choose another.', 'members-databes' )
                     ), 'error' );
             break;
           }
           $result = Participants_Db::add_blank_field( $atts );
           // prevent name from beginning with a number
           if ( $result ) {
-            Participants_Db::set_admin_message( __( 'The new field was added.', 'pacients-database' ), 'update' );
+            Participants_Db::set_admin_message( __( 'The new field was added.', 'members-databes' ), 'update' );
           } else {
-            Participants_Db::set_admin_message( __( 'The field could not be added.', 'pacients-database' ), 'error' );
+            Participants_Db::set_admin_message( __( 'The field could not be added.', 'members-databes' ), 'error' );
           }
 
           break;
@@ -732,10 +732,10 @@ class PDb_Manage_Fields {
         if ( $wpdb->last_error ) {
           Participants_Db::set_admin_message( $this->parse_db_error( $wpdb->last_error, $action ), 'error' );
         } elseif ( empty( Participants_Db::$admin_message ) ) {
-          Participants_Db::set_admin_message( __( 'There was an error; the settings were not saved.', 'pacients-database' ), 'error' );
+          Participants_Db::set_admin_message( __( 'There was an error; the settings were not saved.', 'members-databes' ), 'error' );
         }
       } elseif ( is_int( $result ) ) {
-        Participants_Db::set_admin_message( __( 'Your information has been updated', 'pacients-database' ), 'updated' );
+        Participants_Db::set_admin_message( __( 'Your information has been updated', 'members-databes' ), 'updated' );
       }
     }
 
@@ -934,7 +934,7 @@ class PDb_Manage_Fields {
 
       if ( $item && false !== stripos( $error, 'duplicate' ) ) {
 
-        $message = sprintf( __( 'The %1$s was not added. There is already a %1$s with that name, please choose another.', 'pacients-database' ), $item );
+        $message = sprintf( __( 'The %1$s was not added. There is already a %1$s with that name, please choose another.', 'members-databes' ), $item );
       }
 
       return $message;
@@ -1012,35 +1012,35 @@ class PDb_Manage_Fields {
     {
       return array(
           /* translators: these strings are used in logic matching, please test after translating in case special characters cause problems */
-          'update fields' => __( 'Update Fields', 'pacients-database' ),
-          'update groups' => __( 'Update Groups', 'pacients-database' ),
-          'add field' => __( 'Add Field', 'pacients-database' ),
-          'add group' => __( 'Add Group', 'pacients-database' ),
-          'group' => __( 'group', 'pacients-database' ),
-          'field' => __( 'field', 'pacients-database' ),
-          'new field title' => __( 'new field title', 'pacients-database' ),
-          'new group title' => __( 'new group title', 'pacients-database' ),
-          'fields' => _x( 'Fields', 'column name', 'pacients-database' ),
-          'Group' => _x( 'Group', 'column name', 'pacients-database' ),
-          'order' => _x( 'Order', 'column name', 'pacients-database' ),
-          'name' => _x( 'Name', 'column name', 'pacients-database' ),
-          'title' => _x( 'Title', 'column name', 'pacients-database' ),
-          'default' => _x( 'Default', 'column name', 'pacients-database' ),
-          'help_text' => _x( 'Help Text', 'column name', 'pacients-database' ),
-          'form_element' => _x( 'Form Element', 'column name', 'pacients-database' ),
-          'values' => _x( 'Values', 'column name', 'pacients-database' ),
-          'validation' => _x( 'Validation', 'column name', 'pacients-database' ),
-          'display_column' => str_replace( ' ', '<br />', _x( 'Display Column', 'column name', 'pacients-database' ) ),
-          'admin_column' => str_replace( ' ', '<br />', _x( 'Admin Column', 'column name', 'pacients-database' ) ),
-          'sortable' => _x( 'Sortable', 'column name', 'pacients-database' ),
-          'CSV' => _x( 'CSV', 'column name, acronym for "comma separated values"', 'pacients-database' ),
-          'persistent' => _x( 'Persistent', 'column name', 'pacients-database' ),
-          'signup' => _x( 'Signup', 'column name', 'pacients-database' ),
-          'readonly' => _x( 'Read Only', 'column name', 'pacients-database' ),
-          'admin' => _x( 'Admin', 'column name', 'pacients-database' ),
-          'delete' => _x( 'Delete', 'column name', 'pacients-database' ),
-          'display' => _x( 'Display', 'column name', 'pacients-database' ),
-          'description' => _x( 'Description', 'column name', 'pacients-database' ),
+          'update fields' => __( 'Update Fields', 'members-databes' ),
+          'update groups' => __( 'Update Groups', 'members-databes' ),
+          'add field' => __( 'Add Field', 'members-databes' ),
+          'add group' => __( 'Add Group', 'members-databes' ),
+          'group' => __( 'group', 'members-databes' ),
+          'field' => __( 'field', 'members-databes' ),
+          'new field title' => __( 'new field title', 'members-databes' ),
+          'new group title' => __( 'new group title', 'members-databes' ),
+          'fields' => _x( 'Fields', 'column name', 'members-databes' ),
+          'Group' => _x( 'Group', 'column name', 'members-databes' ),
+          'order' => _x( 'Order', 'column name', 'members-databes' ),
+          'name' => _x( 'Name', 'column name', 'members-databes' ),
+          'title' => _x( 'Title', 'column name', 'members-databes' ),
+          'default' => _x( 'Default', 'column name', 'members-databes' ),
+          'help_text' => _x( 'Help Text', 'column name', 'members-databes' ),
+          'form_element' => _x( 'Form Element', 'column name', 'members-databes' ),
+          'values' => _x( 'Values', 'column name', 'members-databes' ),
+          'validation' => _x( 'Validation', 'column name', 'members-databes' ),
+          'display_column' => str_replace( ' ', '<br />', _x( 'Display Column', 'column name', 'members-databes' ) ),
+          'admin_column' => str_replace( ' ', '<br />', _x( 'Admin Column', 'column name', 'members-databes' ) ),
+          'sortable' => _x( 'Sortable', 'column name', 'members-databes' ),
+          'CSV' => _x( 'CSV', 'column name, acronym for "comma separated values"', 'members-databes' ),
+          'persistent' => _x( 'Persistent', 'column name', 'members-databes' ),
+          'signup' => _x( 'Signup', 'column name', 'members-databes' ),
+          'readonly' => _x( 'Read Only', 'column name', 'members-databes' ),
+          'admin' => _x( 'Admin', 'column name', 'members-databes' ),
+          'delete' => _x( 'Delete', 'column name', 'members-databes' ),
+          'display' => _x( 'Display', 'column name', 'members-databes' ),
+          'description' => _x( 'Description', 'column name', 'members-databes' ),
       );
     }
 

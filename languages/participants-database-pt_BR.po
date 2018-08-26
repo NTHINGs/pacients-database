@@ -13,7 +13,7 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
-"X-Poedit-WPHeader: pacients-database.php\n"
+"X-Poedit-WPHeader: members-databes.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
@@ -449,7 +449,7 @@ msgstr "Lista PDb Admin com os Selecionados: "
 msgid "send signup email"
 msgstr "enviar e-mail de registro"
 
-#: classes/PDb_List_Admin.class.php:1487 pacients-database.php:3422
+#: classes/PDb_List_Admin.class.php:1487 members-databes.php:3422
 msgid "Apply"
 msgstr "Aplicar"
 
@@ -459,7 +459,7 @@ msgctxt ""
 msgid "With selected"
 msgstr "Com os selecionados"
 
-#: classes/PDb_Manage_Fields.class.php:86 pacients-database.php:3596
+#: classes/PDb_Manage_Fields.class.php:86 members-databes.php:3596
 msgid "Manage Database Fields"
 msgstr "Gerenciamento de Campos"
 
@@ -676,11 +676,11 @@ msgstr "Descrição"
 msgid "First"
 msgstr "Primeiro"
 
-#: classes/PDb_Pagination.class.php:377 pacients-database.php:3424
+#: classes/PDb_Pagination.class.php:377 members-databes.php:3424
 msgid "Previous"
 msgstr "Anterior"
 
-#: classes/PDb_Pagination.class.php:396 pacients-database.php:3423
+#: classes/PDb_Pagination.class.php:396 members-databes.php:3423
 msgid "Next"
 msgstr "Próximo"
 
@@ -688,7 +688,7 @@ msgstr "Próximo"
 msgid "Last"
 msgstr "Último"
 
-#: classes/PDb_Path.class.php:159 pacients-database.php:3231
+#: classes/PDb_Path.class.php:159 members-databes.php:3231
 #, php-format
 msgid "The uploads directory (%s) could not be created."
 msgstr "O diretório de upload (%s) não pôde ser criado."
@@ -783,12 +783,12 @@ msgstr "Local de Upload"
 #, php-format
 msgid ""
 "This defines where the uploaded files will go, relative to the %s. The "
-"default location is '/wp-content/uploads/pacients-database'<br />Don't "
+"default location is '/wp-content/uploads/members-databes'<br />Don't "
 "put it in the plugin folder, the images and files could get deleted when the "
 "plugin is updated."
 msgstr ""
 "Isso define aonde os arquivos serão carregados, relativo a %s. O local "
-"padrão é '/wp-content/uploads/pacients-database'<br /> Não use a pasta "
+"padrão é '/wp-content/uploads/members-databes'<br /> Não use a pasta "
 "de instalação do plugin, pois os arquivos podem ser apagados quando o plugin "
 "for atualizado."
 
@@ -1956,8 +1956,8 @@ msgstr "Editor"
 msgid "Admin"
 msgstr "Administrador"
 
-#: classes/PDb_Settings.class.php:1558 pacients-database.php:3598
-#: pacients-database.php:3659
+#: classes/PDb_Settings.class.php:1558 members-databes.php:3598
+#: members-databes.php:3659
 msgid "Settings"
 msgstr "Configurações"
 
@@ -2614,27 +2614,27 @@ msgstr ""
 "de Administração."
 
 #. Plugin Name of the plugin/theme
-#: pacients-database.php:513
+#: members-databes.php:513
 msgid "Participants Database"
 msgstr "Participants Database"
 
 #. translators: don't translate the words in brackets {}
-#: pacients-database.php:662
+#: members-databes.php:662
 msgid "You must remove all fields from the {name} group before deleting it."
 msgstr "Você deve remover todos os campos do grupo {name} antes de apagá-lo."
 
 #. translators: don't translate the words in brackets {}
-#: pacients-database.php:664
+#: members-databes.php:664
 msgid "Delete the \"{name}\" {thing}?"
 msgstr "Apaga o \"{name}\" {thing}?"
 
-#: pacients-database.php:665
+#: members-databes.php:665
 msgid "The changes you made will be lost if you navigate away from this page."
 msgstr ""
 "As mudanças que você fez irão se perder se você navegar para fora dessa "
 "página."
 
-#: pacients-database.php:666
+#: members-databes.php:666
 msgid ""
 "Changing the form element on a field that has stored data can result in data "
 "loss."
@@ -2642,61 +2642,61 @@ msgstr ""
 "Mudar o elemento de formulário em um campo que possui dados pode resultar na "
 "perda dos dados."
 
-#: pacients-database.php:666
+#: members-databes.php:666
 msgid "More information here…"
 msgstr "Mais informações aqui…"
 
-#: pacients-database.php:667
+#: members-databes.php:667
 msgid "Yes, change the form element"
 msgstr "Sim, altere o elemento"
 
-#: pacients-database.php:668
+#: members-databes.php:668
 msgid "No, don't change the form element"
 msgstr "Não, não altere o elemento"
 
-#: pacients-database.php:3421 templates/pdb-retrieve-bootstrap.php:69
+#: members-databes.php:3421 templates/pdb-retrieve-bootstrap.php:69
 #: templates/pdb-retrieve-default.php:60
 msgid "Submit"
 msgstr "Enviar"
 
-#: pacients-database.php:3425
+#: members-databes.php:3425
 msgid "The record has been updated."
 msgstr "Registro atualizado."
 
-#: pacients-database.php:3426
+#: members-databes.php:3426
 msgid "The new record has been added."
 msgstr "Novo registro adicionado."
 
-#: pacients-database.php:3427
+#: members-databes.php:3427
 #, php-format
 msgid "No record was added on query: %s"
 msgstr "Nenhum registro foi adicionado na query: %s"
 
-#: pacients-database.php:3428
+#: members-databes.php:3428
 #, php-format
 msgid "Database Error: %2$s on query: %1$s"
 msgstr "Erro no Banco de Dados: %2$s na query: %1$s"
 
-#: pacients-database.php:3570
+#: members-databes.php:3570
 msgid "WordPress Plugin"
 msgstr "Plugin WordPress"
 
-#: pacients-database.php:3571
+#: members-databes.php:3571
 msgid ""
 "Helping organizations manage their volunteers, members and participants."
 msgstr ""
 "Ajuda instituições a gerenciar seus voluntários, membros e participantes."
 
-#: pacients-database.php:3574
+#: members-databes.php:3574
 msgid "Developed by"
 msgstr "Desenvolvido por"
 
-#: pacients-database.php:3575
+#: members-databes.php:3575
 msgid ""
 "Suggestions or criticisms of this plugin? I&#39;d love to hear them: email "
 msgstr "Sugestões ou críticas a esse plugin? Gostaria de ouvi-las: e-mail "
 
-#: pacients-database.php:3578
+#: members-databes.php:3578
 #, php-format
 msgid ""
 "Please consider contributing to the continued support and development of "
@@ -2709,35 +2709,35 @@ msgstr ""
 "%2$sestrelas%3$s ou escrevendo um comentário. Ou coloque algum trocado no "
 "%1$smeu porquinho%3$s. Obrigado!"
 
-#: pacients-database.php:3594
+#: members-databes.php:3594
 msgid "Add Participant"
 msgstr "Adicionar Participante"
 
-#: pacients-database.php:3595 pacients-database.php:3602
+#: members-databes.php:3595 members-databes.php:3602
 msgid "List Participants"
 msgstr "Listar Participantes"
 
-#: pacients-database.php:3597 upload_csv.php:41
+#: members-databes.php:3597 upload_csv.php:41
 msgid "Import CSV File"
 msgstr "Importar Arquivo CSV"
 
-#: pacients-database.php:3599
+#: members-databes.php:3599
 msgid "Setup Guide"
 msgstr "Guia de Configuração"
 
-#: pacients-database.php:3600
+#: members-databes.php:3600
 msgid "Add New Participant Record"
 msgstr "Adicionar Novo Registro de Participante"
 
-#: pacients-database.php:3601
+#: members-databes.php:3601
 msgid "Edit Existing Participant Record"
 msgstr "Editar Registro Atual do Participante"
 
-#: pacients-database.php:3603
+#: members-databes.php:3603
 msgid "Export CSV"
 msgstr "Exportar Arquivo CSV"
 
-#: pacients-database.php:3736
+#: members-databes.php:3736
 #, php-format
 msgid ""
 "Participants Database requires PHP version %s to function properly, you have "
@@ -2941,8 +2941,8 @@ msgid "Every %d Minutes"
 msgstr "A cada %d minutos"
 
 #. Plugin URI of the plugin/theme
-msgid "https://xnau.com/wordpress-plugins/pacients-database"
-msgstr "https://xnau.com/wordpress-plugins/pacients-database"
+msgid "https://xnau.com/wordpress-plugins/members-databes"
+msgstr "https://xnau.com/wordpress-plugins/members-databes"
 
 #. Description of the plugin/theme
 msgid "Plugin for managing a database of participants, members or volunteers"

@@ -1,33 +1,33 @@
 /* Participants Database Global Admin Stylesheet */
 
-.branch-3-6 #adminmenu #toplevel_page_pacients-database div:hover.wp-menu-image,
-.branch-3-7 #adminmenu #toplevel_page_pacients-database div:hover.wp-menu-image {
+.branch-3-6 #adminmenu #toplevel_page_members-databes div:hover.wp-menu-image,
+.branch-3-7 #adminmenu #toplevel_page_members-databes div:hover.wp-menu-image {
   background: url("../../../../wp-admin/images/menu.png?ver=20100531") no-repeat scroll -300px -1px transparent;
 }
-.branch-3-6 #adminmenu #toplevel_page_pacients-database div.wp-menu-image, 
-.branch-3-7 #adminmenu #toplevel_page_pacients-database div.wp-menu-image {
+.branch-3-6 #adminmenu #toplevel_page_members-databes div.wp-menu-image, 
+.branch-3-7 #adminmenu #toplevel_page_members-databes div.wp-menu-image {
   background: url("../../../../wp-admin/images/menu.png?ver=20100531") no-repeat scroll -300px -33px transparent;
 }
-.branch-3-7 #adminmenu #toplevel_page_pacients-database div.wp-menu-image,
-.branch-3-6 #adminmenu #toplevel_page_pacients-database div.wp-menu-image {
+.branch-3-7 #adminmenu #toplevel_page_members-databes div.wp-menu-image,
+.branch-3-6 #adminmenu #toplevel_page_members-databes div.wp-menu-image {
   background-position: -300px -33px;
 }
-.branch-3-7 #adminmenu #toplevel_page_pacients-database div:hover.wp-menu-image,
-.branch-3-6 #adminmenu #toplevel_page_pacients-database div:hover.wp-menu-image {
+.branch-3-7 #adminmenu #toplevel_page_members-databes div:hover.wp-menu-image,
+.branch-3-6 #adminmenu #toplevel_page_members-databes div:hover.wp-menu-image {
   background-position: -300px -1px;
 }
-#toplevel_page_pacients-database img {
+#toplevel_page_members-databes img {
   visibility:hidden;
 }
 /* add "people" icon */
-#adminmenu #toplevel_page_pacients-database div.wp-menu-image:before  {
+#adminmenu #toplevel_page_members-databes div.wp-menu-image:before  {
   content: "\f307";
 }
-.branch-3-7 #adminmenu #toplevel_page_pacients-database div.wp-menu-image:before,
-.branch-3-6 #adminmenu #toplevel_page_pacients-database div.wp-menu-image:before {
+.branch-3-7 #adminmenu #toplevel_page_members-databes div.wp-menu-image:before,
+.branch-3-6 #adminmenu #toplevel_page_members-databes div.wp-menu-image:before {
   content: '';
 }
-#toplevel_page_pacients-database .dashicons {
+#toplevel_page_members-databes .dashicons {
   vertical-align: bottom;
   margin-right: 2px;
 }

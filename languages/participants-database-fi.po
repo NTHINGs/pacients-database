@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Participants Database 1.5.3\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tag/pacients-database\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/members-databes\n"
 "POT-Creation-Date: 2018-04-26 09:19-1000\n"
 "PO-Revision-Date: 2018-06-12 10:50-1000\n"
 "Last-Translator: Visa Jokela <visa.jokela@gmail.com>\n"
@@ -507,7 +507,7 @@ msgstr ""
 msgid "send signup email"
 msgstr "Lähetä ilmoittautumisesta vastausviesti"
 
-#: classes/PDb_List_Admin.class.php:1488 pacients-database.php:3461
+#: classes/PDb_List_Admin.class.php:1488 members-databes.php:3461
 msgid "Apply"
 msgstr "Käytä"
 
@@ -519,7 +519,7 @@ msgctxt ""
 msgid "With selected"
 msgstr "valitse"
 
-#: classes/PDb_Manage_Fields.class.php:86 pacients-database.php:3635
+#: classes/PDb_Manage_Fields.class.php:86 members-databes.php:3635
 msgid "Manage Database Fields"
 msgstr "Hallinnoi tietokannan kenttiä"
 
@@ -738,11 +738,11 @@ msgstr "Kuvaus"
 msgid "First"
 msgstr "Ensimmäinen"
 
-#: classes/PDb_Pagination.class.php:377 pacients-database.php:3463
+#: classes/PDb_Pagination.class.php:377 members-databes.php:3463
 msgid "Previous"
 msgstr "Edellinen"
 
-#: classes/PDb_Pagination.class.php:396 pacients-database.php:3462
+#: classes/PDb_Pagination.class.php:396 members-databes.php:3462
 msgid "Next"
 msgstr "Seuraava"
 
@@ -750,7 +750,7 @@ msgstr "Seuraava"
 msgid "Last"
 msgstr "Viimeinen"
 
-#: classes/PDb_Path.class.php:159 pacients-database.php:3270
+#: classes/PDb_Path.class.php:159 members-databes.php:3270
 #, php-format
 msgid "The uploads directory (%s) could not be created."
 msgstr "Lataushakemistoa (%s) ei voitu luoda."
@@ -861,13 +861,13 @@ msgstr "Tiedoston sijainti"
 #| "could get deleted when the plugin is updated."
 msgid ""
 "This defines where the uploaded files will go, relative to the %s. The "
-"default location is '/wp-content/uploads/pacients-database'<br />Don't "
+"default location is '/wp-content/uploads/members-databes'<br />Don't "
 "put it in the plugin folder, the images and files could get deleted when the "
 "plugin is updated."
 msgstr ""
 "Tämä kertoo sen, mihin sisäänladattava tiedosto tallettuu suhteessa "
 "WordPressin juurihakemistoon. Oletushakemisto on ' '/wp-content/uploads/"
-"pacients-database'<br />Älä talleta sitä samaan hakemistoon "
+"members-databes'<br />Älä talleta sitä samaan hakemistoon "
 "ohjelmalaajennuksen kanssa, koska omat kuvat ja tiedostot voivat kadota "
 "laajennuksen päivittämisen yhteydessä."
 
@@ -2063,8 +2063,8 @@ msgstr "Muokkaja"
 msgid "Admin"
 msgstr "Pääkäyttäjä"
 
-#: classes/PDb_Settings.class.php:1621 pacients-database.php:3637
-#: pacients-database.php:3698
+#: classes/PDb_Settings.class.php:1621 members-databes.php:3637
+#: members-databes.php:3698
 msgid "Settings"
 msgstr "Asetukset"
 
@@ -2729,82 +2729,82 @@ msgstr ""
 "muokata vain pääkäyttäjä -tilassa."
 
 #. Plugin Name of the plugin/theme
-#: pacients-database.php:515
+#: members-databes.php:515
 msgid "Participants Database"
 msgstr "Participant tietokanta"
 
-#: pacients-database.php:665
+#: members-databes.php:665
 msgid "You must remove all fields from the {name} group before deleting it."
 msgstr ""
 "Ryhmän kaikki kentät pitää poistaa ryhmästä {name} ennenkuin itse ryhmän voi "
 "poistaa."
 
-#: pacients-database.php:667
+#: members-databes.php:667
 msgid "Delete the \"{name}\" {thing}?"
 msgstr "Poista \"{nimi}\"{asia}?"
 
-#: pacients-database.php:668
+#: members-databes.php:668
 msgid "The changes you made will be lost if you navigate away from this page."
 msgstr ""
 
-#: pacients-database.php:669
+#: members-databes.php:669
 msgid ""
 "Changing the form element on a field that has stored data can result in data "
 "loss."
 msgstr ""
 
-#: pacients-database.php:669
+#: members-databes.php:669
 #, fuzzy
 #| msgid "Your information has been updated"
 msgid "More information here…"
 msgstr "Tietosi on päivitetty"
 
-#: pacients-database.php:670
+#: members-databes.php:670
 msgid "Yes, change the form element"
 msgstr ""
 
-#: pacients-database.php:671
+#: members-databes.php:671
 msgid "No, don't change the form element"
 msgstr ""
 
-#: pacients-database.php:3460 templates/pdb-retrieve-bootstrap.php:69
+#: members-databes.php:3460 templates/pdb-retrieve-bootstrap.php:69
 #: templates/pdb-retrieve-default.php:60
 msgid "Submit"
 msgstr "Lähetä"
 
-#: pacients-database.php:3464
+#: members-databes.php:3464
 msgid "The record has been updated."
 msgstr "Tietue on päivitetty."
 
-#: pacients-database.php:3465
+#: members-databes.php:3465
 msgid "The new record has been added."
 msgstr "Uusi tietue on lisätty."
 
-#: pacients-database.php:3466
+#: members-databes.php:3466
 #, fuzzy, php-format
 #| msgid "No record was found."
 msgid "No record was added on query: %s"
 msgstr "Tietuetta ei löydy."
 
-#: pacients-database.php:3467
+#: members-databes.php:3467
 #, php-format
 msgid "Database Error: %2$s on query: %1$s"
 msgstr ""
 
-#: pacients-database.php:3609
+#: members-databes.php:3609
 msgid "WordPress Plugin"
 msgstr "WordPress liitännäinen"
 
-#: pacients-database.php:3610
+#: members-databes.php:3610
 msgid ""
 "Helping organizations manage their volunteers, members and participants."
 msgstr "Autamme organisaatioita ylläpitämään jäsen- ja osallistujatietojaan."
 
-#: pacients-database.php:3613
+#: members-databes.php:3613
 msgid "Developed by"
 msgstr "Kehittäjä"
 
-#: pacients-database.php:3614
+#: members-databes.php:3614
 #, fuzzy
 #| msgid ""
 #| "Suggestions or crticisms of this plugin? I&#39;d love to hear them: email "
@@ -2814,7 +2814,7 @@ msgstr ""
 "Ehdotuksia tai kritiikkiä tästä liitännäisestä? Anna palautetta ja lähetä "
 "sähköpostia "
 
-#: pacients-database.php:3617
+#: members-databes.php:3617
 #, fuzzy, php-format
 #| msgid ""
 #| "Please consider contributing to the continued support and development of "
@@ -2832,35 +2832,35 @@ msgstr ""
 "liitännäiselle arviosi tai palautteesi, tai jättämällä jotain %1$stip jar."
 "%3$s Kiitos!"
 
-#: pacients-database.php:3633
+#: members-databes.php:3633
 msgid "Add Participant"
 msgstr "Lisää jäsen"
 
-#: pacients-database.php:3634 pacients-database.php:3641
+#: members-databes.php:3634 members-databes.php:3641
 msgid "List Participants"
 msgstr "Listaa jäsenet"
 
-#: pacients-database.php:3636 upload_csv.php:41
+#: members-databes.php:3636 upload_csv.php:41
 msgid "Import CSV File"
 msgstr "Lataa sisään CSV tiedosto"
 
-#: pacients-database.php:3638
+#: members-databes.php:3638
 msgid "Setup Guide"
 msgstr "Asennusohje"
 
-#: pacients-database.php:3639
+#: members-databes.php:3639
 msgid "Add New Participant Record"
 msgstr "Lisää uusi Participant tietue"
 
-#: pacients-database.php:3640
+#: members-databes.php:3640
 msgid "Edit Existing Participant Record"
 msgstr "Muokkaa olemassaolevaa Participant tietuetta"
 
-#: pacients-database.php:3642
+#: members-databes.php:3642
 msgid "Export CSV"
 msgstr "Vie CSV"
 
-#: pacients-database.php:3775
+#: members-databes.php:3775
 #, php-format
 msgid ""
 "Participants Database requires PHP version %s to function properly, you have "
@@ -3078,9 +3078,9 @@ msgstr ""
 
 #. Plugin URI of the plugin/theme
 #, fuzzy
-#| msgid "http://xnau.com/wordpress-plugins/pacients-database"
-msgid "https://xnau.com/wordpress-plugins/pacients-database"
-msgstr "http://xnau.com/wordpress-plugins/pacients-database"
+#| msgid "http://xnau.com/wordpress-plugins/members-databes"
+msgid "https://xnau.com/wordpress-plugins/members-databes"
+msgstr "http://xnau.com/wordpress-plugins/members-databes"
 
 #. Description of the plugin/theme
 msgid "Plugin for managing a database of participants, members or volunteers"

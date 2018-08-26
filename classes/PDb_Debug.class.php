@@ -49,7 +49,7 @@ class PDb_Debug {
    */
   public function __construct()
   {
-    $this->log_title = __( 'Debugging Log', 'pacients-database' );
+    $this->log_title = __( 'Debugging Log', 'members-databes' );
     $this->settings_page = Participants_Db::$plugin_page . '-' . self::name . '_settings';
 
     $this->logging_option = self::name . '-settings';
@@ -75,7 +75,7 @@ class PDb_Debug {
    */
   public function assets( $hook )
   {
-    if ( strpos( $hook, 'pacients-database-pdb_debugging' ) !== false ) {
+    if ( strpos( $hook, 'members-databes-pdb_debugging' ) !== false ) {
       wp_localize_script( Participants_Db::$prefix . 'debug', 'PDb_Debug', array(
           'action' => $this->action,
           'spinner' => Participants_Db::get_loading_spinner(),
@@ -202,7 +202,7 @@ class PDb_Debug {
         </div>
       </form>
 
-      <p><?php printf( __( 'Log file: %s', 'pacients-database' ), '<br/>' . $this->log_filepath() ) ?></p>
+      <p><?php printf( __( 'Log file: %s', 'members-databes' ), '<br/>' . $this->log_filepath() ) ?></p>
 
     </div>
     <?php
@@ -240,9 +240,9 @@ class PDb_Debug {
       if ( !is_resource($this->log_file) ) {
         $this->clear_log_filename();
         Participants_Db::debug_log( __METHOD__ . ' unable to open file for logging: ' . $this->log_filepath() );
-        PDb_Admin_Notices::post_admin_notice( sprintf( __( 'Unable to open the debugging log file: %s Check the "File Upload Location" setting.', 'pacients-database' ), $this->log_filepath() ) . '<a href="https://xnau.com/work/wordpress-plugins/pacients-database/pacients-database-documentation/pacients-database-settings-help/#File-and-Image-Uploads-Use-WP-"><span class="dashicons dashicons-editor-help"></span></a>', array(
+        PDb_Admin_Notices::post_admin_notice( sprintf( __( 'Unable to open the debugging log file: %s Check the "File Upload Location" setting.', 'members-databes' ), $this->log_filepath() ) . '<a href="https://xnau.com/work/wordpress-plugins/members-databes/members-databes-documentation/members-databes-settings-help/#File-and-Image-Uploads-Use-WP-"><span class="dashicons dashicons-editor-help"></span></a>', array(
             'type' => 'error',
-            'context' => __( 'Debugging', 'pacients-database' ),
+            'context' => __( 'Debugging', 'members-databes' ),
         ) );
         return;
       } 
@@ -415,7 +415,7 @@ class PDb_Debug {
    */
   private function log_header()
   {
-    return '<header class="loghead">' . sprintf( __( 'Log file initiated at: %s', 'pacients-database' ), date( get_option( 'date_format' ) . ' ' . get_option( 'time_format' ) . ' T' ) ) . '</header>';
+    return '<header class="loghead">' . sprintf( __( 'Log file initiated at: %s', 'members-databes' ), date( get_option( 'date_format' ) . ' ' . get_option( 'time_format' ) . ' T' ) ) . '</header>';
   }
 
   /**

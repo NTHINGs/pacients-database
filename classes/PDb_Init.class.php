@@ -411,6 +411,7 @@ class PDb_Init {
     $sql = 'CREATE TABLE ' . Participants_Db::$participants_table . ' (
           `id` int(6) NOT NULL AUTO_INCREMENT,
           `private_id` VARCHAR(9) NULL,
+          `user_id` int(6) NOT NULL,
           ';
     foreach ( array_keys( self::$field_groups ) as $group ) {
 
@@ -1027,6 +1028,12 @@ class PDb_Init {
             'form_element' => 'timestamp',
             'sortable' => 1,
             'readonly' => 1,
+        ),
+        'user_id' => array(
+          'title' => 'User ID',
+          'form_element' => 'text-line',
+          'sortable' => 1,
+          'readonly' => 1,
         ),
     );
 

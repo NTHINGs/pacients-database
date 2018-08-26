@@ -1770,6 +1770,10 @@ class Participants_Db extends PDb_Base {
       // first process the internal fields
       switch ( $column->name ) {
 
+        case 'user_id':
+          $new_value = wp_get_current_user()->ID;
+          break;
+
         case 'id':
           $new_value = $participant_id;
           break;

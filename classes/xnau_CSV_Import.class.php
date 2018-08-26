@@ -91,42 +91,42 @@ abstract class xnau_CSV_Import {
 
         if (false !== move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $target_path)) {
 
-          $this->set_error(sprintf(__('The file %s has been uploaded.', 'members-databes'), '<strong>' . $_FILES['uploadedfile']['name'] . '</strong>'), false);
+          $this->set_error(sprintf(__('The file %s has been uploaded.', 'members-database'), '<strong>' . $_FILES['uploadedfile']['name'] . '</strong>'), false);
 
           $this->insert_from_csv($target_path);
 
           if ($this->insert_count > 0) {
 
-            $this->set_error_heading(sprintf(_n('%s record added', '%s records added', $this->insert_count, 'members-databes'), $this->insert_count), '', false);
+            $this->set_error_heading(sprintf(_n('%s record added', '%s records added', $this->insert_count, 'members-database'), $this->insert_count), '', false);
           }
           if ($this->update_count > 0) {
 
-            $this->set_error_heading(sprintf(_n('%s matching record updated', '%s matching records updated', $this->update_count, 'members-databes'), $this->update_count), '', false);
+            $this->set_error_heading(sprintf(_n('%s matching record updated', '%s matching records updated', $this->update_count, 'members-database'), $this->update_count), '', false);
           }
 
           if ($this->skip_count > 0) {
 
-            $this->set_error_heading(sprintf(_n('%s duplicate record skipped', '%s duplicate records skipped', $this->skip_count, 'members-databes'), $this->skip_count), '', false);
+            $this->set_error_heading(sprintf(_n('%s duplicate record skipped', '%s duplicate records skipped', $this->skip_count, 'members-database'), $this->skip_count), '', false);
           }
 
           if ($this->error_count > 0) {
 
-            $this->set_error_heading(sprintf(_n('%s record skipped due to errors', '%s records skipped due to errors', $this->error_count, 'members-databes'), $this->error_count), '', false);
+            $this->set_error_heading(sprintf(_n('%s record skipped due to errors', '%s records skipped due to errors', $this->error_count, 'members-database'), $this->error_count), '', false);
           }
           if ($this->update_count == 0 and $this->insert_count == 0) {
 
-            $this->set_error_heading(__('Zero records imported', 'members-databes'));
+            $this->set_error_heading(__('Zero records imported', 'members-database'));
           }
         } // file move successful
         else { // file move failed
           $this->set_error_heading(
-                  __('There was an error uploading the file. This could be a problem with permissions on the uploads directory.', 'members-databes'), __('Destination', 'members-databes') . ': ' . $target_path
+                  __('There was an error uploading the file. This could be a problem with permissions on the uploads directory.', 'members-database'), __('Destination', 'members-database') . ': ' . $target_path
           );
         }
       } else {
 
         $this->set_error_heading(
-                __('Target directory does not exist and could not be created. Try creating it manually.', 'members-databes'), __('Destination', 'members-databes') . ': ' . $upload_location
+                __('Target directory does not exist and could not be created. Try creating it manually.', 'members-database'), __('Destination', 'members-database') . ': ' . $upload_location
         );
       }
       // we are done with the file, delete it
@@ -152,7 +152,7 @@ abstract class xnau_CSV_Import {
       $_FILES['uploadedfile']['name'] = $filename;
       return true;
     }
-    $this->set_error_heading( __('Invalid file for import.', 'members-databes') );
+    $this->set_error_heading( __('Invalid file for import.', 'members-database') );
     return false;
   }
 
@@ -195,7 +195,7 @@ abstract class xnau_CSV_Import {
 
       /* translators: the %s will be the name of the file */
       $this->set_error_heading(
-              __('Error occured while trying to add the data to the database', 'members-databes'), sprintf(__('Input file does not exist or path is incorrect.<br />Attempted to load: %s', 'members-databes'), basename($src_file))
+              __('Error occured while trying to add the data to the database', 'members-database'), sprintf(__('Input file does not exist or path is incorrect.<br />Attempted to load: %s', 'members-database'), basename($src_file))
       );
 
       return false;
@@ -245,7 +245,7 @@ csv line= '.print_r( $csv_line, true ) );
       if (count($values) != $this->column_count) {
 
         $this->set_error(sprintf(
-                        __('The number of items in line %s is incorrect.<br />There are %s and there should be %s.', 'members-databes'), $line_num, count($values), $this->column_count
+                        __('The number of items in line %s is incorrect.<br />There are %s and there should be %s.', 'members-database'), $line_num, count($values), $this->column_count
                 )
         );
 
@@ -254,7 +254,7 @@ csv line= '.print_r( $csv_line, true ) );
 
       // put the keys and the values together into the $post array
       if (!$post = array_combine($this->column_names, $values))
-        $this->set_error(__('Number of values does not match number of columns', 'members-databes'));
+        $this->set_error(__('Number of values does not match number of columns', 'members-database'));
 
       // store the record
       $this->store_record($post);

@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Participants Database 1.5\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tag/members-databes\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/members-database\n"
 "POT-Creation-Date: 2013-12-27 17:36:25+00:00\n"
 "PO-Revision-Date: 2014-06-01 16:05-1000\n"
 "Last-Translator: Roland Barker <webdesign@xnau.com>\n"
@@ -177,16 +177,16 @@ msgstr "Поиск"
 msgid "Record delete successful."
 msgstr "Удаление прошло успешно"
 
-#: classes/PDb_List_Admin.class.php:360 members-databes.php:508
+#: classes/PDb_List_Admin.class.php:360 members-database.php:508
 msgid "Do you really want to delete the selected record?"
 msgstr "Вы действительно хотите удалить выбранную запись?"
 
-#: classes/PDb_List_Admin.class.php:361 members-databes.php:509
+#: classes/PDb_List_Admin.class.php:361 members-database.php:509
 msgid "Do you really want to delete the selected records?"
 msgstr "Вы действительно хотите удалить выбранные записи?"
 
-#: classes/PDb_List_Admin.class.php:426 members-databes.php:416
-#: members-databes.php:417
+#: classes/PDb_List_Admin.class.php:426 members-database.php:416
+#: members-database.php:417
 msgid "List Participants"
 msgstr "Список участников"
 
@@ -271,11 +271,11 @@ msgstr ""
 msgid "First"
 msgstr "Первый"
 
-#: classes/PDb_Pagination.class.php:365 members-databes.php:2820
+#: classes/PDb_Pagination.class.php:365 members-database.php:2820
 msgid "Previous"
 msgstr "Предыдущий"
 
-#: classes/PDb_Pagination.class.php:382 members-databes.php:2819
+#: classes/PDb_Pagination.class.php:382 members-database.php:2819
 msgid "Next"
 msgstr "Следующий"
 
@@ -374,7 +374,7 @@ msgid ""
 msgstr ""
 "Это определяет место, куда попадут загружаемые файлы, относительно корневого "
 "каталога WordPress. Расположение по умолчанию - / wp-content/uploads/"
-"members-databes '<br />. Не помещайте их в папку плагинов, так как "
+"members-database '<br />. Не помещайте их в папку плагинов, так как "
 "изображения и файлы могут быть удалены при обновлении плагина."
 
 #: classes/PDb_Settings.class.php:93
@@ -1401,8 +1401,8 @@ msgstr "Редактор"
 msgid "Admin"
 msgstr "Администратор"
 
-#: classes/PDb_Settings.class.php:1216 members-databes.php:452
-#: members-databes.php:453 members-databes.php:2979
+#: classes/PDb_Settings.class.php:1216 members-database.php:452
+#: members-database.php:453 members-database.php:2979
 msgid "Settings"
 msgstr "Настройки"
 
@@ -1694,8 +1694,8 @@ msgstr ""
 "Это имя зарезервировано, пожалуйста, выберите другое. Зарезервированные "
 "имена:"
 
-#: manage_fields.php:236 members-databes.php:434
-#: members-databes.php:435
+#: manage_fields.php:236 members-database.php:434
+#: members-database.php:435
 msgid "Manage Database Fields"
 msgstr "Поля управления базой данных"
 
@@ -2077,65 +2077,65 @@ msgstr ""
 "редактирования в учетной записи администратора."
 
 #. Plugin Name of the plugin/theme
-#: members-databes.php:338
+#: members-database.php:338
 msgid "Participants Database"
 msgstr "База участников"
 
-#: members-databes.php:425 members-databes.php:426
+#: members-database.php:425 members-database.php:426
 msgid "Add Participant"
 msgstr "Добавить участника"
 
-#: members-databes.php:443 members-databes.php:444
+#: members-database.php:443 members-database.php:444
 #: upload_csv.php:8
 msgid "Import CSV File"
 msgstr "Импортировать CSV файл"
 
-#: members-databes.php:461 members-databes.php:462
+#: members-database.php:461 members-database.php:462
 msgid "Setup Guide"
 msgstr "Инструкция по установке"
 
-#: members-databes.php:470 members-databes.php:471
+#: members-database.php:470 members-database.php:471
 msgid "Edit Record"
 msgstr "Редактировать запись"
 
 #. translators: don't translate the words in brackets {}
-#: members-databes.php:520
+#: members-database.php:520
 msgid "You must remove all fields from the {name} group before deleting it."
 msgstr "Вы должны удалить все поля из группы {name} перед тем как удалить ее"
 
-#: members-databes.php:521
+#: members-database.php:521
 msgid "Delete the \"{name}\" {thing}?"
 msgstr "Удалить \"{name}\" {thing}?"
 
-#: members-databes.php:2383
+#: members-database.php:2383
 msgid ""
 "There is something wrong with the file you tried to upload. Try another."
 msgstr "При загрузке файла произошли проблемы. Попробуйте загрузить другой"
 
-#: members-databes.php:2399 members-databes.php:2427
+#: members-database.php:2399 members-database.php:2427
 msgid "For \"%s\", you may only upload image files like JPEGs, GIFs or PNGs."
 msgstr ""
 "Для \"%s\", вы можете загрузить только такие файлы изображений, как JPEG, "
 "GIF или PNG."
 
-#: members-databes.php:2401
+#: members-database.php:2401
 msgid "The file selected for \"%s\" must be one of these types: %s. "
 msgstr "Файл, выбранный для \"%s\" должен быть одним из этих типов: %s."
 
-#: members-databes.php:2433
+#: members-database.php:2433
 msgid ""
 "The file you tried to upload is too large. The file must be smaller than %sK."
 msgstr "Файл, который вы попытались загрузить не является разрешенного типа."
 
-#: members-databes.php:2440
+#: members-database.php:2440
 msgid "The file could not be saved."
 msgstr "Файл не может быть сохранен."
 
-#: members-databes.php:2468
+#: members-database.php:2468
 msgid "The uploads directory (%s) could not be created."
 msgstr "Директория для загрузки файлов (%s) не может быть создана."
 
-#: members-databes.php:2727
+#: members-database.php:2727
 msgid ""
 "The date for \"%s\" was invalid. Please input the date with the exact format "
 "shown"
@@ -2143,42 +2143,42 @@ msgstr ""
 "Дата для \"%s\" была недопустимой. Пожалуйста, введите дату в правильном "
 "формате."
 
-#: members-databes.php:2817 templates/pdb-retrieve-default.php:45
+#: members-database.php:2817 templates/pdb-retrieve-default.php:45
 msgid "Submit"
 msgstr "Подтвердить"
 
-#: members-databes.php:2818
+#: members-database.php:2818
 msgid "Apply"
 msgstr "Применить"
 
-#: members-databes.php:2821
+#: members-database.php:2821
 msgid "The record has been updated."
 msgstr "Запись обновлена"
 
-#: members-databes.php:2822
+#: members-database.php:2822
 #, fuzzy
 msgid "The new record has been added."
 msgstr "Запись обновлена"
 
-#: members-databes.php:2940
+#: members-database.php:2940
 msgid "WordPress Plugin"
 msgstr "Плагин Вордпресс"
 
-#: members-databes.php:2941
+#: members-database.php:2941
 msgid ""
 "Helping organizations manage their volunteers, members and participants."
 msgstr "Помогая организациям управлять волонтерами и участниками"
 
-#: members-databes.php:2944
+#: members-database.php:2944
 msgid "Developed by"
 msgstr "Разработано"
 
-#: members-databes.php:2945
+#: members-database.php:2945
 msgid ""
 "Suggestions or crticisms of this plugin? I&#39;d love to hear them: email "
 msgstr "Имеете замечания и предложения? Буду рад услышать их: email"
 
-#: members-databes.php:2948
+#: members-database.php:2948
 msgid ""
 "Please consider contributing to the continued support and development of "
 "this software by visiting %1$sthis plugin&#39;s page,%3$s giving the plugin "
@@ -2335,8 +2335,8 @@ msgid "Upload File"
 msgstr "Загрузить файл"
 
 #. Plugin URI of the plugin/theme
-msgid "http://xnau.com/wordpress-plugins/members-databes"
-msgstr "http://xnau.com/wordpress-plugins/members-databes"
+msgid "http://xnau.com/wordpress-plugins/members-database"
+msgstr "http://xnau.com/wordpress-plugins/members-database"
 
 #. Description of the plugin/theme
 msgid "Plugin for managing a database of participants, members or volunteers"

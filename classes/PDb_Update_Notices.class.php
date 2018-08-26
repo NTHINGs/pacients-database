@@ -61,7 +61,7 @@ class PDb_Update_Notices {
   public function __construct( $plugin_file_path )
   {
     $this->plugin_file_path = $plugin_file_path;
-    $this->readme_url = $this->testmode ? 'http://wp.xnau.dev/content/plugins/members-databes/readme.txt' : 'http://plugins.svn.wordpress.org/members-databes/trunk/readme.txt?format=txt';
+    $this->readme_url = $this->testmode ? 'http://wp.xnau.dev/content/plugins/members-database/readme.txt' : 'http://plugins.svn.wordpress.org/members-database/trunk/readme.txt?format=txt';
 
     remove_action( 'install_plugins_pre_plugin-information', 'install_plugin_information' );
     add_filter( 'install_plugins_pre_plugin-information', array($this, 'install_plugin_information') );

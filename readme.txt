@@ -1,6 +1,6 @@
 === Participants Database ===
 Contributors: xnau
-Donate link: https://xnau.com/wordpress-plugins/members-databes
+Donate link: https://xnau.com/wordpress-plugins/members-database
 Tags: supporter, member, volunteer, database, sign up form, survey, management, non-profit, political, community, organization, mailing list, team, records
 Requires at least: 4.0
 Tested up to: 4.9.8
@@ -21,7 +21,7 @@ This database could be of use to any organization that needs to build and mainta
 
 The plugin can be easily adapted to work as a database for other applications such as indexes, directories, catalogs, or anything, really. The plugin uses a system of customizable templates for all its displays, and an API for the customization and extension of its capabilities. The plugin is fully internationalized with a growing set of translations.
 
-[GDPR Compliance Information](https://xnau.com/work/wordpress-plugins/members-databes/gdpr-compliance-and-members-databes/) for users of Participants Database
+[GDPR Compliance Information](https://xnau.com/work/wordpress-plugins/members-database/gdpr-compliance-and-members-database/) for users of Participants Database
 
 = Some of the features of the Participants Database Plugin: =
 
@@ -130,7 +130,7 @@ If you are multi-lingual and feel like contributing a translation, please contac
 
 Please note that several of these translations are out of date. If your language is in this list and you'd like to help me provide the latest translation, please contact me.
 
-The latest POT file is always [available here.](http://plugins.svn.wordpress.org/members-databes/trunk/members-databes.pot)
+The latest POT file is always [available here.](http://plugins.svn.wordpress.org/members-database/trunk/members-database.pot)
 
 = Key Image Credit =
 
@@ -156,10 +156,10 @@ By Tukulti65 (Own work) [CC BY-SA 4.0 (http://creativecommons.org/licenses/by-sa
 
 This is a complex plugin that can be configured in many ways. I am happy to answer support questions, but please read the documentation, there are also many articles and tutroials to help you get the most out of Participants Database. Here are some helpful links:
 
-* [Participants Database](https://xnau.com/work/wordpress-plugins/members-databes/)
-* [Participants database Documentation](https://xnau.com/work/wordpress-plugins/members-databes/members-databes-documentation/)
+* [Participants Database](https://xnau.com/work/wordpress-plugins/members-database/)
+* [Participants database Documentation](https://xnau.com/work/wordpress-plugins/members-database/members-database-documentation/)
 * [Add-Ons and UI Enhancements](https://xnau.com/shop/?utm_source=wporg_visitor&utm_medium=plugin_page_inatallation_tab&utm_campaign=pdb-addons-promo)
-* [Quick Setup Guide](https://xnau.com/members-databes-quick-setup-guide/)
+* [Quick Setup Guide](https://xnau.com/members-database-quick-setup-guide/)
 
 == Frequently Asked Questions ==
 
@@ -215,11 +215,11 @@ No, these signups and records are separate from people who can register on your 
 
 The idea is to use the database as a roster of volunteers, supporters, etc. for the organization, not the website.
 
-If you are interested in having this plugin work with WordPress users, read this article: [Using Participants Database with WordPress Users](http://xnau.com/using-members-databes-with-wordpress-users/).
+If you are interested in having this plugin work with WordPress users, read this article: [Using Participants Database with WordPress Users](http://xnau.com/using-members-database-with-wordpress-users/).
 
 = People are signing up, but emails are not getting sent =
 
-Use my [Email Troubleshooting Flowchart](http://xnau.com/members-databes-email-troubleshooting/) to help you diagnose the problem.
+Use my [Email Troubleshooting Flowchart](http://xnau.com/members-database-email-troubleshooting/) to help you diagnose the problem.
 
 Of course make sure your settings are set to send emails.
 
@@ -1064,8 +1064,8 @@ Version 1.7.9.8 is a minor bugfix update.
 
 == Plugin Support ==
 
-**[Plugin manual and documentation](https://xnau.com/work/wordpress-plugins/members-databes/members-databes-documentation/?utm_source=wporg_visitor&utm_medium=plugin_page_othernotes__tab&utm_campaign=pdb-addons-promo) is published on the developer's website, xnau.com**
+**[Plugin manual and documentation](https://xnau.com/work/wordpress-plugins/members-database/members-database-documentation/?utm_source=wporg_visitor&utm_medium=plugin_page_othernotes__tab&utm_campaign=pdb-addons-promo) is published on the developer's website, xnau.com**
 
-Plugin technical support is available on the [WordPress Plugin Plugin Support Forum](https://wordpress.org/support/plugin/members-databes), and on xnau.com in the comments section.
+Plugin technical support is available on the [WordPress Plugin Plugin Support Forum](https://wordpress.org/support/plugin/members-database), and on xnau.com in the comments section.
 
 A growing list of [plugin add-ons and functionality enhancements](https://xnau.com/shop/?utm_source=wporg_visitor&utm_medium=plugin_page_othernotes__tab&utm_campaign=pdb-addons-promo) are also available on xnau.com.

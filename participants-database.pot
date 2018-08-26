@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.0.6\n"
 "X-Poedit-Basepath: .\n"
-"X-Poedit-WPHeader: members-databes.php\n"
+"X-Poedit-WPHeader: members-database.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
@@ -480,7 +480,7 @@ msgstr ""
 msgid "send signup email"
 msgstr ""
 
-#: classes/PDb_List_Admin.class.php:1486 members-databes.php:3462
+#: classes/PDb_List_Admin.class.php:1486 members-database.php:3462
 msgid "Apply"
 msgstr ""
 
@@ -490,7 +490,7 @@ msgctxt ""
 msgid "With selected"
 msgstr ""
 
-#: classes/PDb_Manage_Fields.class.php:86 members-databes.php:3640
+#: classes/PDb_Manage_Fields.class.php:86 members-database.php:3640
 msgid "Manage Database Fields"
 msgstr ""
 
@@ -737,11 +737,11 @@ msgstr ""
 msgid "First"
 msgstr ""
 
-#: classes/PDb_Pagination.class.php:377 members-databes.php:3464
+#: classes/PDb_Pagination.class.php:377 members-database.php:3464
 msgid "Previous"
 msgstr ""
 
-#: classes/PDb_Pagination.class.php:396 members-databes.php:3463
+#: classes/PDb_Pagination.class.php:396 members-database.php:3463
 msgid "Next"
 msgstr ""
 
@@ -749,7 +749,7 @@ msgstr ""
 msgid "Last"
 msgstr ""
 
-#: classes/PDb_Path.class.php:159 members-databes.php:3271
+#: classes/PDb_Path.class.php:159 members-database.php:3271
 #, php-format
 msgid "The uploads directory (%s) could not be created."
 msgstr ""
@@ -835,7 +835,7 @@ msgstr ""
 #, php-format
 msgid ""
 "This defines where the uploaded files will go, relative to the %s. The "
-"default location is '/wp-content/uploads/members-databes'<br />Don't "
+"default location is '/wp-content/uploads/members-database'<br />Don't "
 "put it in the plugin folder, the images and files could get deleted when the "
 "plugin is updated."
 msgstr ""
@@ -1888,8 +1888,8 @@ msgstr ""
 msgid "Admin"
 msgstr ""
 
-#: classes/PDb_Settings.class.php:1638 members-databes.php:3642
-#: members-databes.php:3704
+#: classes/PDb_Settings.class.php:1638 members-database.php:3642
+#: members-database.php:3704
 msgid "Settings"
 msgstr ""
 
@@ -2432,82 +2432,82 @@ msgid ""
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-#: members-databes.php:527
+#: members-database.php:527
 msgid "Participants Database"
 msgstr ""
 
-#: members-databes.php:676
+#: members-database.php:676
 msgid "You must remove all fields from the {name} group before deleting it."
 msgstr ""
 
-#: members-databes.php:678
+#: members-database.php:678
 msgid "Delete the \"{name}\" {thing}?"
 msgstr ""
 
-#: members-databes.php:679
+#: members-database.php:679
 msgid "The changes you made will be lost if you navigate away from this page."
 msgstr ""
 
-#: members-databes.php:680
+#: members-database.php:680
 msgid ""
 "Changing the form element on a field that has stored data can result in data "
 "loss."
 msgstr ""
 
-#: members-databes.php:680
+#: members-database.php:680
 msgid "More information here…"
 msgstr ""
 
-#: members-databes.php:681
+#: members-database.php:681
 msgid "Yes, change the form element"
 msgstr ""
 
-#: members-databes.php:682
+#: members-database.php:682
 msgid "No, don't change the form element"
 msgstr ""
 
-#: members-databes.php:3461 templates/pdb-retrieve-bootstrap.php:69
+#: members-database.php:3461 templates/pdb-retrieve-bootstrap.php:69
 #: templates/pdb-retrieve-default.php:60
 msgid "Submit"
 msgstr ""
 
-#: members-databes.php:3465
+#: members-database.php:3465
 msgid "The record has been updated."
 msgstr ""
 
-#: members-databes.php:3466
+#: members-database.php:3466
 msgid "The new record has been added."
 msgstr ""
 
-#: members-databes.php:3467
+#: members-database.php:3467
 #, php-format
 msgid "No record was added on query: %s"
 msgstr ""
 
-#: members-databes.php:3468
+#: members-database.php:3468
 #, php-format
 msgid "Database Error: %2$s on query: %1$s"
 msgstr ""
 
-#: members-databes.php:3614
+#: members-database.php:3614
 msgid "WordPress Plugin"
 msgstr ""
 
-#: members-databes.php:3615
+#: members-database.php:3615
 msgid ""
 "Helping organizations manage their volunteers, members and participants."
 msgstr ""
 
-#: members-databes.php:3618
+#: members-database.php:3618
 msgid "Developed by"
 msgstr ""
 
-#: members-databes.php:3619
+#: members-database.php:3619
 msgid ""
 "Suggestions or criticisms of this plugin? I&#39;d love to hear them: email "
 msgstr ""
 
-#: members-databes.php:3622
+#: members-database.php:3622
 #, php-format
 msgid ""
 "Please consider contributing to the continued support and development of "
@@ -2516,39 +2516,39 @@ msgid ""
 "Thanks!"
 msgstr ""
 
-#: members-databes.php:3638
+#: members-database.php:3638
 msgid "Add Participant"
 msgstr ""
 
-#: members-databes.php:3639 members-databes.php:3646
+#: members-database.php:3639 members-database.php:3646
 msgid "List Participants"
 msgstr ""
 
-#: members-databes.php:3641 upload_csv.php:41
+#: members-database.php:3641 upload_csv.php:41
 msgid "Import CSV File"
 msgstr ""
 
-#: members-databes.php:3643
+#: members-database.php:3643
 msgid "Setup Guide"
 msgstr ""
 
-#: members-databes.php:3644
+#: members-database.php:3644
 msgid "Add New Participant Record"
 msgstr ""
 
-#: members-databes.php:3645
+#: members-database.php:3645
 msgid "Edit Existing Participant Record"
 msgstr ""
 
-#: members-databes.php:3647
+#: members-database.php:3647
 msgid "Export CSV"
 msgstr ""
 
-#: members-databes.php:3648
+#: members-database.php:3648
 msgid "Manage List Columns"
 msgstr ""
 
-#: members-databes.php:3782
+#: members-database.php:3782
 #, php-format
 msgid ""
 "Participants Database requires PHP version %s to function properly, you have "
@@ -2721,7 +2721,7 @@ msgid "Every %d Minutes"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
-msgid "https://xnau.com/wordpress-plugins/members-databes"
+msgid "https://xnau.com/wordpress-plugins/members-database"
 msgstr ""
 
 #. Description of the plugin/theme

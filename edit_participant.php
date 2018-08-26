@@ -89,7 +89,7 @@ if ( $participant_values ) :
         </div>
         <?php
       } else {
-        $id_line = '<tr><th>' . _x( 'ID', 'abbreviation for "identification"', 'members-databes' ) . '</th><td>' . ( false === $participant_id ? _x( '(new record)', 'indicates a new record is being entered', 'members-databes' ) : $participant_id ) . '</td></tr>';
+        $id_line = '<tr><th>' . _x( 'ID', 'abbreviation for "identification"', 'members-database' ) . '</th><td>' . ( false === $participant_id ? _x( '(new record)', 'indicates a new record is being entered', 'members-database' ) : $participant_id ) . '</td></tr>';
       }
       $section = $column->group()
       ?>
@@ -114,7 +114,7 @@ if ( $participant_values ) :
             $add_title = array();
             $fieldnote_pattern = ' <span class="fieldnote">%s</span>';
             if ( $column->is_hidden_field() ) {
-              $add_title[] = __( 'hidden', 'members-databes' );
+              $add_title[] = __( 'hidden', 'members-database' );
             }
             if ( $column->is_readonly() ) {
 
@@ -138,7 +138,7 @@ if ( $participant_values ) :
                         ) {
                   $attributes['readonly'] = 'readonly';
                 }
-                $add_title[] = __( 'read only', 'members-databes' );
+                $add_title[] = __( 'read only', 'members-database' );
               }
             }
             ?>
@@ -245,7 +245,7 @@ if ( $participant_values ) :
     </table>
   </div>
   <div  class="field-group field-group-submit" >
-    <h3 class="field-group-title"><?php _e( 'Save the Record', 'members-databes' ) ?></h3>
+    <h3 class="field-group-title"><?php _e( 'Save the Record', 'members-database' ) ?></h3>
     <table class="form-table">
       <tbody>
         <?php if ( is_admin() ) : ?>
@@ -259,11 +259,11 @@ if ( $participant_values ) :
           </tr>
           <tr>
             <td >
-              <?php _e( '<strong>Submit:</strong> save record and return to list<br><strong>Apply:</strong> save record and continue with same record<br><strong>Next:</strong> save record and then start a new one', 'members-databes' ) ?>
+              <?php _e( '<strong>Submit:</strong> save record and return to list<br><strong>Apply:</strong> save record and continue with same record<br><strong>Next:</strong> save record and then start a new one', 'members-database' ) ?>
               <br />
               <?php
               if ( !empty( $input_id ) ) {
-                _e( '<strong>Previous:</strong> save and move to previous record', 'members-databes' );
+                _e( '<strong>Previous:</strong> save and move to previous record', 'members-database' );
               }
               ?>
             </td>

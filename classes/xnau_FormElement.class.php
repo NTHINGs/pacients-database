@@ -34,7 +34,7 @@
  * @copyright  2011, 2012, 2013, 2014, 2015 xnau webdesign
  * @license    GPL2
  * @version    1.12
- * @link       http://wordpress.org/extend/plugins/members-databes/
+ * @link       http://wordpress.org/extend/plugins/members-database/
  *
  */
 if ( !defined( 'ABSPATH' ) )
@@ -244,8 +244,8 @@ abstract class xnau_FormElement {
     }
 
     $this->i18n = array(
-        'other' => _x( 'other', 'indicates a write-in choice', 'members-databes' ),
-        'linktext' => _x( 'Link Text', 'indicates the text to be clicked to go to another web page', 'members-databes' )
+        'other' => _x( 'other', 'indicates a write-in choice', 'members-database' ),
+        'linktext' => _x( 'Link Text', 'indicates the text to be clicked to go to another web page', 'members-database' )
     );
     /*
      * classes can come in in the classes parameter or as part of the attributes array. 
@@ -1072,7 +1072,7 @@ abstract class xnau_FormElement {
 
       // add the delete checkbox if there is a file defined
       if ( !empty( $this->value ) ) {
-        $this->_addline( '<span class="file-delete" ><label><input type="checkbox" value="delete" name="' . $this->name . '-deletefile">' . __( 'delete', 'members-databes' ) . '</label></span>' );
+        $this->_addline( '<span class="file-delete" ><label><input type="checkbox" value="delete" name="' . $this->name . '-deletefile">' . __( 'delete', 'members-database' ) . '</label></span>' );
       }
     }
 

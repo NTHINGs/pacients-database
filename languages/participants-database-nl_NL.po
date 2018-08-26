@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Participants Database 1.4.9.2\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tag/members-databes\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/members-database\n"
 "POT-Creation-Date: 2014-02-11 18:07:51+00:00\n"
 "PO-Revision-Date: 2015-09-05 23:01-1000\n"
 "Last-Translator: Roland Barker <webdesign@xnau.com>\n"
@@ -175,16 +175,16 @@ msgstr "Zoek"
 msgid "Record delete successful."
 msgstr "Record succesvol verwijderd."
 
-#: classes/PDb_List_Admin.class.php:368 members-databes.php:514
+#: classes/PDb_List_Admin.class.php:368 members-database.php:514
 msgid "Do you really want to delete the selected record?"
 msgstr "Weet u zeker dat u het geselecteerde record wilt verwijderen?"
 
-#: classes/PDb_List_Admin.class.php:369 members-databes.php:515
+#: classes/PDb_List_Admin.class.php:369 members-database.php:515
 msgid "Do you really want to delete the selected records?"
 msgstr "Weet u zeker dat u de geselecteerde records wilt verwijderen?"
 
-#: classes/PDb_List_Admin.class.php:434 members-databes.php:420
-#: members-databes.php:421
+#: classes/PDb_List_Admin.class.php:434 members-database.php:420
+#: members-database.php:421
 msgid "List Participants"
 msgstr "Deelnemerslijst"
 
@@ -270,11 +270,11 @@ msgstr ""
 msgid "First"
 msgstr "Eerste"
 
-#: classes/PDb_Pagination.class.php:368 members-databes.php:2864
+#: classes/PDb_Pagination.class.php:368 members-database.php:2864
 msgid "Previous"
 msgstr "Vorige"
 
-#: classes/PDb_Pagination.class.php:385 members-databes.php:2863
+#: classes/PDb_Pagination.class.php:385 members-database.php:2863
 msgid "Next"
 msgstr "Volgende"
 
@@ -364,7 +364,7 @@ msgstr "Bestandsuploadlocatie"
 #: classes/PDb_Settings.class.php:86
 msgid ""
 "This defines where the uploaded files will go, relative to the WordPress root. The "
-"default location is '/wp-content/uploads/members-databes'<br />Don't put it in "
+"default location is '/wp-content/uploads/members-database'<br />Don't put it in "
 "the plugin folder, the images and files could get deleted when the plugin is updated."
 msgstr ""
 "Deze instelling regelt waar geüploade bestanden terecht komen, relatief tot de "
@@ -1354,8 +1354,8 @@ msgstr "Redacteur"
 msgid "Admin"
 msgstr "Beheerder"
 
-#: classes/PDb_Settings.class.php:1230 members-databes.php:456
-#: members-databes.php:457 members-databes.php:3023
+#: classes/PDb_Settings.class.php:1230 members-database.php:456
+#: members-database.php:457 members-database.php:3023
 msgid "Settings"
 msgstr "Instellingen"
 
@@ -1638,7 +1638,7 @@ msgstr "Kan geen veld toegoegen met deze naam."
 msgid "This name is reserved; please choose another. Reserved names are"
 msgstr "Deze naam is gereserveerd; kies een andere. Gereserveerde namen zijn:"
 
-#: manage_fields.php:238 members-databes.php:438 members-databes.php:439
+#: manage_fields.php:238 members-database.php:438 members-database.php:439
 msgid "Manage Database Fields"
 msgstr "Beheer databasevelden"
 
@@ -2004,104 +2004,104 @@ msgstr ""
 "door de beheerder."
 
 #. Plugin Name of the plugin/theme
-#: members-databes.php:338
+#: members-database.php:338
 msgid "Participants Database"
 msgstr "Deelnemers-database"
 
-#: members-databes.php:429 members-databes.php:430
+#: members-database.php:429 members-database.php:430
 msgid "Add Participant"
 msgstr "Voeg deelnemer toe"
 
-#: members-databes.php:447 members-databes.php:448 upload_csv.php:8
+#: members-database.php:447 members-database.php:448 upload_csv.php:8
 msgid "Import CSV File"
 msgstr "Importeer CSV-bestand"
 
-#: members-databes.php:465 members-databes.php:466
+#: members-database.php:465 members-database.php:466
 msgid "Setup Guide"
 msgstr "Setuphandleiding"
 
-#: members-databes.php:474 members-databes.php:475
+#: members-database.php:474 members-database.php:475
 msgid "Edit Record"
 msgstr "Bewerk record"
 
 #. translators: don't translate the words in brackets {}
-#: members-databes.php:526
+#: members-database.php:526
 msgid "You must remove all fields from the {name} group before deleting it."
 msgstr ""
 "U dient alle velden van de groep {naam} te verwijderen, alvorens de groep te "
 "verwijderen."
 
-#: members-databes.php:527
+#: members-database.php:527
 msgid "Delete the \"{name}\" {thing}?"
 msgstr "Verwijder het “{name}” {thing}?"
 
-#: members-databes.php:2427
+#: members-database.php:2427
 msgid "There is something wrong with the file you tried to upload. Try another."
 msgstr "Er is iets mis met bestand dat u probeerde te uploaden. Probeer een ander."
 
-#: members-databes.php:2443 members-databes.php:2471
+#: members-database.php:2443 members-database.php:2471
 msgid "For \"%s\", you may only upload image files like JPEGs, GIFs or PNGs."
 msgstr ""
 "Voor \"%s\" dient u alleen afbeeldingen te uploaden zoals JPG's, GIF's of PNG's."
 
-#: members-databes.php:2445
+#: members-database.php:2445
 msgid "The file selected for \"%s\" must be one of these types: %s. "
 msgstr "Het voor \"%s\" geselecteerde bestand moet een van deze typen zijn: %s. "
 
-#: members-databes.php:2477
+#: members-database.php:2477
 msgid "The file you tried to upload is too large. The file must be smaller than %sK."
 msgstr ""
 "Het bestand dat u probeerde te uploaden is te groot. Het bestand dient niet groter "
 "te zijn dan %sK."
 
-#: members-databes.php:2484
+#: members-database.php:2484
 msgid "The file could not be saved."
 msgstr "Het bestand kon niet worden opgeslagen."
 
-#: members-databes.php:2512
+#: members-database.php:2512
 msgid "The uploads directory (%s) could not be created."
 msgstr "De uploadbestandsfolder (%s) kon niet worden aangemaakt."
 
-#: members-databes.php:2771
+#: members-database.php:2771
 msgid ""
 "The date for \"%s\" was invalid. Please input the date with the exact format shown"
 msgstr ""
 "De datum voor \"%s\" is ongeldig. Voer de datum exact in volgens het formaat dat "
 "getoond wordt."
 
-#: members-databes.php:2861 templates/pdb-retrieve-default.php:45
+#: members-database.php:2861 templates/pdb-retrieve-default.php:45
 msgid "Submit"
 msgstr "Opslaan"
 
-#: members-databes.php:2862
+#: members-database.php:2862
 msgid "Apply"
 msgstr "Bijwerken"
 
-#: members-databes.php:2865
+#: members-database.php:2865
 msgid "The record has been updated."
 msgstr "Het record is geüpdatet."
 
-#: members-databes.php:2866
+#: members-database.php:2866
 msgid "The new record has been added."
 msgstr "Het nieuwe record is toegevoegd."
 
-#: members-databes.php:2984
+#: members-database.php:2984
 msgid "WordPress Plugin"
 msgstr "WordPress-plugin"
 
-#: members-databes.php:2985
+#: members-database.php:2985
 msgid "Helping organizations manage their volunteers, members and participants."
 msgstr "Helpt organisaties bij het beheren van hun vrijwilligers, leden en deelnemers."
 
-#: members-databes.php:2988
+#: members-database.php:2988
 msgid "Developed by"
 msgstr "Ontwikkeld door"
 
-#: members-databes.php:2989
+#: members-database.php:2989
 msgid "Suggestions or crticisms of this plugin? I&#39;d love to hear them: email "
 msgstr "Suggesties of kritiek over deze plugin? Ik hoor ze graag: email me "
 
-#: members-databes.php:2992
+#: members-database.php:2992
 msgid ""
 "Please consider contributing to the continued support and development of this "
 "software by visiting %1$sthis plugin&#39;s page,%3$s giving the plugin a %2$srating"
@@ -2247,8 +2247,8 @@ msgid "Upload File"
 msgstr "Upload bestand"
 
 #. Plugin URI of the plugin/theme
-msgid "http://xnau.com/wordpress-plugins/members-databes"
-msgstr "http://xnau.com/wordpress-plugins/members-databes "
+msgid "http://xnau.com/wordpress-plugins/members-database"
+msgstr "http://xnau.com/wordpress-plugins/members-database "
 
 #. Description of the plugin/theme
 msgid "Plugin for managing a database of participants, members or volunteers"

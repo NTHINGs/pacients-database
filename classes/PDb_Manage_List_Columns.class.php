@@ -214,13 +214,13 @@ class PDb_Manage_List_Columns {
       <?php Participants_Db::admin_page_heading() ?>
       <h3><?php echo Participants_Db::plugin_label( 'manage_list_columns' ) ?></h3>
       <?php Participants_Db::admin_message(); ?>
-      <p><?php _e( 'Drag the fields you want shown from the "Available Fields" area to the "List Columns" area below. The fields can be re-ordered or removed from the List Columns area.', 'members-databes' ) ?>
+      <p><?php _e( 'Drag the fields you want shown from the "Available Fields" area to the "List Columns" area below. The fields can be re-ordered or removed from the List Columns area.', 'members-database' ) ?>
       </p>
       <div class='column-setup-pair' id="publicfields">
-        <h3><?php _e( 'Public List Column Setup', 'members-databes' ) ?></h3>
-      <p><?php _e( 'Set up the columns for list displays using the [pdb_list] shortcode.', 'members-databes' ) ?></p>
+        <h3><?php _e( 'Public List Column Setup', 'members-database' ) ?></h3>
+      <p><?php _e( 'Set up the columns for list displays using the [pdb_list] shortcode.', 'members-database' ) ?></p>
         <div class='available-fields'>
-          <p><?php _e( 'Available Fields:', 'members-databes' ) ?></p>
+          <p><?php _e( 'Available Fields:', 'members-database' ) ?></p>
           <ul id="pubfields-source" class='field-list fields-sortable'>
             <?php foreach ( $this->source_fields( 'public' ) as $field ) : ?>
               <li class="ui-state-default" data-id="<?php echo $field->id ?>" data-fieldname="<?php echo $field->name ?>"><?php echo $field->title ?></li>
@@ -228,7 +228,7 @@ class PDb_Manage_List_Columns {
           </ul>
         </div>
         <div class='columns-setup'>
-          <h3><?php _e( 'List Columns', 'members-databes' ) ?></h3>
+          <h3><?php _e( 'List Columns', 'members-database' ) ?></h3>
           <ul id="pubfields-chosen" class='field-list columnsetup fields-sortable'>
             <?php foreach ( $this->configured_fields( 'public' ) as $field ) : ?>
               <li class="ui-state-default" data-id="<?php echo $field->id ?>" data-fieldname="<?php echo $field->name ?>"><?php echo $field->title ?></li>
@@ -237,10 +237,10 @@ class PDb_Manage_List_Columns {
         </div>
       </div>
       <div class='column-setup-pair' id="adminfields">
-        <h3><?php _e( 'Admin List Column Setup', 'members-databes' ) ?></h3>
-      <p><?php _e( 'Set up the columns for list displays on the List Participants admin page.', 'members-databes' ) ?></p>
+        <h3><?php _e( 'Admin List Column Setup', 'members-database' ) ?></h3>
+      <p><?php _e( 'Set up the columns for list displays on the List Participants admin page.', 'members-database' ) ?></p>
         <div class='available-fields'>
-          <p><?php _e( 'Available Fields:', 'members-databes' ) ?></p>
+          <p><?php _e( 'Available Fields:', 'members-database' ) ?></p>
           <ul id="adminfields-source" class='field-list fields-sortable'>
             <?php foreach ( $this->source_fields( 'admin' ) as $field ) : ?>
               <li class="ui-state-default" data-id="<?php echo $field->id ?>" data-fieldname="<?php echo $field->name ?>"><?php echo $field->title ?></li>
@@ -248,7 +248,7 @@ class PDb_Manage_List_Columns {
           </ul>
         </div>
         <div class='columns-setup'>
-          <h3><?php _e( 'List Columns', 'members-databes' ) ?></h3>
+          <h3><?php _e( 'List Columns', 'members-database' ) ?></h3>
           <ul id="adminfields-chosen" class='field-list columnsetup fields-sortable'>
             <?php foreach ( $this->configured_fields( 'admin' ) as $field ) : ?>
               <li class="ui-state-default" data-id="<?php echo $field->id ?>" data-fieldname="<?php echo $field->name ?>"><?php echo $field->title ?></li>

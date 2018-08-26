@@ -44,7 +44,7 @@ class PDb_Update {
    * Initialize a new instance of the PDb_Update class
    * 
    * this would normally be instantiated on the 'init' hook:
-   * $updater = new PDb_Update('members-databes/members-databes.php', '1.5', 'http://xnau.com/plugin_updates.php');
+   * $updater = new PDb_Update('members-database/members-database.php', '1.5', 'http://xnau.com/plugin_updates.php');
    * 
    * this will be handled in the PDb_Aux_Plugin class
    * 

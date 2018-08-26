@@ -1,6 +1,6 @@
 <?php
 /**
- * plugin settings class for members-databes plugin
+ * plugin settings class for members-database plugin
  *
  *
  * this uses the generic plugin settings class to build the settings specific to
@@ -29,24 +29,24 @@ class PDb_Settings extends xnau_Plugin_Settings {
      * define the settings sections
      */
     $this->sections = array(
-        'pdb-main' => __( 'General Settings', 'members-databes' ),
-        'pdb-signup' => __( 'Signup Form Settings', 'members-databes' ),
-        'pdb-record' => __( 'Record Form Settings', 'members-databes' ),
-        'pdb-list' => __( 'List Display Settings', 'members-databes' ),
-        'pdb-resend' => __( 'Resend Link Settings', 'members-databes' ),
-        'pdb-admin' => __( 'Admin Settings', 'members-databes' ),
-        'pdb-advanced' => __( 'Advanced Settings', 'members-databes' ),
-        'pdb-css' => __( 'Custom CSS', 'members-databes' ),
+        'pdb-main' => __( 'General Settings', 'members-database' ),
+        'pdb-signup' => __( 'Signup Form Settings', 'members-database' ),
+        'pdb-record' => __( 'Record Form Settings', 'members-database' ),
+        'pdb-list' => __( 'List Display Settings', 'members-database' ),
+        'pdb-resend' => __( 'Resend Link Settings', 'members-database' ),
+        'pdb-admin' => __( 'Admin Settings', 'members-database' ),
+        'pdb-advanced' => __( 'Advanced Settings', 'members-database' ),
+        'pdb-css' => __( 'Custom CSS', 'members-database' ),
     );
 
     $this->section_description = array(
-        'pdb-record' => __( 'Settings for the [pdb_record] shortcode, which is used to show a user-editable form on the website.', 'members-databes' ),
-        'pdb-list' => __( 'Settings for the [pdb_list] shortcode, which is used to show a list of records from the database.', 'members-databes' ),
-        'pdb-signup' => __( 'Settings for the [pdb_signup] shortcode, which is used to show a signup or registration form on the website.', 'members-databes' ),
-        'pdb-resend' => __( 'Settings for the lost private link resend function.', 'members-databes' ),
-        'pdb-advanced' => __( 'Settings for special configurations.', 'members-databes' ),
-        'pdb-admin' => __( 'Settings for the plugin backend.', 'members-databes' ),
-        'pdb-css' => __( 'User CSS rules for styling plugin displays.</h4><p>If you\'re new to CSS, try this tutorial to help you get started: <a target="_blank" href="http://shrsl.com/?dnf8">Use Firebug for Editing WordPress Themes.</a></p>', 'members-databes' ),
+        'pdb-record' => __( 'Settings for the [pdb_record] shortcode, which is used to show a user-editable form on the website.', 'members-database' ),
+        'pdb-list' => __( 'Settings for the [pdb_list] shortcode, which is used to show a list of records from the database.', 'members-database' ),
+        'pdb-signup' => __( 'Settings for the [pdb_signup] shortcode, which is used to show a signup or registration form on the website.', 'members-database' ),
+        'pdb-resend' => __( 'Settings for the lost private link resend function.', 'members-database' ),
+        'pdb-advanced' => __( 'Settings for special configurations.', 'members-database' ),
+        'pdb-admin' => __( 'Settings for the plugin backend.', 'members-database' ),
+        'pdb-css' => __( 'User CSS rules for styling plugin displays.</h4><p>If you\'re new to CSS, try this tutorial to help you get started: <a target="_blank" href="http://shrsl.com/?dnf8">Use Firebug for Editing WordPress Themes.</a></p>', 'members-database' ),
     );
     // determine the type of text-area elements to use for email body settings
     $this->textarea_type = Participants_Db::$plugin_options['html_email'] == '1' ? 'rich-text' : 'text-area';
@@ -55,7 +55,7 @@ class PDb_Settings extends xnau_Plugin_Settings {
     // run the parent class initialization to finish setting up the class 
     parent::__construct( __CLASS__ );
 
-    $this->submit_button = __( 'Save Plugin Settings', 'members-databes' );
+    $this->submit_button = __( 'Save Plugin Settings', 'members-database' );
     
     
     // this is waiting on more complete implementation. #1634
@@ -159,22 +159,22 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'image_upload_location',
-        'title' => __( 'File Upload Location', 'members-databes' ),
+        'title' => __( 'File Upload Location', 'members-database' ),
         'group' => 'pdb-main',
         'options' => array(
             'type' => 'text',
-            'help_text' => sprintf( __( "This defines where the uploaded files will go, relative to the %s. The default location is '/wp-content/uploads/members-databes'<br />Don't put it in the plugin folder, the images and files could get deleted when the plugin is updated.", 'members-databes' ), $this->files_base_label() ) . $this->settings_help( 'File-Upload-Location' ),
+            'help_text' => sprintf( __( "This defines where the uploaded files will go, relative to the %s. The default location is '/wp-content/uploads/members-database'<br />Don't put it in the plugin folder, the images and files could get deleted when the plugin is updated.", 'members-database' ), $this->files_base_label() ) . $this->settings_help( 'File-Upload-Location' ),
             'value' => 'wp-content/uploads/' . Participants_Db::PLUGIN_NAME . '/',
         )
     );
 
     $this->plugin_settings[] = array(
         'name' => 'image_upload_limit',
-        'title' => __( 'File Upload Limit', 'members-databes' ),
+        'title' => __( 'File Upload Limit', 'members-database' ),
         'group' => 'pdb-main',
         'options' => array(
             'type' => 'numeric',
-            'help_text' => __( 'the maximum allowed file size (in kilobytes) for an uploaded file', 'members-databes' ),
+            'help_text' => __( 'the maximum allowed file size (in kilobytes) for an uploaded file', 'members-database' ),
             'value' => '100',
             'attributes' => array('style' => 'width:5em','min' => '10', 'step' => '10','data-after' => 'K '),
         )
@@ -182,34 +182,34 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'allowed_file_types',
-        'title' => __( 'Allowed File Types', 'members-databes' ),
+        'title' => __( 'Allowed File Types', 'members-database' ),
         'group' => 'pdb-main',
         'options' => array(
             'type' => 'text',
-            'help_text' => __( 'list of allowed file types by file extension. Please be aware that there are security risks in allowing file uploads.', 'members-databes' ),
+            'help_text' => __( 'list of allowed file types by file extension. Please be aware that there are security risks in allowing file uploads.', 'members-database' ),
             'value' => 'txt,pdf,mp3,mp4a,ogg,doc,docx,odt,rtf,zip,jpg,jpeg,gif,png',
         )
     );
 
     $this->plugin_settings[] = array(
         'name' => 'default_image',
-        'title' => __( 'Default Image', 'members-databes' ),
+        'title' => __( 'Default Image', 'members-database' ),
         'group' => 'pdb-main',
         'options' => array(
             'type' => 'text',
-            'help_text' => sprintf( __( "Path (relative to the %s) of an image file to show if no image has been defined for an image field. Leave blank for no default image.", 'members-databes' ), $this->files_base_label() ),
-            'value' => '/wp-content/plugins/members-databes/ui/no-image.png',
+            'help_text' => sprintf( __( "Path (relative to the %s) of an image file to show if no image has been defined for an image field. Leave blank for no default image.", 'members-database' ), $this->files_base_label() ),
+            'value' => '/wp-content/plugins/members-database/ui/no-image.png',
         )
     );
 
     $this->plugin_settings[] = array(
         'name' => 'image_link',
-        'title' => __( 'Link Image to Fullsize', 'members-databes' ),
+        'title' => __( 'Link Image to Fullsize', 'members-database' ),
         'group' => 'pdb-main',
         'options' => array
             (
             'type' => 'checkbox',
-            'help_text' => __( 'place a link to the full-size image on images. This link will work with most "lightbox" plugins.', 'members-databes' ),
+            'help_text' => __( 'place a link to the full-size image on images. This link will work with most "lightbox" plugins.', 'members-database' ),
             'value' => 0,
             'options' => array(1, 0),
         ),
@@ -217,12 +217,12 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'file_delete',
-        'title' => __( 'Allow File Delete', 'members-databes' ),
+        'title' => __( 'Allow File Delete', 'members-database' ),
         'group' => 'pdb-main',
         'options' => array
             (
             'type' => 'checkbox',
-            'help_text' => __( 'if checked, allows uploaded files and images to be deleted from storage when deleted from a record by a user', 'members-databes' ),
+            'help_text' => __( 'if checked, allows uploaded files and images to be deleted from storage when deleted from a record by a user', 'members-database' ),
             'value' => 0,
             'options' => array(1, 0),
         ),
@@ -231,12 +231,12 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'allow_tags',
-        'title' => __( 'Allow HTML Tags in Text Fields', 'members-databes' ),
+        'title' => __( 'Allow HTML Tags in Text Fields', 'members-database' ),
         'group' => 'pdb-main',
         'options' => array
             (
             'type' => 'checkbox',
-            'help_text' => __( 'if checked, limited HTML tags are allowed in "text-line" fields.', 'members-databes' ),
+            'help_text' => __( 'if checked, limited HTML tags are allowed in "text-line" fields.', 'members-database' ),
             'value' => 0,
             'options' => array(1, 0),
         ),
@@ -244,12 +244,12 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'make_links',
-        'title' => __( 'Make Links Clickable', 'members-databes' ),
+        'title' => __( 'Make Links Clickable', 'members-database' ),
         'group' => 'pdb-main',
         'options' => array
             (
             'type' => 'checkbox',
-            'help_text' => __( 'if a "text-line" field looks like a link (begins with "http" or is an email address) make it clickable', 'members-databes' ),
+            'help_text' => __( 'if a "text-line" field looks like a link (begins with "http" or is an email address) make it clickable', 'members-database' ),
             'value' => 0,
             'options' => array(1, 0),
         ),
@@ -257,12 +257,12 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'email_protect',
-        'title' => __( 'Protect Email Addresses', 'members-databes' ),
+        'title' => __( 'Protect Email Addresses', 'members-database' ),
         'group' => 'pdb-main',
         'options' => array
             (
             'type' => 'checkbox',
-            'help_text' => __( 'protect email addresses in text-line fields with Javascript', 'members-databes' ),
+            'help_text' => __( 'protect email addresses in text-line fields with Javascript', 'members-database' ),
             'value' => 0,
             'options' => array(1, 0),
         ),
@@ -270,68 +270,68 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'empty_field_message',
-        'title' => __( 'Missing Field Error Message', 'members-databes' ),
+        'title' => __( 'Missing Field Error Message', 'members-database' ),
         'group' => 'pdb-main',
         'options' => array(
             'type' => 'text',
-            'help_text' => __( 'the message shown when a field is required, but left empty (the %s is replaced by the name of the field)', 'members-databes' ),
-            'value' => __( 'The %s field is required.', 'members-databes' ),
+            'help_text' => __( 'the message shown when a field is required, but left empty (the %s is replaced by the name of the field)', 'members-database' ),
+            'value' => __( 'The %s field is required.', 'members-database' ),
         )
     );
 
     $this->plugin_settings[] = array(
         'name' => 'invalid_field_message',
-        'title' => __( 'Invalid Field Error Message', 'members-databes' ),
+        'title' => __( 'Invalid Field Error Message', 'members-database' ),
         'group' => 'pdb-main',
         'options' => array(
             'type' => 'text',
-            'help_text' => __( "the message shown when a field's value does not pass the validation test", 'members-databes' ),
-            'value' => __( 'The %s field appears to be incorrect.', 'members-databes' ),
+            'help_text' => __( "the message shown when a field's value does not pass the validation test", 'members-database' ),
+            'value' => __( 'The %s field appears to be incorrect.', 'members-database' ),
         )
     );
 
     $this->plugin_settings[] = array(
         'name' => 'nonmatching_field_message',
-        'title' => __( 'Non-Matching Field Error Message', 'members-databes' ),
+        'title' => __( 'Non-Matching Field Error Message', 'members-database' ),
         'group' => 'pdb-main',
         'options' => array(
             'type' => 'text',
-            'help_text' => __( "the message shown when a field's value does match the value of another field. The first %s will show the name of the field, the second will show the name of the field it must match.", 'members-databes' ),
-            'value' => __( 'The %s field must match the %s field.', 'members-databes' ),
+            'help_text' => __( "the message shown when a field's value does match the value of another field. The first %s will show the name of the field, the second will show the name of the field it must match.", 'members-database' ),
+            'value' => __( 'The %s field must match the %s field.', 'members-database' ),
         )
     );
 
 
     $this->plugin_settings[] = array(
         'name' => 'captcha_field_message',
-        'title' => __( 'Failed CAPTCHA Message', 'members-databes' ),
+        'title' => __( 'Failed CAPTCHA Message', 'members-database' ),
         'group' => 'pdb-main',
         'options' => array(
             'type' => 'text',
-            'help_text' => __( "the message shown when the CAPTCHA (verify human) test failed", 'members-databes' ),
-            'value' => __( 'Pleast try the %s question again.', 'members-databes' ),
+            'help_text' => __( "the message shown when the CAPTCHA (verify human) test failed", 'members-database' ),
+            'value' => __( 'Pleast try the %s question again.', 'members-database' ),
         )
     );
 
     $this->plugin_settings[] = array(
         'name' => 'field_error_style',
-        'title' => __( 'Field Error Style', 'members-databes' ),
+        'title' => __( 'Field Error Style', 'members-database' ),
         'group' => 'pdb-main',
         'options' => array(
             'type' => 'text',
-            'help_text' => __( 'the CSS style applied to an input or text field that is missing or has not passed validation. This must be a valid CSS rule', 'members-databes' ),
+            'help_text' => __( 'the CSS style applied to an input or text field that is missing or has not passed validation. This must be a valid CSS rule', 'members-database' ),
             'value' => 'border: 1px solid red',
         )
     );
 
     $this->plugin_settings[] = array(
         'name' => 'mark_required_fields',
-        'title' => __( 'Mark Required Fields', 'members-databes' ),
+        'title' => __( 'Mark Required Fields', 'members-database' ),
         'group' => 'pdb-main',
         'options' => array
             (
             'type' => 'checkbox',
-            'help_text' => __( 'mark the title of required fields?', 'members-databes' ),
+            'help_text' => __( 'mark the title of required fields?', 'members-database' ),
             'value' => 0,
             'options' => array(1, 0),
         ),
@@ -339,22 +339,22 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'required_field_marker',
-        'title' => __( 'Required Field Marker', 'members-databes' ),
+        'title' => __( 'Required Field Marker', 'members-database' ),
         'group' => 'pdb-main',
         'options' => array(
             'type' => 'text-area',
-            'help_text' => __( 'html added to field title for required fields if selected above (the %s is replaced by the title of the field)', 'members-databes' ),
+            'help_text' => __( 'html added to field title for required fields if selected above (the %s is replaced by the title of the field)', 'members-database' ),
             'value' => '%s<span class="reqd">*</span>',
         )
     );
 
 //    $this->plugin_settings[] = array(
 //        'name' => 'search_collation',
-//        'title' => __('Search Collation', 'members-databes'),
+//        'title' => __('Search Collation', 'members-database'),
 //        'group' => 'pdb-main',
 //        'options' => array(
 //            'type' => 'dropdown',
-//            'help_text' => sprintf(__('sets the database collation map <a href="%s">(more info)</a> to use for list searches. Set this to your language if your non-English searches are not working correctly. You may have to experiment with different settings. The default is "UTF-8 Unicode."', 'members-databes'), 'http://dev.mysql.com/doc/refman/5.0/en/charset-general.html'),
+//            'help_text' => sprintf(__('sets the database collation map <a href="%s">(more info)</a> to use for list searches. Set this to your language if your non-English searches are not working correctly. You may have to experiment with different settings. The default is "UTF-8 Unicode."', 'members-database'), 'http://dev.mysql.com/doc/refman/5.0/en/charset-general.html'),
 //            'value' => $this->get_collation(),
 //            'options' => $this->get_collation_list(),
 //        )
@@ -368,22 +368,22 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'signup_button_text',
-        'title' => __( 'Signup Button Text', 'members-databes' ),
+        'title' => __( 'Signup Button Text', 'members-database' ),
         'group' => 'pdb-signup',
         'options' => array(
             'type' => 'text',
-            'help_text' => __( 'text shown on the button to sign up', 'members-databes' ),
-            'value' => _x( 'Sign Up', 'the text on a button to submit a signup form', 'members-databes' ),
+            'help_text' => __( 'text shown on the button to sign up', 'members-database' ),
+            'value' => _x( 'Sign Up', 'the text on a button to submit a signup form', 'members-database' ),
         )
     );
 
     $this->plugin_settings[] = array(
         'name' => 'signup_thanks_page',
-        'title' => __( 'Signup Thanks Page', 'members-databes' ),
+        'title' => __( 'Signup Thanks Page', 'members-database' ),
         'group' => 'pdb-signup',
         'options' => array(
             'type' => 'dropdown-other',
-            'help_text' => __( 'after they register, send them to this page for a thank you message. This page is where you put the [pdb_signup_thanks] shortcode, but you don&#39;t have to do that if you have them go back to the same page. You can also use a Post ID for posts and custom post types.', 'members-databes' ),
+            'help_text' => __( 'after they register, send them to this page for a thank you message. This page is where you put the [pdb_signup_thanks] shortcode, but you don&#39;t have to do that if you have them go back to the same page. You can also use a Post ID for posts and custom post types.', 'members-database' ),
             'options' => $this->_get_pagelist( true ),
             'attributes' => array('other' => 'Post ID'),
             'value' => 'none',
@@ -392,12 +392,12 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'signup_show_group_descriptions',
-        'title' => __( 'Show Field Groups', 'members-databes' ),
+        'title' => __( 'Show Field Groups', 'members-database' ),
         'group' => 'pdb-signup',
         'options' => array
             (
             'type' => 'checkbox',
-            'help_text' => __( 'Show groups and group descriptions in the signup form.', 'members-databes' ),
+            'help_text' => __( 'Show groups and group descriptions in the signup form.', 'members-database' ),
             'value' => 0,
             'options' => array(1, 0),
         )
@@ -405,29 +405,29 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'unique_field',
-        'title' => __( 'Duplicate Record Check Field', 'members-databes' ),
+        'title' => __( 'Duplicate Record Check Field', 'members-database' ),
         'group' => 'pdb-signup',
         'options' => array
             (
             'type' => 'dropdown',
-            'help_text' => __( 'when a signup is submitted or CSV record is imported, this field is checked for a duplicate', 'members-databes' ),
+            'help_text' => __( 'when a signup is submitted or CSV record is imported, this field is checked for a duplicate', 'members-database' ),
             'options' => self::_get_identifier_columns( false ),
             'value' => 'email',
         )
     );
     $this->plugin_settings[] = array(
         'name' => 'unique_email',
-        'title' => __( 'Duplicate Record Preference', 'members-databes' ),
+        'title' => __( 'Duplicate Record Preference', 'members-database' ),
         'group' => 'pdb-signup',
         'options' => array
             (
             'type' => 'dropdown',
-            'help_text' => __( 'when the submission matches the Duplicate Record Check Field of an existing record. This also applies to importing records from a CSV file.', 'members-databes' ),
+            'help_text' => __( 'when the submission matches the Duplicate Record Check Field of an existing record. This also applies to importing records from a CSV file.', 'members-database' ),
             'value' => 1,
             'options' => array(
-                __( 'Create a new record with the submission', 'members-databes' ) => 0,
-                __( 'Overwrite matching record with new data', 'members-databes' ) => 1,
-                __( 'Show a validation error message', 'members-databes' ) => 2,
+                __( 'Create a new record with the submission', 'members-database' ) => 0,
+                __( 'Overwrite matching record with new data', 'members-database' ) => 1,
+                __( 'Show a validation error message', 'members-database' ) => 2,
                 'null_select' => false,
             ),
         ),
@@ -435,22 +435,22 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'duplicate_field_message',
-        'title' => __( 'Duplicate Record Error Message', 'members-databes' ),
+        'title' => __( 'Duplicate Record Error Message', 'members-database' ),
         'group' => 'pdb-signup',
         'options' => array(
             'type' => 'text-area',
-            'help_text' => __( 'If "Show a validation error message" is selected above, this message will be shown if a signup is made with a "check field" that matches an existing record.', 'members-databes' ),
-            'value' => __( 'A record with that %s already exists. Please choose another.', 'members-databes' ),
+            'help_text' => __( 'If "Show a validation error message" is selected above, this message will be shown if a signup is made with a "check field" that matches an existing record.', 'members-database' ),
+            'value' => __( 'A record with that %s already exists. Please choose another.', 'members-database' ),
         )
     );
 
     $this->plugin_settings[] = array(
         'name' => 'send_signup_receipt_email',
-        'title' => __( 'Send Signup Response Email', 'members-databes' ),
+        'title' => __( 'Send Signup Response Email', 'members-database' ),
         'group' => 'pdb-signup',
         'options' => array(
             'type' => 'checkbox',
-            'help_text' => __( 'Send a receipt email to people who sign up', 'members-databes' ),
+            'help_text' => __( 'Send a receipt email to people who sign up', 'members-database' ),
             'value' => 1,
             'options' => array(1, 0),
         )
@@ -458,68 +458,68 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'receipt_from_address',
-        'title' => __( 'Signup Email From Address', 'members-databes' ),
+        'title' => __( 'Signup Email From Address', 'members-database' ),
         'group' => 'pdb-signup',
         'options' => array(
             'type' => 'text',
-            'help_text' => __( 'the "From" address on signup receipt emails. If the recipient hits "reply", their reply will go to this address. It is a good idea to use an email address from the same domain as this website.', 'members-databes' ),
+            'help_text' => __( 'the "From" address on signup receipt emails. If the recipient hits "reply", their reply will go to this address. It is a good idea to use an email address from the same domain as this website.', 'members-database' ),
             'value' => get_bloginfo( 'admin_email' ),
         )
     );
 
     $this->plugin_settings[] = array(
         'name' => 'receipt_from_name',
-        'title' => __( 'Signup Email From Name', 'members-databes' ),
+        'title' => __( 'Signup Email From Name', 'members-database' ),
         'group' => 'pdb-signup',
         'options' => array(
             'type' => 'text',
-            'help_text' => __( 'the "From" name on signup receipt emails.', 'members-databes' ),
+            'help_text' => __( 'the "From" name on signup receipt emails.', 'members-database' ),
             'value' => get_bloginfo( 'name' ),
         )
     );
 
     $this->plugin_settings[] = array(
         'name' => 'signup_receipt_email_subject',
-        'title' => __( 'Signup Response Email Subject', 'members-databes' ),
+        'title' => __( 'Signup Response Email Subject', 'members-database' ),
         'group' => 'pdb-signup',
         'options' => array(
             'type' => 'text',
-            'help_text' => __( 'subject line for the signup response email; placeholder tags can be used (see below)', 'members-databes' ),
-            'value' => sprintf( __( "You've just signed up on %s", 'members-databes' ), get_bloginfo( 'name' ) ),
+            'help_text' => __( 'subject line for the signup response email; placeholder tags can be used (see below)', 'members-database' ),
+            'value' => sprintf( __( "You've just signed up on %s", 'members-database' ), get_bloginfo( 'name' ) ),
         )
     );
 
     $this->plugin_settings[] = array(
         'name' => 'signup_receipt_email_body',
-        'title' => __( 'Signup Response Email', 'members-databes' ),
+        'title' => __( 'Signup Response Email', 'members-database' ),
         'group' => 'pdb-signup',
         'options' => array(
             'type' => $this->textarea_type,
-            'help_text' => __( 'Body of the email a visitor gets when they sign up. It includes a link ([record_link]) back to their record so they can fill it out. Can include HTML, placeholders:[first_name],[last_name],[email],[record_link]. You can only use placeholders for fields that are present in the signup form, including hidden fields.', 'members-databes' ),
+            'help_text' => __( 'Body of the email a visitor gets when they sign up. It includes a link ([record_link]) back to their record so they can fill it out. Can include HTML, placeholders:[first_name],[last_name],[email],[record_link]. You can only use placeholders for fields that are present in the signup form, including hidden fields.', 'members-database' ),
             /* translators: the %s will be the name of the website */
-            'value' => sprintf( __( '<p>Thank you, [first_name], for signing up with %s.</p><p>You may complete your registration with additional information or update your information by visiting this private link at any time: <a href="[record_link]">[record_link]</a>.</p>', 'members-databes' ), get_bloginfo( 'name' ) ),
+            'value' => sprintf( __( '<p>Thank you, [first_name], for signing up with %s.</p><p>You may complete your registration with additional information or update your information by visiting this private link at any time: <a href="[record_link]">[record_link]</a>.</p>', 'members-database' ), get_bloginfo( 'name' ) ),
         )
     );
 
     $this->plugin_settings[] = array(
         'name' => 'signup_thanks',
-        'title' => __( 'Signup Thanks Message', 'members-databes' ),
+        'title' => __( 'Signup Thanks Message', 'members-database' ),
         'group' => 'pdb-signup',
         'options' => array(
             'type' => 'rich-text',
-            'help_text' => __( 'Note to display on the web page after someone has submitted a signup form. Can include HTML and placeholders (see above)', 'members-databes' ),
-            'value' => __( '<p>Thank you, [first_name] for signing up!</p><p>You will receive an email acknowledgement shortly. You may complete your registration with additional information or update your information by visiting the link provided in the email.</p>', 'members-databes' ),
+            'help_text' => __( 'Note to display on the web page after someone has submitted a signup form. Can include HTML and placeholders (see above)', 'members-database' ),
+            'value' => __( '<p>Thank you, [first_name] for signing up!</p><p>You will receive an email acknowledgement shortly. You may complete your registration with additional information or update your information by visiting the link provided in the email.</p>', 'members-database' ),
         )
     );
 
     $this->plugin_settings[] = array(
         'name' => 'send_signup_notify_email',
-        'title' => __( 'Send Signup Notification Email', 'members-databes' ),
+        'title' => __( 'Send Signup Notification Email', 'members-database' ),
         'group' => 'pdb-signup',
         'options' => array
             (
             'type' => 'checkbox',
-            'help_text' => __( 'Send an email notification that a signup has occurred.', 'members-databes' ),
+            'help_text' => __( 'Send an email notification that a signup has occurred.', 'members-database' ),
             'value' => 1,
             'options' => array(1, 0),
         )
@@ -528,47 +528,47 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'email_signup_notify_addresses',
-        'title' => __( 'Signup Notification Recipients', 'members-databes' ),
+        'title' => __( 'Signup Notification Recipients', 'members-database' ),
         'group' => 'pdb-signup',
         'options' => array(
             'type' => 'text',
-            'help_text' => __( 'comma-separated list of email addresses to send signup notifications to', 'members-databes' ),
+            'help_text' => __( 'comma-separated list of email addresses to send signup notifications to', 'members-database' ),
             'value' => get_bloginfo( 'admin_email' ),
         )
     );
 
     $this->plugin_settings[] = array(
         'name' => 'email_signup_notify_subject',
-        'title' => __( 'Signup Notification Email Subject', 'members-databes' ),
+        'title' => __( 'Signup Notification Email Subject', 'members-database' ),
         'group' => 'pdb-signup',
         'options' => array(
             'type' => 'text',
-            'help_text' => __( 'subject of the notification email; placeholder tags can be used (see above)', 'members-databes' ),
+            'help_text' => __( 'subject of the notification email; placeholder tags can be used (see above)', 'members-database' ),
             /* translators: the %s will be the name of the website */
-            'value' => sprintf( __( 'New signup on %s', 'members-databes' ), get_bloginfo( 'name' ) ),
+            'value' => sprintf( __( 'New signup on %s', 'members-database' ), get_bloginfo( 'name' ) ),
         )
     );
 
     $this->plugin_settings[] = array(
         'name' => 'email_signup_notify_body',
-        'title' => __( 'Signup Notification Email', 'members-databes' ),
+        'title' => __( 'Signup Notification Email', 'members-database' ),
         'group' => 'pdb-signup',
         'options' => array(
             'type' => $this->textarea_type,
-            'help_text' => __( 'notification email body. The [admin_record_link] tag will supply the URL for editing the record in the admin.', 'members-databes' ),
-            'value' => __( '<p>A new signup has been submitted</p><ul><li>Name: [first_name] [last_name]</li><li>Email: [email]</li></ul><p>Edit this new record here: <a href="[admin_record_link]">[admin_record_link]</a></p>', 'members-databes' ),
+            'help_text' => __( 'notification email body. The [admin_record_link] tag will supply the URL for editing the record in the admin.', 'members-database' ),
+            'value' => __( '<p>A new signup has been submitted</p><ul><li>Name: [first_name] [last_name]</li><li>Email: [email]</li></ul><p>Edit this new record here: <a href="[admin_record_link]">[admin_record_link]</a></p>', 'members-database' ),
         )
     );
 
     /*
       $this->plugin_settings[] = array(
       'name' => 'no_cookie_message',
-      'title' => __('No User Cookie Message', 'members-databes'),
+      'title' => __('No User Cookie Message', 'members-database'),
       'group' => 'pdb-signup',
       'options' => array(
       'type' => 'text',
-      'help_text' => __('this plugin doesn\'t work if the user has cookies disabled. Show this message in place of the signup form if the user has cookies disabled.', 'members-databes'),
-      'value' => __('Please enable cookies in your browser to use this feature.', 'members-databes'),
+      'help_text' => __('this plugin doesn\'t work if the user has cookies disabled. Show this message in place of the signup form if the user has cookies disabled.', 'members-database'),
+      'value' => __('Please enable cookies in your browser to use this feature.', 'members-database'),
       )
       );
      */
@@ -581,12 +581,12 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'registration_page',
-        'title' => __( 'Participant Record Page', 'members-databes' ),
+        'title' => __( 'Participant Record Page', 'members-database' ),
         'group' => 'pdb-record',
         'options' => array
             (
             'type' => 'dropdown-other',
-            'help_text' => __( 'The page where your participant record ([pdb_record] shortcode) is displayed. You can use a Post ID for posts and custom post types.', 'members-databes' ),
+            'help_text' => __( 'The page where your participant record ([pdb_record] shortcode) is displayed. You can use a Post ID for posts and custom post types.', 'members-database' ),
             'options' => $this->_get_pagelist( false, true ),
             'attributes' => array('other' => 'Post ID'),
         )
@@ -594,12 +594,12 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'show_group_descriptions',
-        'title' => __( 'Show Groups', 'members-databes' ),
+        'title' => __( 'Show Groups', 'members-database' ),
         'group' => 'pdb-record',
         'options' => array
             (
             'type' => 'checkbox',
-            'help_text' => __( 'Show the group and description (if defined) under each group title in the record form.', 'members-databes' ),
+            'help_text' => __( 'Show the group and description (if defined) under each group title in the record form.', 'members-database' ),
             'value' => 0,
             'options' => array(1, 0),
         )
@@ -607,58 +607,58 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'save_changes_label',
-        'title' => __( 'Save Changes Label', 'members-databes' ),
+        'title' => __( 'Save Changes Label', 'members-database' ),
         'group' => 'pdb-record',
         'options' => array
             (
             'type' => 'text',
-            'help_text' => __( 'label for the save changes button on the record form', 'members-databes' ),
-            'value' => __( 'Save Your Changes', 'members-databes' ),
+            'help_text' => __( 'label for the save changes button on the record form', 'members-database' ),
+            'value' => __( 'Save Your Changes', 'members-database' ),
         )
     );
 
     $this->plugin_settings[] = array(
         'name' => 'save_changes_button',
-        'title' => __( 'Save Button Text', 'members-databes' ),
+        'title' => __( 'Save Button Text', 'members-database' ),
         'group' => 'pdb-record',
         'options' => array
             (
             'type' => 'text',
-            'help_text' => __( 'text on the "save" button', 'members-databes' ),
-            'value' => _x( 'Save', 'a label for a button to save a form', 'members-databes' ),
+            'help_text' => __( 'text on the "save" button', 'members-database' ),
+            'value' => _x( 'Save', 'a label for a button to save a form', 'members-database' ),
         )
     );
 
     $this->plugin_settings[] = array(
         'name' => 'record_updated_message',
-        'title' => __( 'Record Updated Message', 'members-databes' ),
+        'title' => __( 'Record Updated Message', 'members-database' ),
         'group' => 'pdb-record',
         'options' => array(
             'type' => 'text',
-            'help_text' => __( "the message shown when a record form has been successfully submitted", 'members-databes' ),
-            'value' => __( 'Your information has been updated', 'members-databes' ),
+            'help_text' => __( "the message shown when a record form has been successfully submitted", 'members-database' ),
+            'value' => __( 'Your information has been updated', 'members-database' ),
         )
     );
 
     $this->plugin_settings[] = array(
         'name' => 'no_record_error_message',
-        'title' => __( 'Record Not Found Error Message', 'members-databes' ),
+        'title' => __( 'Record Not Found Error Message', 'members-database' ),
         'group' => 'pdb-record',
         'options' => array(
             'type' => 'text',
-            'help_text' => __( 'message to show if the record page was accessed without a valid identifier. Leave this empty if you want nothing at all to show.', 'members-databes' ),
-            'value' => sprintf( __( "No record was found.", 'members-databes' ), get_bloginfo( 'name' ) ),
+            'help_text' => __( 'message to show if the record page was accessed without a valid identifier. Leave this empty if you want nothing at all to show.', 'members-database' ),
+            'value' => sprintf( __( "No record was found.", 'members-database' ), get_bloginfo( 'name' ) ),
         )
     );
 
     $this->plugin_settings[] = array(
         'name' => 'no_record_use_template',
-        'title' => __( 'Use Template for No Record Message', 'members-databes' ),
+        'title' => __( 'Use Template for No Record Message', 'members-database' ),
         'group' => 'pdb-record',
         'options' => array
             (
             'type' => 'checkbox',
-            'help_text' => __( 'If checked, use the record template to show the "Record Not Found" message. If unchecked, the message is shown without using the template.', 'members-databes' ),
+            'help_text' => __( 'If checked, use the record template to show the "Record Not Found" message. If unchecked, the message is shown without using the template.', 'members-database' ),
             'value' => 0,
             'options' => array(1, 0),
         )
@@ -666,12 +666,12 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'send_record_update_notify_email',
-        'title' => __( 'Send Record Form Update Notification Email', 'members-databes' ),
+        'title' => __( 'Send Record Form Update Notification Email', 'members-database' ),
         'group' => 'pdb-record',
         'options' => array
             (
             'type' => 'checkbox',
-            'help_text' => __( 'Send an email notification that a record has been updated. These will be sent to the email addresses listed in the "Signup Notification Recipients" setting.', 'members-databes' ),
+            'help_text' => __( 'Send an email notification that a record has been updated. These will be sent to the email addresses listed in the "Signup Notification Recipients" setting.', 'members-database' ),
             'value' => 0,
             'options' => array(1, 0),
         )
@@ -679,35 +679,35 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'record_update_email_subject',
-        'title' => __( 'Record Update Email Subject', 'members-databes' ),
+        'title' => __( 'Record Update Email Subject', 'members-database' ),
         'group' => 'pdb-record',
         'options' => array(
             'type' => 'text',
-            'help_text' => __( 'subject line for the record update notification email; placeholders can be used.', 'members-databes' ),
-            'value' => sprintf( __( "A record has just been updated on %s", 'members-databes' ), get_bloginfo( 'name' ) ),
+            'help_text' => __( 'subject line for the record update notification email; placeholders can be used.', 'members-database' ),
+            'value' => sprintf( __( "A record has just been updated on %s", 'members-database' ), get_bloginfo( 'name' ) ),
         )
     );
 
     $this->plugin_settings[] = array(
         'name' => 'record_update_email_body',
-        'title' => __( 'Record Update Notification Email', 'members-databes' ),
+        'title' => __( 'Record Update Notification Email', 'members-database' ),
         'group' => 'pdb-record',
         'options' => array(
             'type' => $this->textarea_type,
             /* translators: [date] and [admin_record_link] must not be translated, they must be used literally. The rest of the words enclosed in brackets can be defined by the user, they are used here only as examples. */
-            'help_text' => __( 'Body of the the email sent when a user updates their record. Any field from the form can be included by using a replacement code of the form: [field_name]. For instance: [last_name],[address],[email] etc. (The field name is under the "name" column on the "Manage Database Fields" page.)  Also available is [date] which will show the date and time of the update and [admin_record_link] tag for a link to edit the record in the admin.', 'members-databes' ),
-            'value' => __( '<p>The following record was updated on [date]:</p><ul><li>Name: [first_name] [last_name]</li><li>Address: [address]</li><li>[city], [state], [country]</li><li>Phone: [phone]</li><li>Email: [email]</li></ul><p>Edit this record <a href="[admin_record_link]">here.</a></p>', 'members-databes' ),
+            'help_text' => __( 'Body of the the email sent when a user updates their record. Any field from the form can be included by using a replacement code of the form: [field_name]. For instance: [last_name],[address],[email] etc. (The field name is under the "name" column on the "Manage Database Fields" page.)  Also available is [date] which will show the date and time of the update and [admin_record_link] tag for a link to edit the record in the admin.', 'members-database' ),
+            'value' => __( '<p>The following record was updated on [date]:</p><ul><li>Name: [first_name] [last_name]</li><li>Address: [address]</li><li>[city], [state], [country]</li><li>Phone: [phone]</li><li>Email: [email]</li></ul><p>Edit this record <a href="[admin_record_link]">here.</a></p>', 'members-database' ),
         )
     );
 
 //    $this->plugin_settings[] = array(
 //        'name' => 'prevent_duplicate_on_update',
-//        'title' => __( 'Prevent Duplicate Field Values', 'members-databes' ),
+//        'title' => __( 'Prevent Duplicate Field Values', 'members-database' ),
 //        'group' => 'pdb-record',
 //        'options' => array
 //            (
 //            'type' => 'checkbox',
-//            'help_text' => __( 'When checked, the "duplicate field" settings for the signup form will be used to prevent a duplicate field value when the record is updated.', 'members-databes' )  . $this->settings_help( 'File-and-Image-Uploads-Use-WP-'),
+//            'help_text' => __( 'When checked, the "duplicate field" settings for the signup form will be used to prevent a duplicate field value when the record is updated.', 'members-database' )  . $this->settings_help( 'File-and-Image-Uploads-Use-WP-'),
 //            'value' => 0,
 //            'options' => array(1, 0),
 //        )
@@ -722,11 +722,11 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'list_limit',
-        'title' => __( 'Records per Page', 'members-databes' ),
+        'title' => __( 'Records per Page', 'members-database' ),
         'group' => 'pdb-list',
         'options' => array(
             'type' => 'numeric',
-            'help_text' => __( 'the number of records to show on each page', 'members-databes' ),
+            'help_text' => __( 'the number of records to show on each page', 'members-database' ),
             'attributes' => array('style' => 'width:4em','step' => '1', 'min' => '-1'),
             'value' => 10,
         ),
@@ -734,47 +734,47 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'single_record_link_field',
-        'title' => __( 'Single Record Link Field', 'members-databes' ),
+        'title' => __( 'Single Record Link Field', 'members-database' ),
         'group' => 'pdb-list',
         'options' => array
             (
             'type' => 'dropdown',
-            'help_text' => __( 'select the field on which to put a link to the [pdb_single] shortcode. Leave blank or set to "none" for no link.', 'members-databes' ),
+            'help_text' => __( 'select the field on which to put a link to the [pdb_single] shortcode. Leave blank or set to "none" for no link.', 'members-database' ),
             'options' => $this->_get_display_columns(),
         )
     );
 
     $this->plugin_settings[] = array(
         'name' => 'single_record_page',
-        'title' => __( 'Single Record Page', 'members-databes' ),
+        'title' => __( 'Single Record Page', 'members-database' ),
         'group' => 'pdb-list',
         'options' => array
             (
             'attributes' => array('other' => 'Post ID'),
             'type' => 'dropdown-other',
-            'help_text' => __( 'this is the page where the [pdb_single] shortcode is located. If you want to assign a post or custom post type, select "Post ID" and enter the post ID in the "other" box.', 'members-databes' ),
+            'help_text' => __( 'this is the page where the [pdb_single] shortcode is located. If you want to assign a post or custom post type, select "Post ID" and enter the post ID in the "other" box.', 'members-database' ),
             'options' => $this->_get_pagelist( false, true ),
         )
     );
 
     $this->plugin_settings[] = array(
         'name' => 'no_records_message',
-        'title' => __( 'No Records Message', 'members-databes' ),
+        'title' => __( 'No Records Message', 'members-database' ),
         'group' => 'pdb-list',
         'options' => array(
             'type' => 'text',
-            'help_text' => __( 'Message shown when no records are found.', 'members-databes' ),
-            'value' => __( 'No Records Found', 'members-databes' ),
+            'help_text' => __( 'Message shown when no records are found.', 'members-database' ),
+            'value' => __( 'No Records Found', 'members-database' ),
         )
     );
     $this->plugin_settings[] = array(
         'name' => 'show_count',
-        'title' => __( 'Show Count', 'members-databes' ),
+        'title' => __( 'Show Count', 'members-database' ),
         'group' => 'pdb-list',
         'options' => array
             (
             'type' => 'checkbox',
-            'help_text' => __( "Show the list count on list displays. Can also be set in the shortcode.", 'members-databes' ),
+            'help_text' => __( "Show the list count on list displays. Can also be set in the shortcode.", 'members-database' ),
             'value' => 0,
             'options' => array(1, 0),
         ),
@@ -782,12 +782,12 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'count_template',
-        'title' => __( 'List Count Template', 'members-databes' ),
+        'title' => __( 'List Count Template', 'members-database' ),
         'group' => 'pdb-list',
         'options' => array(
             'type' => 'text-area',
-            'help_text' => sprintf( __( 'template for displaying the list count. %1$s - total number of records found, %2$s - number of records shown per page, %3$s - starting record number, %4$s - ending record number, %5$s - the current page number', 'members-databes' ), '<br /><strong>%1$s</strong>', '<strong>%2$s</strong>', '<strong>%3$s</strong>', '<strong>%4$s</strong>', '<strong>%5$s</strong>' ),
-            'value' => __( 'Total Records Found: %1$s, showing %2$s per page', 'members-databes' ),
+            'help_text' => sprintf( __( 'template for displaying the list count. %1$s - total number of records found, %2$s - number of records shown per page, %3$s - starting record number, %4$s - ending record number, %5$s - the current page number', 'members-database' ), '<br /><strong>%1$s</strong>', '<strong>%2$s</strong>', '<strong>%3$s</strong>', '<strong>%4$s</strong>', '<strong>%5$s</strong>' ),
+            'value' => __( 'Total Records Found: %1$s, showing %2$s per page', 'members-database' ),
             'attributes' => array(
                 'style' => 'height: 4em;'
             ),
@@ -797,38 +797,38 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'list_default_sort',
-        'title' => __( 'List Default Sort', 'members-databes' ),
+        'title' => __( 'List Default Sort', 'members-database' ),
         'group' => 'pdb-list',
         'options' => array
             (
             'type' => 'dropdown',
             'value' => 'date_updated',
-            'help_text' => __( 'The record list shown by the list shortcode will be sorted by this field by default. (Field must be checked "sortable.")', 'members-databes' ),
+            'help_text' => __( 'The record list shown by the list shortcode will be sorted by this field by default. (Field must be checked "sortable.")', 'members-database' ),
             'options' => $this->_get_sort_columns(),
         )
     );
 
     $this->plugin_settings[] = array(
         'name' => 'list_default_sort_order',
-        'title' => __( 'List Default Sort Order', 'members-databes' ),
+        'title' => __( 'List Default Sort Order', 'members-database' ),
         'group' => 'pdb-list',
         'options' => array(
             'type' => 'dropdown',
-            'help_text' => __( 'Sets the default order of the records shown by the list shortcode.', 'members-databes' ),
+            'help_text' => __( 'Sets the default order of the records shown by the list shortcode.', 'members-database' ),
             'value' => 'desc',
-            'options' => array(__( 'Ascending', 'members-databes' ) => 'asc', __( 'Descending', 'members-databes' ) => 'desc', 'null_select' => false),
+            'options' => array(__( 'Ascending', 'members-database' ) => 'asc', __( 'Descending', 'members-database' ) => 'desc', 'null_select' => false),
         )
     );
 
 
     $this->plugin_settings[] = array(
         'name' => 'empty_search',
-        'title' => __( 'Allow Empty Search', 'members-databes' ),
+        'title' => __( 'Allow Empty Search', 'members-database' ),
         'group' => 'pdb-list',
         'options' => array
             (
             'type' => 'checkbox',
-            'help_text' => __( "This allows frontend searches to find records with missing or blank data.", 'members-databes' ),
+            'help_text' => __( "This allows frontend searches to find records with missing or blank data.", 'members-database' ),
             'value' => 0,
             'options' => array(1, 0),
         ),
@@ -838,12 +838,12 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'strict_search',
-        'title' => __( 'Strict User Searching', 'members-databes' ),
+        'title' => __( 'Strict User Searching', 'members-database' ),
         'group' => 'pdb-list',
         'options' => array
             (
             'type' => 'checkbox',
-            'help_text' => __( 'When checked, the frontend list search must match the whole field exactly. If unchecked, the search will match if the search term is found in part of the field. Searches are not case-sensitive either way.', 'members-databes' ),
+            'help_text' => __( 'When checked, the frontend list search must match the whole field exactly. If unchecked, the search will match if the search term is found in part of the field. Searches are not case-sensitive either way.', 'members-database' ),
             'value' => 0,
             'options' => array(1, 0),
         ),
@@ -857,12 +857,12 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'show_retrieve_link',
-        'title' => __( 'Enable Lost Private Link', 'members-databes' ),
+        'title' => __( 'Enable Lost Private Link', 'members-database' ),
         'group' => 'pdb-resend',
         'options' => array
             (
             'type' => 'checkbox',
-            'help_text' => __( 'Show a link on the signup form allowing users to have their private link emailed to them.', 'members-databes' ),
+            'help_text' => __( 'Show a link on the signup form allowing users to have their private link emailed to them.', 'members-database' ),
             'value' => 0,
             'options' => array(1, 0),
         )
@@ -870,22 +870,22 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'retrieve_link_text',
-        'title' => __( 'Lost Private Link Text', 'members-databes' ),
+        'title' => __( 'Lost Private Link Text', 'members-database' ),
         'group' => 'pdb-resend',
         'options' => array(
             'type' => 'text',
-            'help_text' => __( 'clickable text shown in the signup form', 'members-databes' ),
-            'value' => __( 'Forget your private link? Click here to have it emailed to you.', 'members-databes' ),
+            'help_text' => __( 'clickable text shown in the signup form', 'members-database' ),
+            'value' => __( 'Forget your private link? Click here to have it emailed to you.', 'members-database' ),
         )
     );
     $this->plugin_settings[] = array(
         'name' => 'link_retrieval_page',
-        'title' => __( 'Lost Private Link Page', 'members-databes' ),
+        'title' => __( 'Lost Private Link Page', 'members-database' ),
         'group' => 'pdb-resend',
         'options' => array
             (
             'type' => 'dropdown-other',
-            'help_text' => __( 'send people to this page to request their private link.', 'members-databes' ),
+            'help_text' => __( 'send people to this page to request their private link.', 'members-database' ),
             'options' => $this->_get_pagelist( true ),
             'attributes' => array('other' => 'Post ID'),
             'value' => 'none',
@@ -894,11 +894,11 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'retrieve_link_identifier',
-        'title' => __( 'Lost Private Link ID Field', 'members-databes' ),
+        'title' => __( 'Lost Private Link ID Field', 'members-database' ),
         'group' => 'pdb-resend',
         'options' => array(
             'type' => 'dropdown',
-            'help_text' => __( 'The field used to identify the user&#39;s account. This must be a unique identifier for the record', 'members-databes' ),
+            'help_text' => __( 'The field used to identify the user&#39;s account. This must be a unique identifier for the record', 'members-database' ),
             'options' => self::_get_identifier_columns( false ),
             'value' => 'email',
         )
@@ -906,46 +906,46 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'id_field_prompt',
-        'title' => __( 'ID Field Help Text', 'members-databes' ),
+        'title' => __( 'ID Field Help Text', 'members-database' ),
         'group' => 'pdb-resend',
         'options' => array(
             'type' => 'text',
-            'help_text' => __( 'help text for the record identification field', 'members-databes' ),
-            'value' => __( "Type in your %s, your private link will be emailed to you.", 'members-databes' ),
+            'help_text' => __( 'help text for the record identification field', 'members-database' ),
+            'value' => __( "Type in your %s, your private link will be emailed to you.", 'members-database' ),
         )
     );
 
     $this->plugin_settings[] = array(
         'name' => 'retrieve_link_email_subject',
-        'title' => __( 'Lost Private Link Email Subject', 'members-databes' ),
+        'title' => __( 'Lost Private Link Email Subject', 'members-database' ),
         'group' => 'pdb-resend',
         'options' => array(
             'type' => 'text',
-            'help_text' => __( 'subject line for the lost private link email', 'members-databes' ),
-            'value' => sprintf( __( "Here is your private link on %s", 'members-databes' ), get_bloginfo( 'name' ) ),
+            'help_text' => __( 'subject line for the lost private link email', 'members-database' ),
+            'value' => sprintf( __( "Here is your private link on %s", 'members-database' ), get_bloginfo( 'name' ) ),
         )
     );
 
     $this->plugin_settings[] = array(
         'name' => 'retrieve_link_email_body',
-        'title' => __( 'Lost Private Link Email', 'members-databes' ),
+        'title' => __( 'Lost Private Link Email', 'members-database' ),
         'group' => 'pdb-resend',
         'options' => array(
             'type' => $this->textarea_type,
-            'help_text' => __( 'Body of the email sent when a lost private link is requested.', 'members-databes' ),
+            'help_text' => __( 'Body of the email sent when a lost private link is requested.', 'members-database' ),
             /* translators: the %s will be the name of the website */
-            'value' => '<p>' . sprintf( __( 'Here is the private link you requested from %s:', 'members-databes' ), get_bloginfo( 'name' ) ) . '</p><p><a href="[record_link]">[record_link]</a>.</p>',
+            'value' => '<p>' . sprintf( __( 'Here is the private link you requested from %s:', 'members-database' ), get_bloginfo( 'name' ) ) . '</p><p><a href="[record_link]">[record_link]</a>.</p>',
         )
     );
 
     $this->plugin_settings[] = array(
         'name' => 'send_retrieve_link_notify_email',
-        'title' => __( 'Send Lost Private Link Notification Email', 'members-databes' ),
+        'title' => __( 'Send Lost Private Link Notification Email', 'members-database' ),
         'group' => 'pdb-resend',
         'options' => array
             (
             'type' => 'checkbox',
-            'help_text' => __( 'Send an email notification that a lost private link has been requested. This email will go to the "Signup Notification Recipients."', 'members-databes' ),
+            'help_text' => __( 'Send an email notification that a lost private link has been requested. This email will go to the "Signup Notification Recipients."', 'members-database' ),
             'value' => 0,
             'options' => array(1, 0),
         )
@@ -953,35 +953,35 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'retrieve_link_notify_subject',
-        'title' => __( 'Lost Private Link Notification Email Subject', 'members-databes' ),
+        'title' => __( 'Lost Private Link Notification Email Subject', 'members-database' ),
         'group' => 'pdb-resend',
         'options' => array(
             'type' => 'text',
-            'help_text' => __( 'subject of the notification email; placeholder tags can be used (see above)', 'members-databes' ),
+            'help_text' => __( 'subject of the notification email; placeholder tags can be used (see above)', 'members-database' ),
             /* translators: the %s will be the name of the website */
-            'value' => sprintf( __( 'A Lost Private Link has been requested on %s', 'members-databes' ), get_bloginfo( 'name' ) ),
+            'value' => sprintf( __( 'A Lost Private Link has been requested on %s', 'members-database' ), get_bloginfo( 'name' ) ),
         )
     );
 
     $this->plugin_settings[] = array(
         'name' => 'retrieve_link_notify_body',
-        'title' => __( 'Lost Private Link Notification Email', 'members-databes' ),
+        'title' => __( 'Lost Private Link Notification Email', 'members-database' ),
         'group' => 'pdb-resend',
         'options' => array(
             'type' => $this->textarea_type,
-            'help_text' => __( 'notification email body', 'members-databes' ),
-            'value' => __( '<p>A lost private link has been requested by:</p><ul><li>Name: [first_name] [last_name]</li><li>Email: [email]</li></ul>', 'members-databes' ),
+            'help_text' => __( 'notification email body', 'members-database' ),
+            'value' => __( '<p>A lost private link has been requested by:</p><ul><li>Name: [first_name] [last_name]</li><li>Email: [email]</li></ul>', 'members-database' ),
         )
     );
 
     $this->plugin_settings[] = array(
         'name' => 'identifier_field_message',
-        'title' => __( 'Retrieve Private Link Error Message', 'members-databes' ),
+        'title' => __( 'Retrieve Private Link Error Message', 'members-database' ),
         'group' => 'pdb-resend',
         'options' => array(
             'type' => 'text-area',
-            'help_text' => __( 'Message shown when a record matching the retrieve link idenifier cannot be found', 'members-databes' ),
-            'value' => __( 'A record matching that %s cannot be found.', 'members-databes' ),
+            'help_text' => __( 'Message shown when a record matching the retrieve link idenifier cannot be found', 'members-database' ),
+            'value' => __( 'A record matching that %s cannot be found.', 'members-database' ),
         )
     );
 
@@ -995,12 +995,12 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'use_plugin_css',
-        'title' => __( 'Use the Plugin CSS', 'members-databes' ),
+        'title' => __( 'Use the Plugin CSS', 'members-database' ),
         'group' => 'pdb-advanced',
         'options' => array
             (
             'type' => 'checkbox',
-            'help_text' => __( 'use the plugin\'s CSS to style the output of shortcodes', 'members-databes' ),
+            'help_text' => __( 'use the plugin\'s CSS to style the output of shortcodes', 'members-database' ),
             'value' => 1,
             'options' => array(1, 0),
         ),
@@ -1008,12 +1008,12 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'rich_text_editor',
-        'title' => __( 'Use Rich Text Editor', 'members-databes' ),
+        'title' => __( 'Use Rich Text Editor', 'members-database' ),
         'group' => 'pdb-advanced',
         'options' => array
             (
             'type' => 'checkbox',
-            'help_text' => __( 'enable the rich text editor on "rich-text" fields for front-end users. If deselected, "rich-text" fields will appear as text-area fields. This does not affect admin users, who always have the use of the rich-text editor.', 'members-databes' ),
+            'help_text' => __( 'enable the rich text editor on "rich-text" fields for front-end users. If deselected, "rich-text" fields will appear as text-area fields. This does not affect admin users, who always have the use of the rich-text editor.', 'members-database' ),
             'value' => 1,
             'options' => array(1, 0),
         ),
@@ -1026,18 +1026,18 @@ class PDb_Settings extends xnau_Plugin_Settings {
      */
     $this->plugin_settings[] = array(
         'name' => 'enable_wpautop',
-        'title' => __( 'Use WordPress Auto Formatting', 'members-databes' ),
+        'title' => __( 'Use WordPress Auto Formatting', 'members-database' ),
         'group' => 'pdb-advanced',
         'options' => array
             (
             'type' => 'dropdown',
-            'help_text' => __( 'Select the filter mode for all rich text outputs, including HTML emails.', 'members-databes' ),
+            'help_text' => __( 'Select the filter mode for all rich text outputs, including HTML emails.', 'members-database' ),
             'value' => 'the_content',
             'options' => array( 
-                __( 'global content filter', 'members-databes' ) . ' (the_content)' =>'the_content', 
-                __( 'WordPress auto paragraphs', 'members-databes' ) . ' (wpautop)' => 'wpautop', 
-                __( 'auto paragraphs + shortcodes', 'members-databes' ) => 'wpautop+shortcodes', 
-                __( 'none', 'members-databes' ) => 'none' 
+                __( 'global content filter', 'members-database' ) . ' (the_content)' =>'the_content', 
+                __( 'WordPress auto paragraphs', 'members-database' ) . ' (wpautop)' => 'wpautop', 
+                __( 'auto paragraphs + shortcodes', 'members-database' ) => 'wpautop+shortcodes', 
+                __( 'none', 'members-database' ) => 'none' 
                 ),
         ),
     );
@@ -1047,12 +1047,12 @@ class PDb_Settings extends xnau_Plugin_Settings {
      */
     $this->plugin_settings[] = array(
         'name' => 'strip_linebreaks',
-        'title' => __( 'Remove Line Breaks', 'members-databes' ),
+        'title' => __( 'Remove Line Breaks', 'members-database' ),
         'group' => 'pdb-advanced',
         'options' => array
             (
             'type' => 'checkbox',
-            'help_text' => __( 'Remove line breaks from all plugin shortcode ouput.', 'members-databes' ),
+            'help_text' => __( 'Remove line breaks from all plugin shortcode ouput.', 'members-database' ),
             'value' => 0,
             'options' => array(1, 0),
         ),
@@ -1064,12 +1064,12 @@ class PDb_Settings extends xnau_Plugin_Settings {
      */
     $this->plugin_settings[] = array(
         'name' => 'use_pagination_scroll_anchor',
-        'title' => __( 'Use Pagination Scroll Anchors', 'members-databes' ),
+        'title' => __( 'Use Pagination Scroll Anchors', 'members-database' ),
         'group' => 'pdb-advanced',
         'options' => array
             (
             'type' => 'checkbox',
-            'help_text' => __( 'Uncheck this if your theme prevents pagination links with scroll anchors from working.', 'members-databes' ),
+            'help_text' => __( 'Uncheck this if your theme prevents pagination links with scroll anchors from working.', 'members-database' ),
             'value' => 1,
             'options' => array(1, 0),
         ),
@@ -1077,12 +1077,12 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'primary_email_address_field',
-        'title' => __( 'Primary Email Address Field', 'members-databes' ),
+        'title' => __( 'Primary Email Address Field', 'members-database' ),
         'group' => 'pdb-advanced',
         'options' => array
             (
             'type' => 'dropdown',
-            'help_text' => __( 'this field is the primary email address for the record', 'members-databes' ),
+            'help_text' => __( 'this field is the primary email address for the record', 'members-database' ),
             'value' => 'email',
             'options' => self::_get_identifier_columns( false ),
         ),
@@ -1090,12 +1090,12 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'html_email',
-        'title' => __( 'Send HTML Email', 'members-databes' ),
+        'title' => __( 'Send HTML Email', 'members-database' ),
         'group' => 'pdb-advanced',
         'options' => array
             (
             'type' => 'checkbox',
-            'help_text' => __( 'use rich text in plugin emails? If you turn this off, be sure to remove all HTML tags from the email body settings for the plugin.', 'members-databes' ),
+            'help_text' => __( 'use rich text in plugin emails? If you turn this off, be sure to remove all HTML tags from the email body settings for the plugin.', 'members-database' ),
             'value' => 1,
             'options' => array(1, 0),
         ),
@@ -1104,13 +1104,13 @@ class PDb_Settings extends xnau_Plugin_Settings {
     PDb_Date_Display::reassert_timezone();
     $this->plugin_settings[] = array(
         'name' => 'strict_dates',
-        'title' => __( 'Strict Date Format', 'members-databes' ),
+        'title' => __( 'Strict Date Format', 'members-database' ),
         'group' => 'pdb-advanced',
         'options' => array
             (
             'type' => 'checkbox',
             'help_text' => sprintf(
-                    __( 'This forces date inputs to be interpreted strictly according to the "Input Date Format" setting. You should tell your users what format you are expecting them to use. This also applies to date values used in [pdb_list] shortcode filters. The date with your current setting looks like this: <strong>%s</strong> %s', 'members-databes' ), strftime( xnau_Date_Format_String::to_strftime( Participants_Db::plugin_setting( 'input_date_format', get_option( 'date_format' ) ) ) ), (function_exists( 'date_create' ) ? '' : '<strong>(' . __( 'Your current PHP installation does not support this setting.', 'members-databes' ) . ' )</strong>' )
+                    __( 'This forces date inputs to be interpreted strictly according to the "Input Date Format" setting. You should tell your users what format you are expecting them to use. This also applies to date values used in [pdb_list] shortcode filters. The date with your current setting looks like this: <strong>%s</strong> %s', 'members-database' ), strftime( xnau_Date_Format_String::to_strftime( Participants_Db::plugin_setting( 'input_date_format', get_option( 'date_format' ) ) ) ), (function_exists( 'date_create' ) ? '' : '<strong>(' . __( 'Your current PHP installation does not support this setting.', 'members-database' ) . ' )</strong>' )
             ),
             'value' => 0,
             'options' => array(1, 0),
@@ -1119,24 +1119,24 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'input_date_format',
-        'title' => __( 'Input Date Format', 'members-databes' ),
+        'title' => __( 'Input Date Format', 'members-database' ),
         'group' => 'pdb-advanced',
         'options' => array
             (
             'type' => 'text-line',
-            'help_text' => __( 'date formatting string for all plugin date inputs when "Strict Date Format" is enabled. You should use this for all localized (non-American English) date formats.', 'members-databes' ),
+            'help_text' => __( 'date formatting string for all plugin date inputs when "Strict Date Format" is enabled. You should use this for all localized (non-American English) date formats.', 'members-database' ),
             'value' => get_option( 'date_format' ),
         ),
     );
     
     $this->plugin_settings[] = array(
         'name' => 'ajax_search',
-        'title' => __( 'Enable AJAX Search Functionality', 'members-databes' ),
+        'title' => __( 'Enable AJAX Search Functionality', 'members-database' ),
         'group' => 'pdb-advanced',
         'options' => array
             (
             'type' => 'checkbox',
-            'help_text' => __( "This enables list search results that are updated without reloading the page. It requires Javascript, but search will still work if Javascript is disabled in the user's browser.", 'members-databes' ),
+            'help_text' => __( "This enables list search results that are updated without reloading the page. It requires Javascript, but search will still work if Javascript is disabled in the user's browser.", 'members-database' ),
             'value' => 1,
             'options' => array(1, 0),
         ),
@@ -1144,12 +1144,12 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'use_php_sessions',
-        'title' => __( 'Use PHP Sessions', 'members-databes' ),
+        'title' => __( 'Use PHP Sessions', 'members-database' ),
         'group' => 'pdb-advanced',
         'options' => array
             (
             'type' => 'checkbox',
-            'help_text' => __( 'check this to use PHP sessions instead of database sessions.', 'members-databes' ) . $this->settings_help( 'usephpsessions'),
+            'help_text' => __( 'check this to use PHP sessions instead of database sessions.', 'members-database' ) . $this->settings_help( 'usephpsessions'),
             'value' => 0,
             'options' => array(1, 0),
         ),
@@ -1157,24 +1157,24 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'cookie_name',
-        'title' => __( 'Cookie Name', 'members-databes' ),
+        'title' => __( 'Cookie Name', 'members-database' ),
         'group' => 'pdb-advanced',
         'options' => array
             (
             'type' => 'text-line',
-            'help_text' => __( 'Change the name of the cookie for compatibility with some web hosting setups.', 'members-databes' ),
+            'help_text' => __( 'Change the name of the cookie for compatibility with some web hosting setups.', 'members-database' ),
             'value' => 'pdb_wp_session',
         ),
     );
 
     $this->plugin_settings[] = array(
         'name' => 'disable_live_notifications',
-        'title' => __( 'Disable Backend Developer Ads', 'members-databes' ),
+        'title' => __( 'Disable Backend Developer Ads', 'members-database' ),
         'group' => 'pdb-advanced',
         'options' => array
             (
             'type' => 'checkbox',
-            'help_text' => __( 'select this to disable developer ads in the admin.', 'members-databes' ),
+            'help_text' => __( 'select this to disable developer ads in the admin.', 'members-database' ),
             'value' => 0,
             'options' => array(1, 0),
         ),
@@ -1182,12 +1182,12 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'files_use_content_base_path',
-        'title' => __( 'File and Image Uploads Use WP Content Path', 'members-databes' ),
+        'title' => __( 'File and Image Uploads Use WP Content Path', 'members-database' ),
         'group' => 'pdb-advanced',
         'options' => array
             (
             'type' => 'checkbox',
-            'help_text' => __( 'when selected, the base path for file and image uploads will be the site\'s content directory.', 'members-databes' ) . $this->settings_help( 'File-and-Image-Uploads-Use-WP-'),
+            'help_text' => __( 'when selected, the base path for file and image uploads will be the site\'s content directory.', 'members-database' ) . $this->settings_help( 'File-and-Image-Uploads-Use-WP-'),
             'value' => 0,
             'options' => array(1, 0),
         ),
@@ -1195,12 +1195,12 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'allow_record_timestamp_edit',
-        'title' => __( 'Allow Record Timestamps to be Edited', 'members-databes' ),
+        'title' => __( 'Allow Record Timestamps to be Edited', 'members-database' ),
         'group' => 'pdb-advanced',
         'options' => array
             (
             'type' => 'checkbox',
-            'help_text' => __( 'normally, record timestamps (date_recorded, date_updated, last_accessed) are not editable, checking this allows them to be edited.', 'members-databes' ) . $this->settings_help( 'allow-record-timestamps-to-be-edited'),
+            'help_text' => __( 'normally, record timestamps (date_recorded, date_updated, last_accessed) are not editable, checking this allows them to be edited.', 'members-database' ) . $this->settings_help( 'allow-record-timestamps-to-be-edited'),
             'value' => 0,
             'options' => array(1, 0),
         ),
@@ -1209,17 +1209,17 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'pdb_debug',
-        'title' => __( 'Enable Debugging', 'members-databes' ),
+        'title' => __( 'Enable Debugging', 'members-database' ),
         'group' => 'pdb-advanced',
         'options' => array
             (
             'type' => 'dropdown',
-            'help_text' => sprintf(__( 'this will enable writing to the %s debugging log.', 'members-databes' ), Participants_Db::$plugin_title ) . $this->settings_help( 'enable-debugging'),
+            'help_text' => sprintf(__( 'this will enable writing to the %s debugging log.', 'members-database' ), Participants_Db::$plugin_title ) . $this->settings_help( 'enable-debugging'),
             'value' => 0,
             'options' => array( 
-                __('off', 'members-databes') => 0, 
-                __('plugin debug', 'members-databes') => 1,
-                __('all errors', 'members-databes') => 2,
+                __('off', 'members-database') => 0, 
+                __('plugin debug', 'members-database') => 1,
+                __('all errors', 'members-database') => 2,
                 ),
         ),
     );
@@ -1233,32 +1233,32 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'admin_default_sort',
-        'title' => __( 'Admin List Default Sort', 'members-databes' ),
+        'title' => __( 'Admin List Default Sort', 'members-database' ),
         'group' => 'pdb-admin',
         'options' => array
             (
             'type' => 'dropdown',
             'value' => 'date_updated',
-            'help_text' => __( 'The record list shown in the admin section will be sorted by this field by default. (Field must be checked "sortable.")', 'members-databes' ),
+            'help_text' => __( 'The record list shown in the admin section will be sorted by this field by default. (Field must be checked "sortable.")', 'members-database' ),
             'options' => $this->_get_sort_columns(),
         )
     );
 
     $this->plugin_settings[] = array(
         'name' => 'admin_default_sort_order',
-        'title' => __( 'Admin List Default Sort Order', 'members-databes' ),
+        'title' => __( 'Admin List Default Sort Order', 'members-database' ),
         'group' => 'pdb-admin',
         'options' => array(
             'type' => 'dropdown',
-            'help_text' => __( 'Sets the default order of the record list in the admin.', 'members-databes' ),
+            'help_text' => __( 'Sets the default order of the record list in the admin.', 'members-database' ),
             'value' => 'desc',
-            'options' => array(__( 'Ascending', 'members-databes' ) => 'asc', __( 'Descending', 'members-databes' ) => 'desc', 'null_select' => false),
+            'options' => array(__( 'Ascending', 'members-database' ) => 'asc', __( 'Descending', 'members-database' ) => 'desc', 'null_select' => false),
         )
     );
 
     $this->plugin_settings[] = array(
         'name' => 'admin_thumbnails',
-        'title' => __( 'Show Image Thumbnails in Admin List', 'members-databes' ),
+        'title' => __( 'Show Image Thumbnails in Admin List', 'members-database' ),
         'group' => 'pdb-admin',
         'options' => array
             (
@@ -1273,12 +1273,12 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'admin_horiz_scroll',
-        'title' => __( 'Plugin Admin Horizontal Scrolling', 'members-databes' ),
+        'title' => __( 'Plugin Admin Horizontal Scrolling', 'members-database' ),
         'group' => 'pdb-admin',
         'options' => array
             (
             'type' => 'checkbox',
-            'help_text' => __( 'use horizontal scrolling on list and fields management screens', 'members-databes' ),
+            'help_text' => __( 'use horizontal scrolling on list and fields management screens', 'members-database' ),
             'value' => 0,
             'options' => array(1, 0),
         ),
@@ -1286,11 +1286,11 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'record_edit_capability',
-        'title' => __( 'Record Edit Access Level', 'members-databes' ),
+        'title' => __( 'Record Edit Access Level', 'members-database' ),
         'group' => 'pdb-admin',
         'options' => array(
             'type' => 'dropdown',
-            'help_text' => __( 'sets the user access level for adding, editing and listing records.', 'members-databes' ),
+            'help_text' => __( 'sets the user access level for adding, editing and listing records.', 'members-database' ),
             'value' => 'edit_others_posts',
             'options' => $this->get_role_select(),
         )
@@ -1298,11 +1298,11 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'plugin_admin_capability',
-        'title' => __( 'Plugin Admin Access Level', 'members-databes' ),
+        'title' => __( 'Plugin Admin Access Level', 'members-database' ),
         'group' => 'pdb-admin',
         'options' => array(
             'type' => 'dropdown',
-            'help_text' => __( 'sets the user access level for fields management, plugin settings, deleting records and CSV operations.', 'members-databes' ),
+            'help_text' => __( 'sets the user access level for fields management, plugin settings, deleting records and CSV operations.', 'members-database' ),
             'value' => 'manage_options',
             'options' => $this->get_role_select(),
         )
@@ -1310,12 +1310,12 @@ class PDb_Settings extends xnau_Plugin_Settings {
     
     $this->plugin_settings[] = array(
         'name' => 'admin_edits_validated',
-        'title' => __( 'Admin Record Edits are Validated', 'members-databes' ),
+        'title' => __( 'Admin Record Edits are Validated', 'members-database' ),
         'group' => 'pdb-admin',
         'options' => array
             (
             'type' => 'checkbox',
-            'help_text' => __( 'When checked, admin record edits and new records must pass validation.', 'members-databes' ) ,
+            'help_text' => __( 'When checked, admin record edits and new records must pass validation.', 'members-database' ) ,
             'value' => 0,
             'options' => array(1, 0),
         )
@@ -1323,11 +1323,11 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'editor_allowed_csv_export',
-        'title' => __( 'Editor can Export CSV Files', 'members-databes' ),
+        'title' => __( 'Editor can Export CSV Files', 'members-database' ),
         'group' => 'pdb-admin',
         'options' => array(
             'type' => 'checkbox',
-            'help_text' => __( 'If checked, users with the plugin editor role can export a CSV.', 'members-databes' ),
+            'help_text' => __( 'If checked, users with the plugin editor role can export a CSV.', 'members-database' ),
             'value' => '0',
             'options' => array(1, 0),
         )
@@ -1336,12 +1336,12 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'show_time',
-        'title' => __( 'Show Timestamp Time', 'members-databes' ),
+        'title' => __( 'Show Timestamp Time', 'members-database' ),
         'group' => 'pdb-admin',
         'options' => array
             (
             'type' => 'checkbox',
-            'help_text' => __( 'Show time with timestamp dates', 'members-databes' ),
+            'help_text' => __( 'Show time with timestamp dates', 'members-database' ),
             'value' => 0,
             'options' => array(1, 0),
         ),
@@ -1350,11 +1350,11 @@ class PDb_Settings extends xnau_Plugin_Settings {
 
     $this->plugin_settings[] = array(
         'name' => 'clear_pdb_notices',
-        'title' => __( 'Clear Plugin Admin Notices', 'members-databes' ),
+        'title' => __( 'Clear Plugin Admin Notices', 'members-database' ),
         'group' => 'pdb-admin',
         'options' => array(
             'type' => 'checkbox',
-            'help_text' => __( 'If checked, all plugin-generated admin notices will be cleared.', 'members-databes' ),
+            'help_text' => __( 'If checked, all plugin-generated admin notices will be cleared.', 'members-database' ),
             'value' => '0',
             'options' => array(1, 0),
         )
@@ -1368,12 +1368,12 @@ class PDb_Settings extends xnau_Plugin_Settings {
      * **************************************************** */
     $this->plugin_settings[] = array(
         'name' => 'custom_css',
-        'title' => __( 'Custom Plugin Stylesheet', 'members-databes' ),
+        'title' => __( 'Custom Plugin Stylesheet', 'members-database' ),
         'group' => 'pdb-css',
         'options' => array(
             'type' => 'text-area',
             'value' => '',
-            'help_text' => __( 'use this to add your own styles or override styles applied to the output of all plugin shortcodes', 'members-databes' ),
+            'help_text' => __( 'use this to add your own styles or override styles applied to the output of all plugin shortcodes', 'members-database' ),
             'attributes' => array(
                 'style' => "height:20em;width:90%;max-width:400px;",
                 'class' => 'code',
@@ -1383,12 +1383,12 @@ class PDb_Settings extends xnau_Plugin_Settings {
     );
     $this->plugin_settings[] = array(
         'name' => 'print_css',
-        'title' => __( 'Plugin Print Stylesheet', 'members-databes' ),
+        'title' => __( 'Plugin Print Stylesheet', 'members-database' ),
         'group' => 'pdb-css',
         'options' => array(
             'type' => 'text-area',
             'value' => "/* this prevents the search controls from printing */\r.pdb-searchform {\r\tdisplay:none;\r}",
-            'help_text' => __( 'use this to format the printed output of all plugin shortcodes', 'members-databes' ),
+            'help_text' => __( 'use this to format the printed output of all plugin shortcodes', 'members-database' ),
             'attributes' => array(
                 'style' => "height:20em;width:90%;max-width:400px;",
                 'class' => 'code',
@@ -1398,12 +1398,12 @@ class PDb_Settings extends xnau_Plugin_Settings {
     );
     $this->plugin_settings[] = array(
         'name' => 'custom_admin_css',
-        'title' => __( 'Custom Admin Stylesheet', 'members-databes' ),
+        'title' => __( 'Custom Admin Stylesheet', 'members-database' ),
         'group' => 'pdb-css',
         'options' => array(
             'type' => 'text-area',
             'value' => '',
-            'help_text' => __( 'use this to add or modify CSS rules that are applied on all plugin pages in the WordPress backend.', 'members-databes' ),
+            'help_text' => __( 'use this to add or modify CSS rules that are applied on all plugin pages in the WordPress backend.', 'members-database' ),
             'attributes' => array(
                 'style' => "height:20em;width:90%;max-width:400px;",
                 'class' => 'code',
@@ -1426,7 +1426,7 @@ class PDb_Settings extends xnau_Plugin_Settings {
         $pagelist['null_select'] = '';
 
       if ( $with_none )
-        $pagelist[__( 'Same Page', 'members-databes' )] = 'none';
+        $pagelist[__( 'Same Page', 'members-database' )] = 'none';
 
       $pages = wp_cache_get( 'pagelist_posts' );
 
@@ -1461,7 +1461,7 @@ class PDb_Settings extends xnau_Plugin_Settings {
   private function _get_display_columns()
   {
 
-    $columnlist = array(__( 'None', 'members-databes' ) => 'none', 'null_select' => false);
+    $columnlist = array(__( 'None', 'members-database' ) => 'none', 'null_select' => false);
 
     $columns = Participants_Db::get_column_atts( 'all' );
 
@@ -1555,10 +1555,10 @@ ORDER BY g.order, v.order';
   {
     // these are the standard roles we will include
     $role_select = array(
-        __( 'Contributor', 'members-databes' ) => 'edit_posts',
-        __( 'Author', 'members-databes' ) => 'edit_published_posts',
-        __( 'Editor', 'members-databes' ) => 'edit_others_posts',
-        __( 'Admin', 'members-databes' ) => 'manage_options',
+        __( 'Contributor', 'members-database' ) => 'edit_posts',
+        __( 'Author', 'members-database' ) => 'edit_published_posts',
+        __( 'Editor', 'members-database' ) => 'edit_others_posts',
+        __( 'Admin', 'members-database' ) => 'manage_options',
         'null_select' => false,
     );
     global $wp_roles;
@@ -1635,7 +1635,7 @@ ORDER BY g.order, v.order';
     $has_news_class = $news ? 'has-news-panel' : '';
     ?>
     <div class="wrap participants_db settings-class <?= $has_news_class ?>">
-      <?php Participants_Db::admin_page_heading( Participants_Db::$plugin_title . ' ' . __( 'Settings', 'members-databes' ) ) ?>
+      <?php Participants_Db::admin_page_heading( Participants_Db::$plugin_title . ' ' . __( 'Settings', 'members-database' ) ) ?>
       <?php settings_errors(); ?>
       <form action="options.php" method="post" >
         <div class="ui-tabs">
@@ -1722,13 +1722,13 @@ ORDER BY g.order, v.order';
           break;
         case 'list_limit':
           if ( intval( $value ) < -1 ) {
-            add_settings_error( $name, $name, sprintf( __( 'Only numeric values can be used for the "%s" setting.', 'members-databes' ), $this->get_option_title( $name ) ), 'error' );
+            add_settings_error( $name, $name, sprintf( __( 'Only numeric values can be used for the "%s" setting.', 'members-database' ), $this->get_option_title( $name ) ), 'error' );
             $settings[$name] = $this->get_default_value( $name );
           }
           break;
         case 'image_upload_limit':
           if ( intval( $value ) < 1 ) {
-            add_settings_error( $name, $name, sprintf( __( 'Only numeric values can be used for the "%s" setting.', 'members-databes' ), $this->get_option_title( $name ) ), 'error' );
+            add_settings_error( $name, $name, sprintf( __( 'Only numeric values can be used for the "%s" setting.', 'members-database' ), $this->get_option_title( $name ) ), 'error' );
             $settings[$name] = $this->get_default_value( $name );
           }
           break;
@@ -1749,7 +1749,7 @@ ORDER BY g.order, v.order';
    */
   public function settings_help( $anchor )
   {
-    $href = 'https://xnau.com/members-databes-settings-help/';
+    $href = 'https://xnau.com/members-database-settings-help/';
     return '<a class="settings-help-icon" href="' . $href . '#' . $anchor . '" target="_blank"><span class="dashicons dashicons-editor-help"></span></a>';
   }
   
@@ -1777,7 +1777,7 @@ ORDER BY g.order, v.order';
    */
   private function files_base_label()
   {
-    return Participants_Db::apply_filters( 'files_use_content_base_path', false ) ? __( 'Content Directory', 'members-databes' ) : __( 'WordPress root', 'members-databes' );
+    return Participants_Db::apply_filters( 'files_use_content_base_path', false ) ? __( 'Content Directory', 'members-database' ) : __( 'WordPress root', 'members-database' );
   }
 
 }

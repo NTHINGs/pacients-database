@@ -214,8 +214,8 @@ msgstr "Kas soovid kustutada valitud kirjed?"
 msgid "Record delete successful."
 msgstr "Kirje kustutamine õnnestus."
 
-#: classes/PDb_List_Admin.class.php:560 members-databes.php:515
-#: members-databes.php:516
+#: classes/PDb_List_Admin.class.php:560 members-database.php:515
+#: members-database.php:516
 msgid "List Participants"
 msgstr "Osalejate kirjed"
 
@@ -312,8 +312,8 @@ msgstr ""
 "Ekspordis sisalduvaid väljasid kuvatakse \"CSV\" tulbas Muuda andmebaasi "
 "väljasid lehel."
 
-#: classes/PDb_Manage_Fields.class.php:82 members-databes.php:544
-#: members-databes.php:545
+#: classes/PDb_Manage_Fields.class.php:82 members-database.php:544
+#: members-database.php:545
 msgid "Manage Database Fields"
 msgstr "Muuda andmebaasi väljasid"
 
@@ -525,11 +525,11 @@ msgstr "Kirjeldus"
 msgid "First"
 msgstr "Esimene"
 
-#: classes/PDb_Pagination.class.php:377 members-databes.php:3435
+#: classes/PDb_Pagination.class.php:377 members-database.php:3435
 msgid "Previous"
 msgstr "Eelmine"
 
-#: classes/PDb_Pagination.class.php:396 members-databes.php:3434
+#: classes/PDb_Pagination.class.php:396 members-database.php:3434
 msgid "Next"
 msgstr "Järgmine"
 
@@ -633,7 +633,7 @@ msgid ""
 "get deleted when the plugin is updated."
 msgstr ""
 "See määrab selle, kuhu üleslaaditud failid lähevad. Vaikimisi asukoht on '/"
-"wp-content/uploads/members-databes'<br />Ära lisa faile plugina "
+"wp-content/uploads/members-database'<br />Ära lisa faile plugina "
 "kausta, pildid ja failid võidakse uuendamisel kustutada."
 
 #: classes/PDb_Settings.class.php:103
@@ -1667,8 +1667,8 @@ msgstr "Muutja"
 msgid "Admin"
 msgstr "Admin"
 
-#: classes/PDb_Settings.class.php:1391 members-databes.php:562
-#: members-databes.php:563 members-databes.php:3545
+#: classes/PDb_Settings.class.php:1391 members-database.php:562
+#: members-database.php:563 members-database.php:3545
 msgid "Settings"
 msgstr "Seaded"
 
@@ -2114,119 +2114,119 @@ msgstr ""
 "vaates."
 
 #. Plugin Name of the plugin/theme
-#: members-databes.php:370
+#: members-database.php:370
 msgid "Participants Database"
 msgstr "Kirjete andmebaas"
 
-#: members-databes.php:535 members-databes.php:536
+#: members-database.php:535 members-database.php:536
 msgid "Add Participant"
 msgstr "Lisa kirje"
 
-#: members-databes.php:553 members-databes.php:554
+#: members-database.php:553 members-database.php:554
 #: upload_csv.php:40
 msgid "Import CSV File"
 msgstr "Impordi CSV fail"
 
-#: members-databes.php:571 members-databes.php:572
+#: members-database.php:571 members-database.php:572
 msgid "Setup Guide"
 msgstr "Juhised"
 
 #. translators: don't translate the words in brackets {}
-#: members-databes.php:624
+#: members-database.php:624
 msgid "You must remove all fields from the {name} group before deleting it."
 msgstr "Sa pead eemaldama enne kustutamist kõik väljad {name} rühmast."
 
 #. translators: don't translate the words in brackets {}
-#: members-databes.php:626
+#: members-database.php:626
 msgid "Delete the \"{name}\" {thing}?"
 msgstr "Kustuta \"{name}\" {thing}?"
 
-#: members-databes.php:627
+#: members-database.php:627
 msgid "The changes you made will be lost if you navigate away from this page."
 msgstr "Muudatused ei salvestu, kui sulged selle lehe."
 
-#: members-databes.php:2863
+#: members-database.php:2863
 msgid ""
 "There is something wrong with the file you tried to upload. Try another."
 msgstr "Üleslaaditavas failis on viga. Proovi teist faili."
 
-#: members-databes.php:2879 members-databes.php:2907
+#: members-database.php:2879 members-database.php:2907
 msgid "For \"%s\", you may only upload image files like JPEGs, GIFs or PNGs."
 msgstr "\"%s\" võid ainult üles laadida pildifaile nagu JPEG, GIF või PNG."
 
-#: members-databes.php:2881
+#: members-database.php:2881
 msgid "The file selected for \"%s\" must be one of these types: %s. "
 msgstr "Selekteeritud fail \"%s\" peab olema üks nendest tüüpidest: %s. "
 
-#: members-databes.php:2914
+#: members-database.php:2914
 msgid ""
 "The file you tried to upload is too large. The file must be smaller than %sK."
 msgstr ""
 "Fail, mida üritasid üles laadida, on liiga suur. Fail peab olema väiksem kui "
 "%sK."
 
-#: members-databes.php:2921
+#: members-database.php:2921
 msgid "The file could not be saved."
 msgstr "Faili ei saanud salvestada."
 
-#: members-databes.php:2966
+#: members-database.php:2966
 msgid "The uploads directory (%s) could not be created."
 msgstr "Üleslaadimiste kataloogi (%s) ei õnnestunud luua."
 
-#: members-databes.php:3304
+#: members-database.php:3304
 msgid ""
 "The date for \"%s\" was invalid. Please input the date with the exact format "
 "shown"
 msgstr "\"%s\" kuupäev oli vale. Palun sisesta kuupäev näidatud formaadis."
 
-#: members-databes.php:3432 templates/pdb-retrieve-bootstrap.php:69
+#: members-database.php:3432 templates/pdb-retrieve-bootstrap.php:69
 #: templates/pdb-retrieve-default.php:60
 msgid "Submit"
 msgstr "Kinnita"
 
-#: members-databes.php:3433
+#: members-database.php:3433
 msgid "Apply"
 msgstr "Lisa"
 
-#: members-databes.php:3436
+#: members-database.php:3436
 msgid "The record has been updated."
 msgstr "Kirje on uuendatud."
 
-#: members-databes.php:3437
+#: members-database.php:3437
 msgid "The new record has been added."
 msgstr "Uus kirje on lisatud."
 
-#: members-databes.php:3438
+#: members-database.php:3438
 msgid "No record was added on query: %s"
 msgstr "Päringul ei lisatud ühtegi kirjet: %s"
 
-#: members-databes.php:3439
+#: members-database.php:3439
 msgid "Database Error: %2$s on query: %1$s"
 msgstr "Andmebaasi viga: %2$s päringul %1$s"
 
-#: members-databes.php:3506
+#: members-database.php:3506
 msgid "WordPress Plugin"
 msgstr "WordPressi plugin"
 
-#: members-databes.php:3507
+#: members-database.php:3507
 msgid ""
 "Helping organizations manage their volunteers, members and participants."
 msgstr ""
 "Aidata organisatsioonidel korraldada oma vabatahtlike, liikmete ja osalejate "
 "nimekirjasid."
 
-#: members-databes.php:3510
+#: members-database.php:3510
 msgid "Developed by"
 msgstr "Arendus"
 
-#: members-databes.php:3511
+#: members-database.php:3511
 msgid ""
 "Suggestions or criticisms of this plugin? I&#39;d love to hear them: email "
 msgstr ""
 "Kas on soovitusi või kriitikat pluginat kohta? Võtke ühendust: e-posti "
 "aadress"
 
-#: members-databes.php:3514
+#: members-database.php:3514
 msgid ""
 "Please consider contributing to the continued support and development of "
 "this software by visiting %1$sthis plugin&#39;s page,%3$s giving the plugin "
@@ -2237,15 +2237,15 @@ msgstr ""
 "külastades %1$sthis plugin&#39;s page,%3$s andes pluginale %2$srating%3$s "
 "või arvustus või poetades midagi %1$stip jar.%3$s Aitäh!"
 
-#: members-databes.php:3565
+#: members-database.php:3565
 msgid "Submit a rating or review"
 msgstr "Lisa hinnang või arvustus"
 
-#: members-databes.php:3566
+#: members-database.php:3566
 msgid "Free tech support and continued development relies on your support:"
 msgstr "Tasuta tugi ja jätkuv arendus sõltub Sinu toetusest:"
 
-#: members-databes.php:3566
+#: members-database.php:3566
 msgid "contribute"
 msgstr "tee kaastööd"
 
@@ -2395,8 +2395,8 @@ msgid "Upload File"
 msgstr "Laadi fail üles"
 
 #. Plugin URI of the plugin/theme
-msgid "http://xnau.com/wordpress-plugins/members-databes"
-msgstr "http://xnau.com/wordpress-plugins/members-databes"
+msgid "http://xnau.com/wordpress-plugins/members-database"
+msgstr "http://xnau.com/wordpress-plugins/members-database"
 
 #. Description of the plugin/theme
 msgid "Plugin for managing a database of participants, members or volunteers"

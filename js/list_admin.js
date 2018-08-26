@@ -45,7 +45,7 @@ var PDbListAdmin = (function ($) {
     });
   };
   var confirmDialog = $('<div/>').dialog({
-    dialogClass : 'confirmation-dialog members-databes-confirm',
+    dialogClass : 'confirmation-dialog members-database-confirm',
     modal : true,
     zIndex : 10000,
     autoOpen : false,

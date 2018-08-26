@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Participants Database 1.4.9.2\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tag/members-databes\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/members-database\n"
 "POT-Creation-Date: 2013-12-27 17:36:25+00:00\n"
 "PO-Revision-Date: 2018-01-14 20:54-1000\n"
 "Last-Translator: Roland Barker <webdesign@xnau.com>\n"
@@ -175,16 +175,16 @@ msgstr "Rechercher"
 msgid "Record delete successful."
 msgstr "L&#39;enregistrement a été supprimé."
 
-#: classes/PDb_List_Admin.class.php:360 members-databes.php:508
+#: classes/PDb_List_Admin.class.php:360 members-database.php:508
 msgid "Do you really want to delete the selected record?"
 msgstr "Voulez-vous vraiment supprimer l&#39;enregistrement sélectionné&nbsp;?"
 
-#: classes/PDb_List_Admin.class.php:361 members-databes.php:509
+#: classes/PDb_List_Admin.class.php:361 members-database.php:509
 msgid "Do you really want to delete the selected records?"
 msgstr "Voulez-vous vraiment supprimer les enregistrements sélectionnés&nbsp;?"
 
-#: classes/PDb_List_Admin.class.php:426 members-databes.php:416
-#: members-databes.php:417
+#: classes/PDb_List_Admin.class.php:426 members-database.php:416
+#: members-database.php:417
 msgid "List Participants"
 msgstr "Lister les participants"
 
@@ -258,11 +258,11 @@ msgstr "Ceci téléchargera la liste des participants correspondant à votre rec
 msgid "First"
 msgstr "Premier"
 
-#: classes/PDb_Pagination.class.php:365 members-databes.php:2820
+#: classes/PDb_Pagination.class.php:365 members-database.php:2820
 msgid "Previous"
 msgstr "Précédent"
 
-#: classes/PDb_Pagination.class.php:382 members-databes.php:2819
+#: classes/PDb_Pagination.class.php:382 members-database.php:2819
 msgid "Next"
 msgstr "Suivant"
 
@@ -331,8 +331,8 @@ msgid "File Upload Location"
 msgstr "Emplacement des fichiers téléchargés"
 
 #: classes/PDb_Settings.class.php:86
-msgid "This defines where the uploaded files will go, relative to the WordPress root. The default location is '/wp-content/uploads/members-databes'<br />Don't put it in the plugin folder, the images and files could get deleted when the plugin is updated."
-msgstr "Ceci définit la destination des fichiers en upload, par rapport au répertoire racine de WordPress. L&#39;emplacement par défaut est &#39;/wp-content/uploads/members-databes&#39;<br />Ne pas utiliser le répertoire de l&#39;extension, car les images et fichiers risqueraient alors d&#39;être effacés par des mises à jour."
+msgid "This defines where the uploaded files will go, relative to the WordPress root. The default location is '/wp-content/uploads/members-database'<br />Don't put it in the plugin folder, the images and files could get deleted when the plugin is updated."
+msgstr "Ceci définit la destination des fichiers en upload, par rapport au répertoire racine de WordPress. L&#39;emplacement par défaut est &#39;/wp-content/uploads/members-database&#39;<br />Ne pas utiliser le répertoire de l&#39;extension, car les images et fichiers risqueraient alors d&#39;être effacés par des mises à jour."
 
 #: classes/PDb_Settings.class.php:93
 msgid "File Upload Limit"
@@ -1067,8 +1067,8 @@ msgstr "Editeur"
 msgid "Admin"
 msgstr "Administrateur"
 
-#: classes/PDb_Settings.class.php:1216 members-databes.php:452
-#: members-databes.php:453 members-databes.php:2979
+#: classes/PDb_Settings.class.php:1216 members-database.php:452
+#: members-database.php:453 members-database.php:2979
 msgid "Settings"
 msgstr "Configuration"
 
@@ -1327,8 +1327,8 @@ msgstr "Impossible d&#39;ajouter un champ de ce nom"
 msgid "This name is reserved; please choose another. Reserved names are"
 msgstr "Ce nom est réservé; merci d&#39;en choisir un autre. Les noms réservés sont"
 
-#: manage_fields.php:236 members-databes.php:434
-#: members-databes.php:435
+#: manage_fields.php:236 members-database.php:434
+#: members-database.php:435
 msgid "Manage Database Fields"
 msgstr "Gérer les champs de la base de données"
 
@@ -1525,96 +1525,96 @@ msgid "<strong>Readonly</strong> means that plugin users can see the value of th
 msgstr "<strong>Lecture seule</strong> signifie que les utilisateurs peuvent voir la valeur du champ, mais pas la modifier. Le champ est éditable seulement en mode administrateur."
 
 #. Plugin Name of the plugin/theme
-#: members-databes.php:338
+#: members-database.php:338
 msgid "Participants Database"
 msgstr "Base de données des participants"
 
-#: members-databes.php:425 members-databes.php:426
+#: members-database.php:425 members-database.php:426
 msgid "Add Participant"
 msgstr "Ajouter un participant"
 
-#: members-databes.php:443 members-databes.php:444 upload_csv.php:8
+#: members-database.php:443 members-database.php:444 upload_csv.php:8
 msgid "Import CSV File"
 msgstr "Importer un fichier CSV"
 
-#: members-databes.php:461 members-databes.php:462
+#: members-database.php:461 members-database.php:462
 msgid "Setup Guide"
 msgstr "Guide de configuration"
 
-#: members-databes.php:470 members-databes.php:471
+#: members-database.php:470 members-database.php:471
 msgid "Edit Record"
 msgstr "Editer un enregistrement"
 
 #. translators: don't translate the words in brackets {}
-#: members-databes.php:520
+#: members-database.php:520
 msgid "You must remove all fields from the {name} group before deleting it."
 msgstr "Vous devez supprimer tous les champs du groupe {name} avant de le supprimer."
 
-#: members-databes.php:521
+#: members-database.php:521
 msgid "Delete the \"{name}\" {thing}?"
 msgstr "Supprimer le \"{name}\" {thing}&nbsp;?"
 
-#: members-databes.php:2383
+#: members-database.php:2383
 msgid "There is something wrong with the file you tried to upload. Try another."
 msgstr "Il y a un problème avec le fichier que vous avez voulu télécharger. Essayez avec un autre."
 
-#: members-databes.php:2399 members-databes.php:2427
+#: members-database.php:2399 members-database.php:2427
 msgid "For \"%s\", you may only upload image files like JPEGs, GIFs or PNGs."
 msgstr "Pour « %s », vous pouvez seulement télécharger des fichiers image comme JPEG, GIF ou png."
 
-#: members-databes.php:2401
+#: members-database.php:2401
 msgid "The file selected for \"%s\" must be one of these types: %s. "
 msgstr "Le fichier sélectionné pour « %s » doit être un de ces types &nbsp;: %s. "
 
-#: members-databes.php:2433
+#: members-database.php:2433
 msgid "The file you tried to upload is too large. The file must be smaller than %sK."
 msgstr "Le fichier que vous essayez de télécharger est trop grand. Le fichier doit être inférieur à %sK."
 
-#: members-databes.php:2440
+#: members-database.php:2440
 msgid "The file could not be saved."
 msgstr "Ce fichier n&#39;a pas pu être enregistré."
 
-#: members-databes.php:2468
+#: members-database.php:2468
 msgid "The uploads directory (%s) could not be created."
 msgstr "Le répertoire uploads (%s) n’a pas pu être créé."
 
-#: members-databes.php:2727
+#: members-database.php:2727
 msgid "The date for \"%s\" was invalid. Please input the date with the exact format shown"
 msgstr "La date pour \"%s\" n&#39;est pas correcte. Entrez la date exactement au format indiqué"
 
-#: members-databes.php:2817 templates/pdb-retrieve-default.php:45
+#: members-database.php:2817 templates/pdb-retrieve-default.php:45
 msgid "Submit"
 msgstr "Enregistrer"
 
-#: members-databes.php:2818
+#: members-database.php:2818
 msgid "Apply"
 msgstr "Appliquer"
 
-#: members-databes.php:2821
+#: members-database.php:2821
 msgid "The record has been updated."
 msgstr "Enregistrement mis à jour."
 
-#: members-databes.php:2822
+#: members-database.php:2822
 msgid "The new record has been added."
 msgstr "Le nouvel enregistrement a bien été chargé."
 
-#: members-databes.php:2940
+#: members-database.php:2940
 msgid "WordPress Plugin"
 msgstr "Extension WordPress"
 
-#: members-databes.php:2941
+#: members-database.php:2941
 msgid "Helping organizations manage their volunteers, members and participants."
 msgstr "Aider les organisations à gérer leurs volontaires, membres et participants."
 
-#: members-databes.php:2944
+#: members-database.php:2944
 msgid "Developed by"
 msgstr "Développé par"
 
-#: members-databes.php:2945
+#: members-database.php:2945
 msgid "Suggestions or crticisms of this plugin? I&#39;d love to hear them: email "
 msgstr "Suggestions ou commentaires sur cette extension&nbsp;? N&#39;hésitez pas à me les transmettre par courriel"
 
-#: members-databes.php:2948
+#: members-database.php:2948
 msgid "Please consider contributing to the continued support and development of this software by visiting %1$sthis plugin&#39;s page,%3$s giving the plugin a %2$srating%3$s or review, or dropping something in the %1$stip jar.%3$s Thanks!"
 msgstr "N&#39;hésitez pas à contribuer au soutien continu et au développement de ce logiciel en vous rendant sur la %1$s page de l&#39;extension, %3$s en donnant une note %2$ ou une évaluation %3$s, et je n&#39;ai rien contre un %1$spourboire%3$s. Merci!"
 
@@ -1699,8 +1699,8 @@ msgid "Upload File"
 msgstr "Charger le fichier"
 
 #. Plugin URI of the plugin/theme
-msgid "http://xnau.com/wordpress-plugins/members-databes"
-msgstr "http://xnau.com/wordpress-plugins/members-databes"
+msgid "http://xnau.com/wordpress-plugins/members-database"
+msgstr "http://xnau.com/wordpress-plugins/members-database"
 
 #. Description of the plugin/theme
 msgid "Plugin for managing a database of participants, members or volunteers"

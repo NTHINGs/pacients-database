@@ -160,7 +160,7 @@ class PDb_Init {
   {
     global $wpdb;
 
-    if ( is_plugin_active_for_network( 'members-databes/members-databes.php' ) ) {
+    if ( is_plugin_active_for_network( 'members-database/members-database.php' ) ) {
       $current_blog = $wpdb->blogid;
       switch_to_blog( $blog_id );
       $this->maybe_install();
@@ -987,10 +987,10 @@ class PDb_Init {
 
 // define the default field groups
     self::$field_groups = array(
-        'main' => __( 'Participant Info', 'members-databes' ),
-        'personal' => __( 'Personal Info', 'members-databes' ),
-        'admin' => __( 'Administrative Info', 'members-databes' ),
-        'internal' => __( 'Record Info', 'members-databes' ),
+        'main' => __( 'Participant Info', 'members-database' ),
+        'personal' => __( 'Personal Info', 'members-database' ),
+        'admin' => __( 'Administrative Info', 'members-database' ),
+        'internal' => __( 'Record Info', 'members-database' ),
     );
 
 // fields for keeping track of records; not manually edited, but they can be displayed

@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Participants Database 1.5\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tag/participants-database\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/pacients-database\n"
 "POT-Creation-Date: 2013-12-27 17:36:25+00:00\n"
 "PO-Revision-Date: 2014-06-01 16:09-1000\n"
 "Last-Translator: Roland Barker <webdesign@xnau.com>\n"
@@ -177,16 +177,16 @@ msgstr "Пошук"
 msgid "Record delete successful."
 msgstr "Запис видалити успішним."
 
-#: classes/PDb_List_Admin.class.php:360 participants-database.php:508
+#: classes/PDb_List_Admin.class.php:360 pacients-database.php:508
 msgid "Do you really want to delete the selected record?"
 msgstr "Ви дійсно хочете видалити обрану запис?"
 
-#: classes/PDb_List_Admin.class.php:361 participants-database.php:509
+#: classes/PDb_List_Admin.class.php:361 pacients-database.php:509
 msgid "Do you really want to delete the selected records?"
 msgstr "Ви дійсно хочете видалити вибрані записи?"
 
-#: classes/PDb_List_Admin.class.php:426 participants-database.php:416
-#: participants-database.php:417
+#: classes/PDb_List_Admin.class.php:426 pacients-database.php:416
+#: pacients-database.php:417
 msgid "List Participants"
 msgstr "Пошук учасників"
 
@@ -271,11 +271,11 @@ msgstr ""
 msgid "First"
 msgstr "Перший"
 
-#: classes/PDb_Pagination.class.php:365 participants-database.php:2820
+#: classes/PDb_Pagination.class.php:365 pacients-database.php:2820
 msgid "Previous"
 msgstr "Попередній"
 
-#: classes/PDb_Pagination.class.php:382 participants-database.php:2819
+#: classes/PDb_Pagination.class.php:382 pacients-database.php:2819
 msgid "Next"
 msgstr "Наступний"
 
@@ -374,7 +374,7 @@ msgid ""
 "get deleted when the plugin is updated."
 msgstr ""
 "Це визначає, де завантажені файли піде, по відношенню до WordPress корінь. "
-"За замовчуванням це'/wp-content/uploads/participants-database'<br /> Не "
+"За замовчуванням це'/wp-content/uploads/pacients-database'<br /> Не "
 "ставте його в папку плагінів, зображення і файли можуть видаляються, коли "
 "плагін оновлюється. "
 
@@ -1389,8 +1389,8 @@ msgstr "Редактор"
 msgid "Admin"
 msgstr "Адмін"
 
-#: classes/PDb_Settings.class.php:1216 participants-database.php:452
-#: participants-database.php:453 participants-database.php:2979
+#: classes/PDb_Settings.class.php:1216 pacients-database.php:452
+#: pacients-database.php:453 pacients-database.php:2979
 msgid "Settings"
 msgstr "Налаштування"
 
@@ -1679,8 +1679,8 @@ msgstr "Не можете додати поле з таким ім'ям"
 msgid "This name is reserved; please choose another. Reserved names are"
 msgstr "Це ім'я зарезервовано; будь ласка, виберіть інший. Зарезервовані імена"
 
-#: manage_fields.php:236 participants-database.php:434
-#: participants-database.php:435
+#: manage_fields.php:236 pacients-database.php:434
+#: pacients-database.php:435
 msgid "Manage Database Fields"
 msgstr "Управління Поля бази даних"
 
@@ -2064,53 +2064,53 @@ msgstr ""
 "редагувати в адмін."
 
 #. Plugin Name of the plugin/theme
-#: participants-database.php:338
+#: pacients-database.php:338
 msgid "Participants Database"
 msgstr "Учасники База даних"
 
-#: participants-database.php:425 participants-database.php:426
+#: pacients-database.php:425 pacients-database.php:426
 msgid "Add Participant"
 msgstr "Додати учасника"
 
-#: participants-database.php:443 participants-database.php:444
+#: pacients-database.php:443 pacients-database.php:444
 #: upload_csv.php:8
 msgid "Import CSV File"
 msgstr "Імпорт CSV-файл"
 
-#: participants-database.php:461 participants-database.php:462
+#: pacients-database.php:461 pacients-database.php:462
 msgid "Setup Guide"
 msgstr "Керівництво по установці"
 
-#: participants-database.php:470 participants-database.php:471
+#: pacients-database.php:470 pacients-database.php:471
 msgid "Edit Record"
 msgstr "Редагувати запис"
 
 #. translators: don't translate the words in brackets {}
-#: participants-database.php:520
+#: pacients-database.php:520
 msgid "You must remove all fields from the {name} group before deleting it."
 msgstr "Ви повинні видалити всі поля з {name} групи перед його видаленням."
 
-#: participants-database.php:521
+#: pacients-database.php:521
 msgid "Delete the \"{name}\" {thing}?"
 msgstr "Видалити \"{ім'я} \" {річ}?"
 
-#: participants-database.php:2383
+#: pacients-database.php:2383
 msgid ""
 "There is something wrong with the file you tried to upload. Try another."
 msgstr ""
 "Існує щось не так з файлу, який ви намагалися завантажити. Спробуйте інший."
 
-#: participants-database.php:2399 participants-database.php:2427
+#: pacients-database.php:2399 pacients-database.php:2427
 msgid "For \"%s\", you may only upload image files like JPEGs, GIFs or PNGs."
 msgstr ""
 "Для \"%s\", ви тільки можете долучити файли зображень як JPEG, GIF або PNG."
 
-#: participants-database.php:2401
+#: pacients-database.php:2401
 #, fuzzy
 msgid "The file selected for \"%s\" must be one of these types: %s. "
 msgstr "Файл, вибраний для \" %s \" має бути одним з цих типів: %s."
 
-#: participants-database.php:2433
+#: pacients-database.php:2433
 #, fuzzy
 msgid ""
 "The file you tried to upload is too large. The file must be smaller than %sK."
@@ -2118,16 +2118,16 @@ msgstr ""
 "Файл, який ви намагалися завантажити занадто великий. Файл повинен бути "
 "менше, ніж %s."
 
-#: participants-database.php:2440
+#: pacients-database.php:2440
 msgid "The file could not be saved."
 msgstr "Файл не може бути збережений."
 
-#: participants-database.php:2468
+#: pacients-database.php:2468
 #, fuzzy
 msgid "The uploads directory (%s) could not be created."
 msgstr "Каталог додавання ( %s) не може бути створений."
 
-#: participants-database.php:2727
+#: pacients-database.php:2727
 #, fuzzy
 msgid ""
 "The date for \"%s\" was invalid. Please input the date with the exact format "
@@ -2136,44 +2136,44 @@ msgstr ""
 "Строком \" %s \"був визнаний недійсним. Будь ласка, введіть дату з точним "
 "форматом  показаної"
 
-#: participants-database.php:2817 templates/pdb-retrieve-default.php:45
+#: pacients-database.php:2817 templates/pdb-retrieve-default.php:45
 msgid "Submit"
 msgstr "Представляти"
 
-#: participants-database.php:2818
+#: pacients-database.php:2818
 msgid "Apply"
 msgstr "Застосовувати"
 
-#: participants-database.php:2821
+#: pacients-database.php:2821
 msgid "The record has been updated."
 msgstr "Запис була оновлена."
 
-#: participants-database.php:2822
+#: pacients-database.php:2822
 #, fuzzy
 msgid "The new record has been added."
 msgstr "Запис була оновлена."
 
-#: participants-database.php:2940
+#: pacients-database.php:2940
 msgid "WordPress Plugin"
 msgstr "Плагін Wordpress"
 
-#: participants-database.php:2941
+#: pacients-database.php:2941
 msgid ""
 "Helping organizations manage their volunteers, members and participants."
 msgstr ""
 "Допомагаючи організаціям управляти своїми волонтерів, членів та учасників."
 
-#: participants-database.php:2944
+#: pacients-database.php:2944
 msgid "Developed by"
 msgstr "Розроблено"
 
-#: participants-database.php:2945
+#: pacients-database.php:2945
 #, fuzzy
 msgid ""
 "Suggestions or crticisms of this plugin? I&#39;d love to hear them: email "
 msgstr "? Пропозиції або crticisms з цього плагіна я хотів би їх почути: лист"
 
-#: participants-database.php:2948
+#: pacients-database.php:2948
 #, fuzzy
 msgid ""
 "Please consider contributing to the continued support and development of "
@@ -2330,7 +2330,7 @@ msgid "Upload File"
 msgstr "Завантажити файл"
 
 #. Plugin URI of the plugin/theme
-msgid "http://xnau.com/wordpress-plugins/participants-database"
+msgid "http://xnau.com/wordpress-plugins/pacients-database"
 msgstr ""
 
 #. Description of the plugin/theme

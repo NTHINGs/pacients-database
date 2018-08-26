@@ -288,7 +288,7 @@ abstract class PDb_Shortcode {
   {
     if ( false === $this->template ) {
 
-      $this->output = '<p class="alert alert-error">' . sprintf( _x( '<%1$s>The template %2$s was not found.</%1$s> Please make sure the name is correct and the template file is in the correct location.', 'message to show if the plugin cannot find the template', 'participants-database' ), 'strong', $this->template ) . '</p>';
+      $this->output = '<p class="alert alert-error">' . sprintf( _x( '<%1$s>The template %2$s was not found.</%1$s> Please make sure the name is correct and the template file is in the correct location.', 'message to show if the plugin cannot find the template', 'pacients-database' ), 'strong', $this->template ) . '</p>';
 
       return false;
     }
@@ -1277,7 +1277,7 @@ abstract class PDb_Shortcode {
   public function print_next_button()
   {
     if ( strlen( $this->submission_page ) > 0 ) {
-      printf( '<a type="button" class="button button-secondary" href="%s" >%s</a>', $this->submission_page, __( 'next', 'participants-database' ) );
+      printf( '<a type="button" class="button button-secondary" href="%s" >%s</a>', $this->submission_page, __( 'next', 'pacients-database' ) );
     }
   }
 

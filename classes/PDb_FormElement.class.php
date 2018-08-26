@@ -9,7 +9,7 @@
  * @copyright  2015 xnau webdesign
  * @license    GPL2
  * @version    1.6.2
- * @link       http://wordpress.org/extend/plugins/participants-database/
+ * @link       http://wordpress.org/extend/plugins/pacients-database/
  *
  */
 if ( !defined( 'ABSPATH' ) )
@@ -586,7 +586,7 @@ class PDb_FormElement extends xnau_FormElement {
 
       // add the delete checkbox if there is a file defined
       if ( $this->value !== $field_def->default_value() && $this->module !== 'signup' )
-        $this->_addline( '<span class="file-delete" ><label><input type="checkbox" value="delete" name="' . esc_attr( $this->name . '-deletefile' ) . '" ' . $this->_attributes( 'no validate' ) . '>' . __( 'delete', 'participants-database' ) . '</label></span>' );
+        $this->_addline( '<span class="file-delete" ><label><input type="checkbox" value="delete" name="' . esc_attr( $this->name . '-deletefile' ) . '" ' . $this->_attributes( 'no validate' ) . '>' . __( 'delete', 'pacients-database' ) . '</label></span>' );
     }
 
     $this->_addline( '</div>' );
@@ -729,7 +729,7 @@ class PDb_FormElement extends xnau_FormElement {
   private static function is_admin_list_page()
   {
     if ( function_exists( 'get_current_screen' ) && $screen = get_current_screen() ) {
-      return $screen->id === 'toplevel_page_participants-database';
+      return $screen->id === 'toplevel_page_pacients-database';
     }
     return false;
   }
@@ -887,29 +887,29 @@ class PDb_FormElement extends xnau_FormElement {
   public static function get_types()
   {
     $types = array(
-        'text-line' => __( 'Text-line', 'participants-database' ),
-        'text-area' => __( 'Text Area', 'participants-database' ),
-        'rich-text' => __( 'Rich Text', 'participants-database' ),
-        'checkbox' => __( 'Checkbox', 'participants-database' ),
-        'radio' => __( 'Radio Buttons', 'participants-database' ),
-        'dropdown' => __( 'Dropdown List', 'participants-database' ),
-        'date' => __( 'Date Field', 'participants-database' ),
-        'numeric' => __( 'Numeric', 'participants-database' ),
-        'decimal' => __( 'Decimal', 'participants-database' ),
-        'currency' => __( 'Currency', 'participants-database' ),
-        'dropdown-other' => __( 'Dropdown/Other', 'participants-database' ),
-        'multi-checkbox' => __( 'Multiselect Checkbox', 'participants-database' ),
-        'multi-dropdown' => __( 'Multiselect Dropdown', 'participants-database' ),
-        'select-other' => __( 'Radio Buttons/Other', 'participants-database' ),
-        'multi-select-other' => __( 'Multiselect/Other', 'participants-database' ),
-        'link' => __( 'Link Field', 'participants-database' ),
-        'image-upload' => __( 'Image Upload Field', 'participants-database' ),
-        'file-upload' => __( 'File Upload Field', 'participants-database' ),
-        'hidden' => __( 'Hidden Field', 'participants-database' ),
-        'password' => __( 'Password Field', 'participants-database' ),
-        'captcha' => __( 'CAPTCHA', 'participants-database' ),
-        'placeholder' => __( 'Placeholder', 'participants-database' ),
-//         'timestamp'          => __('Timestamp', 'participants-database'),
+        'text-line' => __( 'Text-line', 'pacients-database' ),
+        'text-area' => __( 'Text Area', 'pacients-database' ),
+        'rich-text' => __( 'Rich Text', 'pacients-database' ),
+        'checkbox' => __( 'Checkbox', 'pacients-database' ),
+        'radio' => __( 'Radio Buttons', 'pacients-database' ),
+        'dropdown' => __( 'Dropdown List', 'pacients-database' ),
+        'date' => __( 'Date Field', 'pacients-database' ),
+        'numeric' => __( 'Numeric', 'pacients-database' ),
+        'decimal' => __( 'Decimal', 'pacients-database' ),
+        'currency' => __( 'Currency', 'pacients-database' ),
+        'dropdown-other' => __( 'Dropdown/Other', 'pacients-database' ),
+        'multi-checkbox' => __( 'Multiselect Checkbox', 'pacients-database' ),
+        'multi-dropdown' => __( 'Multiselect Dropdown', 'pacients-database' ),
+        'select-other' => __( 'Radio Buttons/Other', 'pacients-database' ),
+        'multi-select-other' => __( 'Multiselect/Other', 'pacients-database' ),
+        'link' => __( 'Link Field', 'pacients-database' ),
+        'image-upload' => __( 'Image Upload Field', 'pacients-database' ),
+        'file-upload' => __( 'File Upload Field', 'pacients-database' ),
+        'hidden' => __( 'Hidden Field', 'pacients-database' ),
+        'password' => __( 'Password Field', 'pacients-database' ),
+        'captcha' => __( 'CAPTCHA', 'pacients-database' ),
+        'placeholder' => __( 'Placeholder', 'pacients-database' ),
+//         'timestamp'          => __('Timestamp', 'pacients-database'),
     );
     /*
      * this gives access to the list of form element types for alteration before

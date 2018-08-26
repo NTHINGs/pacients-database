@@ -156,7 +156,7 @@ class PDb_Path {
     if (mkdir(self::app_base_path() . $dir, 0755, true) === false) {
 
       if (is_object(Participants_Db::$validation_errors))
-        Participants_Db::$validation_errors->add_error('', sprintf(__('The uploads directory (%s) could not be created.', 'participants-database'), $dir));
+        Participants_Db::$validation_errors->add_error('', sprintf(__('The uploads directory (%s) could not be created.', 'pacients-database'), $dir));
 
       $status = false;
     }

@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.11\n"
 "X-Poedit-Basepath: .\n"
-"X-Poedit-WPHeader: participants-database.php\n"
+"X-Poedit-WPHeader: pacients-database.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
@@ -242,7 +242,7 @@ msgid ""
 "field, but cannot edit it. The field will be editable in the admin."
 msgstr ""
 
-#: participants-database.php:3423
+#: pacients-database.php:3423
 #, php-format
 msgid ""
 "Please consider contributing to the continued support and development of "
@@ -295,7 +295,7 @@ msgid "Upload File"
 msgstr "טען קובץ"
 
 #. Plugin URI of the plugin/theme
-msgid "https://xnau.com/wordpress-plugins/participants-database"
+msgid "https://xnau.com/wordpress-plugins/pacients-database"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -310,7 +310,7 @@ msgstr ""
 msgid "https://xnau.com"
 msgstr ""
 
-#: classes/PDb_Aux_Plugin.class.php:321 participants-database.php:3478
+#: classes/PDb_Aux_Plugin.class.php:321 pacients-database.php:3478
 msgid "Submit a rating or review"
 msgstr "הוסף דירוג או סקירה"
 
@@ -1086,8 +1086,8 @@ msgstr "עורך"
 msgid "Admin"
 msgstr "מנהל"
 
-#: classes/PDb_Settings.class.php:1474 participants-database.php:3386
-#: participants-database.php:3457
+#: classes/PDb_Settings.class.php:1474 pacients-database.php:3386
+#: pacients-database.php:3457
 msgid "Settings"
 msgstr "הגדרות"
 
@@ -1601,109 +1601,109 @@ msgstr ""
 "ערך בעריכת הרשומה"
 
 #. Plugin Name of the plugin/theme
-#: participants-database.php:435
+#: pacients-database.php:435
 msgid "Participants Database"
 msgstr "מסד נתונים"
 
-#: participants-database.php:574
+#: pacients-database.php:574
 msgid "You must remove all fields from the {name} group before deleting it."
 msgstr "יש להסיר את כל השדות מהקבוצה {name} לפני שניתן יהיה למחוק אותה."
 
-#: participants-database.php:576
+#: pacients-database.php:576
 msgid "Delete the \"{name}\" {thing}?"
 msgstr "האם למחוק את ה{thing} בשם \"{name}\"?"
 
-#: participants-database.php:577
+#: pacients-database.php:577
 msgid "The changes you made will be lost if you navigate away from this page."
 msgstr "השינויים שביצעת לא ישמרו אם תנווט מדף זה."
 
-#: participants-database.php:2989
+#: pacients-database.php:2989
 msgid ""
 "There is something wrong with the file you tried to upload. Try another."
 msgstr "יש משהו לא תקין בקובץ שניסית לטעון. אנא נסה לטעון קובץ אחר."
 
-#: participants-database.php:3005 participants-database.php:3033
+#: pacients-database.php:3005 pacients-database.php:3033
 #, php-format
 msgid "For \"%s\", you may only upload image files like JPEGs, GIFs or PNGs."
 msgstr "עבור \"%s\" באפשרותך לטעון קבצי תמונה בלבד, מסוג JPEG, GIF או PNG."
 
-#: participants-database.php:3007
+#: pacients-database.php:3007
 #, php-format
 msgid "The file selected for \"%s\" must be one of these types: %s. "
 msgstr "הקובץ הנטען עבור \"%s\" חייב להיות מאחד הסוגים הבאים: %s. "
 
-#: participants-database.php:3040
+#: pacients-database.php:3040
 #, php-format
 msgid ""
 "The file you tried to upload is too large. The file must be smaller than %sK."
 msgstr "הקובץ שניסית לטעון גדול מידי. הקובץ חייב להיות בגודל מקסימלי של %s KB."
 
-#: participants-database.php:3047
+#: pacients-database.php:3047
 msgid "The file could not be saved."
 msgstr "שמירת הקובץ נכשלה."
 
-#: participants-database.php:3267 templates/pdb-retrieve-bootstrap.php:69
+#: pacients-database.php:3267 templates/pdb-retrieve-bootstrap.php:69
 #: templates/pdb-retrieve-default.php:60
 msgid "Submit"
 msgstr "שמור"
 
-#: participants-database.php:3271
+#: pacients-database.php:3271
 msgid "The record has been updated."
 msgstr "הרשומה עודכנה בהצלחה."
 
-#: participants-database.php:3272
+#: pacients-database.php:3272
 msgid "The new record has been added."
 msgstr "רשומה חדשה נוצרה בהצלחה."
 
-#: participants-database.php:3273
+#: pacients-database.php:3273
 #, php-format
 msgid "No record was added on query: %s"
 msgstr "לא נוצרו רשומות עבור השאילתא: %s"
 
-#: participants-database.php:3274
+#: pacients-database.php:3274
 #, php-format
 msgid "Database Error: %2$s on query: %1$s"
 msgstr "שגיאת מסד נתונים: %2$s עבור השאילתא: %1$s"
 
-#: participants-database.php:3374
+#: pacients-database.php:3374
 msgid "Add Participant"
 msgstr "הוסף משתמש"
 
-#: participants-database.php:3382 upload_csv.php:40
+#: pacients-database.php:3382 upload_csv.php:40
 msgid "Import CSV File"
 msgstr "יבא קובץ CSV"
 
-#: participants-database.php:3390
+#: pacients-database.php:3390
 msgid "Setup Guide"
 msgstr "מדריך התקנה"
 
-#: participants-database.php:3415
+#: pacients-database.php:3415
 msgid "WordPress Plugin"
 msgstr "תוסף וורדפרס"
 
-#: participants-database.php:3416
+#: pacients-database.php:3416
 msgid ""
 "Helping organizations manage their volunteers, members and participants."
 msgstr "עוזר לעמותות לנהל מתנדבים, חברי עמותה ומשתתפים."
 
-#: participants-database.php:3419
+#: pacients-database.php:3419
 msgid "Developed by"
 msgstr "פותח על ידי"
 
-#: participants-database.php:3420
+#: pacients-database.php:3420
 msgid ""
 "Suggestions or criticisms of this plugin? I&#39;d love to hear them: email "
 msgstr "הצעות, בקשות או ביקורות לתוסף זה? נשמח לשמוע על כך: אימייל"
 
-#: participants-database.php:3479
+#: pacients-database.php:3479
 msgid "Free tech support and continued development relies on your support:"
 msgstr "תמיכה טכנית חינם והמשכיות פיתוח התוסף תלויים בתמיכתך:"
 
-#: participants-database.php:3479
+#: pacients-database.php:3479
 msgid "contribute"
 msgstr "תרום"
 
-#: participants-database.php:3527
+#: pacients-database.php:3527
 #, php-format
 msgid ""
 "Participants Database requires PHP version %s to function properly, you have "
@@ -1996,7 +1996,7 @@ msgctxt "number of emails sent"
 msgid "%d emails were sent."
 msgstr "%d מיילים נשלחו."
 
-#: classes/PDb_List_Admin.class.php:706 participants-database.php:3363
+#: classes/PDb_List_Admin.class.php:706 pacients-database.php:3363
 msgid "List Participants"
 msgstr "רשימת משתתפים"
 
@@ -2106,11 +2106,11 @@ msgstr ""
 msgid "send signup email"
 msgstr "שלח מייל הרשמה"
 
-#: classes/PDb_List_Admin.class.php:1391 participants-database.php:3268
+#: classes/PDb_List_Admin.class.php:1391 pacients-database.php:3268
 msgid "Apply"
 msgstr "החל"
 
-#: classes/PDb_Manage_Fields.class.php:86 participants-database.php:3378
+#: classes/PDb_Manage_Fields.class.php:86 pacients-database.php:3378
 msgid "Manage Database Fields"
 msgstr "ערוך שדות מאגר"
 
@@ -2269,11 +2269,11 @@ msgstr "אפשרות מיון"
 msgid "First"
 msgstr "ראשון"
 
-#: classes/PDb_Pagination.class.php:377 participants-database.php:3270
+#: classes/PDb_Pagination.class.php:377 pacients-database.php:3270
 msgid "Previous"
 msgstr "קודם"
 
-#: classes/PDb_Pagination.class.php:396 participants-database.php:3269
+#: classes/PDb_Pagination.class.php:396 pacients-database.php:3269
 msgid "Next"
 msgstr "הבא"
 
@@ -2281,7 +2281,7 @@ msgstr "הבא"
 msgid "Last"
 msgstr "אחרון"
 
-#: classes/PDb_Path.class.php:167 participants-database.php:3093
+#: classes/PDb_Path.class.php:167 pacients-database.php:3093
 #, php-format
 msgid "The uploads directory (%s) could not be created."
 msgstr "לא היתה אפשרות ליצור את תיקיית העלאות הקבצים (%s)."

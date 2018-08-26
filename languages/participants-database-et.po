@@ -214,8 +214,8 @@ msgstr "Kas soovid kustutada valitud kirjed?"
 msgid "Record delete successful."
 msgstr "Kirje kustutamine õnnestus."
 
-#: classes/PDb_List_Admin.class.php:560 participants-database.php:515
-#: participants-database.php:516
+#: classes/PDb_List_Admin.class.php:560 pacients-database.php:515
+#: pacients-database.php:516
 msgid "List Participants"
 msgstr "Osalejate kirjed"
 
@@ -312,8 +312,8 @@ msgstr ""
 "Ekspordis sisalduvaid väljasid kuvatakse \"CSV\" tulbas Muuda andmebaasi "
 "väljasid lehel."
 
-#: classes/PDb_Manage_Fields.class.php:82 participants-database.php:544
-#: participants-database.php:545
+#: classes/PDb_Manage_Fields.class.php:82 pacients-database.php:544
+#: pacients-database.php:545
 msgid "Manage Database Fields"
 msgstr "Muuda andmebaasi väljasid"
 
@@ -525,11 +525,11 @@ msgstr "Kirjeldus"
 msgid "First"
 msgstr "Esimene"
 
-#: classes/PDb_Pagination.class.php:377 participants-database.php:3435
+#: classes/PDb_Pagination.class.php:377 pacients-database.php:3435
 msgid "Previous"
 msgstr "Eelmine"
 
-#: classes/PDb_Pagination.class.php:396 participants-database.php:3434
+#: classes/PDb_Pagination.class.php:396 pacients-database.php:3434
 msgid "Next"
 msgstr "Järgmine"
 
@@ -633,7 +633,7 @@ msgid ""
 "get deleted when the plugin is updated."
 msgstr ""
 "See määrab selle, kuhu üleslaaditud failid lähevad. Vaikimisi asukoht on '/"
-"wp-content/uploads/participants-database'<br />Ära lisa faile plugina "
+"wp-content/uploads/pacients-database'<br />Ära lisa faile plugina "
 "kausta, pildid ja failid võidakse uuendamisel kustutada."
 
 #: classes/PDb_Settings.class.php:103
@@ -1667,8 +1667,8 @@ msgstr "Muutja"
 msgid "Admin"
 msgstr "Admin"
 
-#: classes/PDb_Settings.class.php:1391 participants-database.php:562
-#: participants-database.php:563 participants-database.php:3545
+#: classes/PDb_Settings.class.php:1391 pacients-database.php:562
+#: pacients-database.php:563 pacients-database.php:3545
 msgid "Settings"
 msgstr "Seaded"
 
@@ -2114,119 +2114,119 @@ msgstr ""
 "vaates."
 
 #. Plugin Name of the plugin/theme
-#: participants-database.php:370
+#: pacients-database.php:370
 msgid "Participants Database"
 msgstr "Kirjete andmebaas"
 
-#: participants-database.php:535 participants-database.php:536
+#: pacients-database.php:535 pacients-database.php:536
 msgid "Add Participant"
 msgstr "Lisa kirje"
 
-#: participants-database.php:553 participants-database.php:554
+#: pacients-database.php:553 pacients-database.php:554
 #: upload_csv.php:40
 msgid "Import CSV File"
 msgstr "Impordi CSV fail"
 
-#: participants-database.php:571 participants-database.php:572
+#: pacients-database.php:571 pacients-database.php:572
 msgid "Setup Guide"
 msgstr "Juhised"
 
 #. translators: don't translate the words in brackets {}
-#: participants-database.php:624
+#: pacients-database.php:624
 msgid "You must remove all fields from the {name} group before deleting it."
 msgstr "Sa pead eemaldama enne kustutamist kõik väljad {name} rühmast."
 
 #. translators: don't translate the words in brackets {}
-#: participants-database.php:626
+#: pacients-database.php:626
 msgid "Delete the \"{name}\" {thing}?"
 msgstr "Kustuta \"{name}\" {thing}?"
 
-#: participants-database.php:627
+#: pacients-database.php:627
 msgid "The changes you made will be lost if you navigate away from this page."
 msgstr "Muudatused ei salvestu, kui sulged selle lehe."
 
-#: participants-database.php:2863
+#: pacients-database.php:2863
 msgid ""
 "There is something wrong with the file you tried to upload. Try another."
 msgstr "Üleslaaditavas failis on viga. Proovi teist faili."
 
-#: participants-database.php:2879 participants-database.php:2907
+#: pacients-database.php:2879 pacients-database.php:2907
 msgid "For \"%s\", you may only upload image files like JPEGs, GIFs or PNGs."
 msgstr "\"%s\" võid ainult üles laadida pildifaile nagu JPEG, GIF või PNG."
 
-#: participants-database.php:2881
+#: pacients-database.php:2881
 msgid "The file selected for \"%s\" must be one of these types: %s. "
 msgstr "Selekteeritud fail \"%s\" peab olema üks nendest tüüpidest: %s. "
 
-#: participants-database.php:2914
+#: pacients-database.php:2914
 msgid ""
 "The file you tried to upload is too large. The file must be smaller than %sK."
 msgstr ""
 "Fail, mida üritasid üles laadida, on liiga suur. Fail peab olema väiksem kui "
 "%sK."
 
-#: participants-database.php:2921
+#: pacients-database.php:2921
 msgid "The file could not be saved."
 msgstr "Faili ei saanud salvestada."
 
-#: participants-database.php:2966
+#: pacients-database.php:2966
 msgid "The uploads directory (%s) could not be created."
 msgstr "Üleslaadimiste kataloogi (%s) ei õnnestunud luua."
 
-#: participants-database.php:3304
+#: pacients-database.php:3304
 msgid ""
 "The date for \"%s\" was invalid. Please input the date with the exact format "
 "shown"
 msgstr "\"%s\" kuupäev oli vale. Palun sisesta kuupäev näidatud formaadis."
 
-#: participants-database.php:3432 templates/pdb-retrieve-bootstrap.php:69
+#: pacients-database.php:3432 templates/pdb-retrieve-bootstrap.php:69
 #: templates/pdb-retrieve-default.php:60
 msgid "Submit"
 msgstr "Kinnita"
 
-#: participants-database.php:3433
+#: pacients-database.php:3433
 msgid "Apply"
 msgstr "Lisa"
 
-#: participants-database.php:3436
+#: pacients-database.php:3436
 msgid "The record has been updated."
 msgstr "Kirje on uuendatud."
 
-#: participants-database.php:3437
+#: pacients-database.php:3437
 msgid "The new record has been added."
 msgstr "Uus kirje on lisatud."
 
-#: participants-database.php:3438
+#: pacients-database.php:3438
 msgid "No record was added on query: %s"
 msgstr "Päringul ei lisatud ühtegi kirjet: %s"
 
-#: participants-database.php:3439
+#: pacients-database.php:3439
 msgid "Database Error: %2$s on query: %1$s"
 msgstr "Andmebaasi viga: %2$s päringul %1$s"
 
-#: participants-database.php:3506
+#: pacients-database.php:3506
 msgid "WordPress Plugin"
 msgstr "WordPressi plugin"
 
-#: participants-database.php:3507
+#: pacients-database.php:3507
 msgid ""
 "Helping organizations manage their volunteers, members and participants."
 msgstr ""
 "Aidata organisatsioonidel korraldada oma vabatahtlike, liikmete ja osalejate "
 "nimekirjasid."
 
-#: participants-database.php:3510
+#: pacients-database.php:3510
 msgid "Developed by"
 msgstr "Arendus"
 
-#: participants-database.php:3511
+#: pacients-database.php:3511
 msgid ""
 "Suggestions or criticisms of this plugin? I&#39;d love to hear them: email "
 msgstr ""
 "Kas on soovitusi või kriitikat pluginat kohta? Võtke ühendust: e-posti "
 "aadress"
 
-#: participants-database.php:3514
+#: pacients-database.php:3514
 msgid ""
 "Please consider contributing to the continued support and development of "
 "this software by visiting %1$sthis plugin&#39;s page,%3$s giving the plugin "
@@ -2237,15 +2237,15 @@ msgstr ""
 "külastades %1$sthis plugin&#39;s page,%3$s andes pluginale %2$srating%3$s "
 "või arvustus või poetades midagi %1$stip jar.%3$s Aitäh!"
 
-#: participants-database.php:3565
+#: pacients-database.php:3565
 msgid "Submit a rating or review"
 msgstr "Lisa hinnang või arvustus"
 
-#: participants-database.php:3566
+#: pacients-database.php:3566
 msgid "Free tech support and continued development relies on your support:"
 msgstr "Tasuta tugi ja jätkuv arendus sõltub Sinu toetusest:"
 
-#: participants-database.php:3566
+#: pacients-database.php:3566
 msgid "contribute"
 msgstr "tee kaastööd"
 
@@ -2395,8 +2395,8 @@ msgid "Upload File"
 msgstr "Laadi fail üles"
 
 #. Plugin URI of the plugin/theme
-msgid "http://xnau.com/wordpress-plugins/participants-database"
-msgstr "http://xnau.com/wordpress-plugins/participants-database"
+msgid "http://xnau.com/wordpress-plugins/pacients-database"
+msgstr "http://xnau.com/wordpress-plugins/pacients-database"
 
 #. Description of the plugin/theme
 msgid "Plugin for managing a database of participants, members or volunteers"

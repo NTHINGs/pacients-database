@@ -18,7 +18,7 @@
  * @copyright  2015 - 2015 xnau webdesign
  * @license    GPL2
  * @version    1.12
- * @link       http://wordpress.org/extend/plugins/participants-database/
+ * @link       http://wordpress.org/extend/plugins/pacients-database/
  */
 if ( !defined( 'ABSPATH' ) )
   die;
@@ -140,7 +140,7 @@ class PDb_List extends PDb_Shortcode {
         'sort' => 'false',
         'search' => 'false',
         'list_limit' => Participants_Db::plugin_setting( 'list_limit', '10' ),
-        'class' => 'participants-database',
+        'class' => 'pacients-database',
         'filter' => '',
         'orderby' => Participants_Db::plugin_setting( 'list_default_sort' ),
         'order' => Participants_Db::plugin_setting( 'list_default_sort_order' ),
@@ -424,8 +424,8 @@ class PDb_List extends PDb_Shortcode {
       $output[] = $this->search_error_style;
       $output[] = '<div class="pdb-searchform">';
       $output[] = '<div class="pdb-error pdb-search-error" style="display:none">';
-      $output[] = sprintf( '<p class="search_field_error">%s</p>', __( 'Please select a column to search in.', 'participants-database' ) );
-      $output[] = sprintf( '<p class="value_error">%s</p>', __( 'Please type in something to search for.', 'participants-database' ) );
+      $output[] = sprintf( '<p class="search_field_error">%s</p>', __( 'Please select a column to search in.', 'pacients-database' ) );
+      $output[] = sprintf( '<p class="value_error">%s</p>', __( 'Please type in something to search for.', 'pacients-database' ) );
       $output[] = '</div>';
       $output[] = $this->search_sort_form_top( false, false, false );
 
@@ -433,7 +433,7 @@ class PDb_List extends PDb_Shortcode {
 
         $output[] = '<fieldset class="widefat inline-controls">';
 
-        $output[] = sprintf( '<legend>%s:</legend>', __( 'Search', 'participants-database' ) );
+        $output[] = sprintf( '<legend>%s:</legend>', __( 'Search', 'pacients-database' ) );
 
         $output[] = $this->column_selector( false, false );
         $output[] = $this->search_form( false );
@@ -447,7 +447,7 @@ class PDb_List extends PDb_Shortcode {
 
         $output[] = '<fieldset class="widefat inline-controls">';
 
-        $output[] = sprintf( '<legend>%s:</legend>', __( 'Sort by', 'participants-database' ) );
+        $output[] = sprintf( '<legend>%s:</legend>', __( 'Sort by', 'pacients-database' ) );
 
         $output[] = $this->sort_form( false );
 
@@ -543,7 +543,7 @@ class PDb_List extends PDb_Shortcode {
       $value = isset( $values[$multifield_count] ) ? $values[$multifield_count] : '';
     }
 
-    $all_string = false === $all ? '(' . __( 'select', 'participants-database' ) . ')' : $all;
+    $all_string = false === $all ? '(' . __( 'select', 'pacients-database' ) . ')' : $all;
 
     $search_columns = $this->searchable_columns( self::field_list( $columns ? $columns : $this->shortcode_atts['search_fields']  ) );
 
@@ -699,8 +699,8 @@ class PDb_List extends PDb_Shortcode {
         'value' => $this->list_query->current_filter( 'sort_order' ),
         'class' => 'checkbox inline search-item',
         'options' => array(
-            __( 'Ascending', 'participants-database' ) => 'ASC',
-            __( 'Descending', 'participants-database' ) => 'DESC'
+            __( 'Ascending', 'pacients-database' ) => 'ASC',
+            __( 'Descending', 'pacients-database' ) => 'DESC'
         ),
     );
     $output[] = PDb_FormElement::get_element( $element );
@@ -1172,13 +1172,13 @@ class PDb_List extends PDb_Shortcode {
   {
     extract( shortcode_atts( array(
         'title'         => Participants_Db::plugin_label( 'export_csv_title' ),
-        'helptext'      => '<p>' . __( 'This will download the whole list of participants that match your search terms.', 'participants-database' ) . '</p>',
-        'button_text'   => __( 'Download CSV for this list', 'participants-database' ),
+        'helptext'      => '<p>' . __( 'This will download the whole list of participants that match your search terms.', 'pacients-database' ) . '</p>',
+        'button_text'   => __( 'Download CSV for this list', 'pacients-database' ),
         'filename'      => Participants_Db::PLUGIN_NAME . PDb_List_Admin::filename_datestamp(),
         'export_fields' => false,
         'allow_user_filename' => true,
         'field_titles_checkbox' => true,
-        'field_titles_checkbox_label' => __( 'Include field titles', 'participants-database' ),
+        'field_titles_checkbox_label' => __( 'Include field titles', 'pacients-database' ),
     ), $config ) );
     
     $suggested_filename = esc_attr( $filename )  . '.csv';
@@ -1196,7 +1196,7 @@ class PDb_List extends PDb_Shortcode {
           <input type="hidden" name="CSV type" value="participant list" />
           <?php wp_nonce_field( PDb_Base::csv_export_nonce() ); ?>
           <fieldset class="inline-controls">
-<?php if ( $allow_user_filename ) echo __( 'File Name', 'participants-database' ) . ':' ?>
+<?php if ( $allow_user_filename ) echo __( 'File Name', 'pacients-database' ) . ':' ?>
             <input type="<?php echo ( $allow_user_filename ? 'text' : 'hidden' ) ?>" name="filename" value="<?php echo $suggested_filename ?>" />
             <input type="submit" name="submit-button" value="<?php echo $button_text  ?>" class="button button-primary" />
             <?php if ( $field_titles_checkbox ) : ?>
@@ -1295,12 +1295,12 @@ class PDb_List extends PDb_Shortcode {
 
     /* translators: the following 5 strings are used in logic matching, please test after translating in case special characters cause problems */
     return array(
-        'delete_checked' => _x( 'Delete Checked', 'submit button label', 'participants-database' ),
-        'change' => _x( 'Change', 'submit button label', 'participants-database' ),
-        'sort' => _x( 'Sort', 'submit button label', 'participants-database' ),
-        'filter' => _x( 'Filter', 'submit button label', 'participants-database' ),
-        'clear' => _x( 'Clear', 'submit button label', 'participants-database' ),
-        'search' => _x( 'Search', 'search button label', 'participants-database' ),
+        'delete_checked' => _x( 'Delete Checked', 'submit button label', 'pacients-database' ),
+        'change' => _x( 'Change', 'submit button label', 'pacients-database' ),
+        'sort' => _x( 'Sort', 'submit button label', 'pacients-database' ),
+        'filter' => _x( 'Filter', 'submit button label', 'pacients-database' ),
+        'clear' => _x( 'Clear', 'submit button label', 'pacients-database' ),
+        'search' => _x( 'Search', 'search button label', 'pacients-database' ),
     );
   }
 

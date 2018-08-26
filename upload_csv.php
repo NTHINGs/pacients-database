@@ -38,7 +38,7 @@ update_option( Participants_Db::$prefix . 'csv_import_params', $csv_params );
   <?php Participants_Db::admin_page_heading() ?>
   <div id="poststuff">
     <div id="post-body">
-      <h2><?php echo __( 'Import CSV File', 'participants-database' ) ?></h2>
+      <h2><?php echo __( 'Import CSV File', 'pacients-database' ) ?></h2>
 
       <?php
       if ( !empty( $CSV_import->errors ) ):
@@ -59,8 +59,8 @@ update_option( Participants_Db::$prefix . 'csv_import_params', $csv_params );
         <input type="hidden" name="CSV type" value="blank" />
         <div class="postbox">
           <div class="inside">
-            <h3><?php _e( 'Prepare a spreadsheet file with the correct format:', 'participants-database' ) ?></h3>
-            <p><?php _e( 'To properly import your membership data, the columns in your spreadsheet must match exactly the columns in the database. Currently, the CSV export columns are as follows:', 'participants-database' ) ?></p>
+            <h3><?php _e( 'Prepare a spreadsheet file with the correct format:', 'pacients-database' ) ?></h3>
+            <p><?php _e( 'To properly import your membership data, the columns in your spreadsheet must match exactly the columns in the database. Currently, the CSV export columns are as follows:', 'pacients-database' ) ?></p>
             <table class="spreadsheet">
               <tr>
                 <?php
@@ -75,22 +75,22 @@ update_option( Participants_Db::$prefix . 'csv_import_params', $csv_params );
                 ?>
               </tr>
             </table>
-            <p><?php printf( __( 'This means your spreadsheet needs to have %s columns, and the heading in each of those columns needs to match exactly the names above. If there is no data for a particular column, you can include it and leave it blank, or leave it out entirely. The order of the columns doesn&#39;t matter.', 'participants-database' ), $CSV_import->column_count ) ?></p>
-            <p><?php _e( 'If the imported CSV file has a different column set, that column set will be imported and used. If a column name does not match a defined column in the database, the data from that column will be discarded', 'participants-database' ) ?></p>
-            <p><input class="button button-default" type="submit" value="<?php _e( 'Get Blank CSV File', 'participants-database' ) ?>" style="float:left;margin:0 5px 5px 0" /><?php _e( 'You can download this file, then open it in Open Office, Excel or Google Docs.', 'participants-database' ) ?></p>
+            <p><?php printf( __( 'This means your spreadsheet needs to have %s columns, and the heading in each of those columns needs to match exactly the names above. If there is no data for a particular column, you can include it and leave it blank, or leave it out entirely. The order of the columns doesn&#39;t matter.', 'pacients-database' ), $CSV_import->column_count ) ?></p>
+            <p><?php _e( 'If the imported CSV file has a different column set, that column set will be imported and used. If a column name does not match a defined column in the database, the data from that column will be discarded', 'pacients-database' ) ?></p>
+            <p><input class="button button-default" type="submit" value="<?php _e( 'Get Blank CSV File', 'pacients-database' ) ?>" style="float:left;margin:0 5px 5px 0" /><?php _e( 'You can download this file, then open it in Open Office, Excel or Google Docs.', 'pacients-database' ) ?></p>
           </div>
         </div>
       </form>
       <div class="postbox">
         <div class="inside">
-          <h3><?php _e( 'Export the .csv file', 'participants-database' ) ?></h3>
-          <p><?php _e( 'When you have your spreadsheet properly set up and filled with data, export it as any of the following: "comma-delimited csv", or just "csv". Save it to your computer then upload it here.', 'participants-database' ) ?></p>
-          <h4><?php _e( 'Exported CSV files should be comma-delimited and enclosed with double-quotes ("). Encoding should be "UTF-8."', 'participants-database' ) ?></h4>
+          <h3><?php _e( 'Export the .csv file', 'pacients-database' ) ?></h3>
+          <p><?php _e( 'When you have your spreadsheet properly set up and filled with data, export it as any of the following: "comma-delimited csv", or just "csv". Save it to your computer then upload it here.', 'pacients-database' ) ?></p>
+          <h4><?php _e( 'Exported CSV files should be comma-delimited and enclosed with double-quotes ("). Encoding should be "UTF-8."', 'pacients-database' ) ?></h4>
         </div>
       </div>
       <div class="postbox">
         <div class="inside">
-          <h3><?php _e( 'Upload the .csv file', 'participants-database' ) ?></h3>
+          <h3><?php _e( 'Upload the .csv file', 'pacients-database' ) ?></h3>
           <form enctype="multipart/form-data" action="<?php echo $_SERVER["REQUEST_URI"]; ?>" method="POST">
             <?php wp_nonce_field(PDb_CSV_Import::nonce) ?>
             <input type="hidden" name="csv_file_upload" id="file_upload" value="true" />
@@ -98,13 +98,13 @@ update_option( Participants_Db::$prefix . 'csv_import_params', $csv_params );
               <p>
             <label style="margin-left:0">
                   <?php
-                  _e( 'Enclosure character', 'participants-database' );
+                  _e( 'Enclosure character', 'pacients-database' );
             $parameters = array(
                 'type' => 'dropdown',
                 'name' => 'enclosure_character',
                 'value' => $enclosure_character,
                 'options' => array(
-                          __( 'Auto', 'participants-database' ) => 'auto',
+                          __( 'Auto', 'pacients-database' ) => 'auto',
                     '&quot;' => '&quot;',
                     "&#39;" => "&#39;"
                 )
@@ -114,16 +114,16 @@ update_option( Participants_Db::$prefix . 'csv_import_params', $csv_params );
             </label>
             <label>
                   <?php
-                  _e( 'Delimiter character', 'participants-database' );
+                  _e( 'Delimiter character', 'pacients-database' );
             $parameters = array(
                 'type' => 'dropdown',
                 'name' => 'delimiter_character',
                 'value' => $delimiter_character,
                 'options' => array(
-                          __( 'Auto', 'participants-database' ) => 'auto',
+                          __( 'Auto', 'pacients-database' ) => 'auto',
                     ',' => ',',
                     ';' => ';',
-                          __( 'tab', 'participants-database' ) => "\t"
+                          __( 'tab', 'pacients-database' ) => "\t"
                 )
             );
                   PDb_FormElement::print_element( $parameters );
@@ -136,15 +136,15 @@ update_option( Participants_Db::$prefix . 'csv_import_params', $csv_params );
               <p>
                 <label>
                   <?php
-                  echo __( 'Duplicate Record Preference', 'participants-database' ) . ': ';
+                  echo __( 'Duplicate Record Preference', 'pacients-database' ) . ': ';
                  $parameters = array(
                      'type' => 'dropdown',
                      'name' => 'match_preference',
                      'value' => $match_preference,
                      'options' => array(
-                          __( 'Create a new record with the submission', 'participants-database' ) => 0,
-                          __( 'Update matching record with new data', 'participants-database' ) => 1,
-                          __( "Don't import the record", 'participants-database' ) => 2,
+                          __( 'Create a new record with the submission', 'pacients-database' ) => 0,
+                          __( 'Update matching record with new data', 'pacients-database' ) => 1,
+                          __( "Don't import the record", 'pacients-database' ) => 2,
                         'null_select' => false,
                       )
                  );
@@ -155,7 +155,7 @@ update_option( Participants_Db::$prefix . 'csv_import_params', $csv_params );
               <p>
                 <label>
                   <?php
-                  echo __( 'Duplicate Record Check Field', 'participants-database' ) . ': ';
+                  echo __( 'Duplicate Record Check Field', 'pacients-database' ) . ': ';
             $parameters = array(
                 'type' => 'dropdown',
                 'name' => 'match_field',
@@ -167,13 +167,13 @@ update_option( Participants_Db::$prefix . 'csv_import_params', $csv_params );
             </label>
               </p>
             </fieldset>
-            <p><?php _e( '<strong>Note:</strong> Depending on the "Duplicate Record Preference" setting, imported records are checked against existing records by the field set in the "Duplicate Record Check Field" setting. If a record matching an existing record is imported, one of three things can happen, based on the "Duplicate Record Preference" setting:', 'participants-database' ) ?></p>
-            <h4 class="inset" id="match-preferences"><?php _e( 'Current Setting', 'participants-database' ) ?>: 
+            <p><?php _e( '<strong>Note:</strong> Depending on the "Duplicate Record Preference" setting, imported records are checked against existing records by the field set in the "Duplicate Record Check Field" setting. If a record matching an existing record is imported, one of three things can happen, based on the "Duplicate Record Preference" setting:', 'pacients-database' ) ?></p>
+            <h4 class="inset" id="match-preferences"><?php _e( 'Current Setting', 'pacients-database' ) ?>: 
             <?php
             $preferences = array(
-                  '0' => sprintf( __( '%sCreate New%s adds all imported records as new records without checking for a match.', 'participants-database' ), '<span class="emphasized">', '</span>', '</span>' ),
-                  '1' => sprintf( __( '%sOverwrite%s an existing record with a matching %s will be updated with the data from the imported record. Blank or missing fields will not overwrite existing data.', 'participants-database' ), '<span class="emphasized">', '</span>', '<em class="match-field">' . Participants_Db::$fields[$match_field]->title . '</em>' ),
-                  '2' => sprintf( __( '%sDon&#39;t Import%s does not import the new record if it matches the %s of an existing one.', 'participants-database' ), '<span class="emphasized">', '</span>', '<em class="match-field">' . Participants_Db::$fields[$match_field]->title . '</em>' ),
+                  '0' => sprintf( __( '%sCreate New%s adds all imported records as new records without checking for a match.', 'pacients-database' ), '<span class="emphasized">', '</span>', '</span>' ),
+                  '1' => sprintf( __( '%sOverwrite%s an existing record with a matching %s will be updated with the data from the imported record. Blank or missing fields will not overwrite existing data.', 'pacients-database' ), '<span class="emphasized">', '</span>', '<em class="match-field">' . Participants_Db::$fields[$match_field]->title . '</em>' ),
+                  '2' => sprintf( __( '%sDon&#39;t Import%s does not import the new record if it matches the %s of an existing one.', 'pacients-database' ), '<span class="emphasized">', '</span>', '<em class="match-field">' . Participants_Db::$fields[$match_field]->title . '</em>' ),
             );
               foreach ($preferences as $i => $preference) {
               $hide = $i == $match_preference ? '' : 'style="display:none"';
@@ -182,8 +182,8 @@ update_option( Participants_Db::$prefix . 'csv_import_params', $csv_params );
             ?></h4>
 
 
-            <?php _e( 'Choose .csv file to import:', 'participants-database' ) ?> <input name="uploadedfile" type="file" /><br />
-            <input type="submit" class="button button-primary" value="<?php _e( 'Upload File', 'participants-database' ) ?>" />
+            <?php _e( 'Choose .csv file to import:', 'pacients-database' ) ?> <input name="uploadedfile" type="file" /><br />
+            <input type="submit" class="button button-primary" value="<?php _e( 'Upload File', 'pacients-database' ) ?>" />
           </form>
         </div>
       </div>

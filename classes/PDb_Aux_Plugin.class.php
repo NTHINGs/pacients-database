@@ -13,7 +13,7 @@
  * @copyright  2015 xnau webdesign
  * @license    GPL2
  * @version    4.9
- * @link       http://wordpress.org/extend/plugins/participants-database/
+ * @link       http://wordpress.org/extend/plugins/pacients-database/
  */
 if ( !defined( 'ABSPATH' ) )
   die;
@@ -210,7 +210,7 @@ if ( !class_exists( 'PDb_Aux_Plugin' ) ) :
       // find the path to the parent plugin
       $active_plugins = get_option( 'active_plugins' );
       foreach ( $active_plugins as $plugin_file ) {
-        if ( false !== stripos( $plugin_file, 'participants-database.php' ) ) {
+        if ( false !== stripos( $plugin_file, 'pacients-database.php' ) ) {
           return true;
         }
       }
@@ -386,9 +386,9 @@ if ( !class_exists( 'PDb_Aux_Plugin' ) ) :
 
         $links[1] = str_replace( $this->plugin_data['Author'], 'xn*au webdesign', $links[1] );
 //        if ( !empty( $this->plugin_data['PluginURI'] ) ) {
-//          $links[] = '<a href="' . $this->plugin_data['PluginURI'] . '">' . __( 'Submit a rating or review', 'participants-database' ) . ' </a>';
+//          $links[] = '<a href="' . $this->plugin_data['PluginURI'] . '">' . __( 'Submit a rating or review', 'pacients-database' ) . ' </a>';
 //        }
-        $links[] = '<a href="' . $this->plugin_data['SupportURI'] . '">' . __( 'Support', 'participants-database' ) . ' </a>';
+        $links[] = '<a href="' . $this->plugin_data['SupportURI'] . '">' . __( 'Support', 'pacients-database' ) . ' </a>';
       }
       return $links;
     }
@@ -399,8 +399,8 @@ if ( !class_exists( 'PDb_Aux_Plugin' ) ) :
     protected function set_attribution()
     {
       $data = $this->plugin_data;
-      $name_pattern = _x( '%s version %s', 'displays the name and version of the plugin', 'participants-database' );
-      $author_pattern = _x( 'Authored by %s', 'displays the plugin author name', 'participants-database' );
+      $name_pattern = _x( '%s version %s', 'displays the name and version of the plugin', 'pacients-database' );
+      $author_pattern = _x( 'Authored by %s', 'displays the plugin author name', 'pacients-database' );
       $this->attribution = sprintf( $name_pattern . '<br />' . $author_pattern, $data['Name'], $data['Version'], $data['Author'] );
     }
 
@@ -418,7 +418,7 @@ if ( !class_exists( 'PDb_Aux_Plugin' ) ) :
       register_setting( $this->aux_plugin_name . '_settings', $this->settings_name() );
       $this->settings_sections = array(
           array(
-              'title' => __( 'General Settings', 'participants-database' ),
+              'title' => __( 'General Settings', 'pacients-database' ),
               'slug' => $this->aux_plugin_shortname . '_setting_section',
           )
       );

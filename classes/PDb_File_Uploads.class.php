@@ -58,7 +58,7 @@ class PDb_File_Uploads {
 
     if ( !is_uploaded_file( realpath( $file['tmp_name'] ) ) ) {
 
-      Participants_Db::validation_error( __( 'There is something wrong with the file you tried to upload. Try another.', 'participants-database' ), $field_name );
+      Participants_Db::validation_error( __( 'There is something wrong with the file you tried to upload. Try another.', 'pacients-database' ), $field_name );
 
       return false;
     }
@@ -74,9 +74,9 @@ class PDb_File_Uploads {
     if ( 0 === $test ) {
 
       if ( $type == 'image' && $this->is_empty( $field_atts->values ) )
-        Participants_Db::validation_error( sprintf( __( 'For "%s", you may only upload image files like JPEGs, GIFs or PNGs.', 'participants-database' ), $field_atts->title ), $field_name );
+        Participants_Db::validation_error( sprintf( __( 'For "%s", you may only upload image files like JPEGs, GIFs or PNGs.', 'pacients-database' ), $field_atts->title ), $field_name );
       else
-        Participants_Db::validation_error( sprintf( __( 'The file selected for "%s" must be one of these types: %s. ', 'participants-database' ), $field_atts->title, preg_replace( '#(,)(?=[^,])#U', ', ', $extensions ) ), $field_name );
+        Participants_Db::validation_error( sprintf( __( 'The file selected for "%s" must be one of these types: %s. ', 'pacients-database' ), $field_atts->title, preg_replace( '#(,)(?=[^,])#U', ', ', $extensions ) ), $field_name );
 
       return false;
     } else {
@@ -109,21 +109,21 @@ class PDb_File_Uploads {
 
       if ( !$valid_image ) {
 
-        Participants_Db::validation_error( sprintf( __( 'For "%s", you may only upload image files like JPEGs, GIFs or PNGs.', 'participants-database' ), $field_atts->title ), $field_name );
+        Participants_Db::validation_error( sprintf( __( 'For "%s", you may only upload image files like JPEGs, GIFs or PNGs.', 'pacients-database' ), $field_atts->title ), $field_name );
         return false;
       }
     }
 
     if ( $file['size'] > Participants_Db::$plugin_options['image_upload_limit'] * 1024 ) {
 
-      Participants_Db::validation_error( sprintf( __( 'The file you tried to upload is too large. The file must be smaller than %sK.', 'participants-database' ), Participants_Db::$plugin_options['image_upload_limit'] ), $field_name );
+      Participants_Db::validation_error( sprintf( __( 'The file you tried to upload is too large. The file must be smaller than %sK.', 'pacients-database' ), Participants_Db::$plugin_options['image_upload_limit'] ), $field_name );
 
       return false;
     }
 
     if ( false === move_uploaded_file( $file['tmp_name'], Participants_Db::files_path() . $new_filename ) ) {
 
-      Participants_Db::validation_error( __( 'The file could not be saved.', 'participants-database' ) );
+      Participants_Db::validation_error( __( 'The file could not be saved.', 'pacients-database' ) );
 
       return false;
     }

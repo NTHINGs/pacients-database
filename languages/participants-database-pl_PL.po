@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Participants Database 1.3.4\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tag/participants-database\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/pacients-database\n"
 "POT-Creation-Date: 2013-12-27 17:36:25+00:00\n"
 "PO-Revision-Date: 2014-06-01 16:06-1000\n"
 "Last-Translator: Roland Barker <webdesign@xnau.com>\n"
@@ -177,16 +177,16 @@ msgstr "Szukaj"
 msgid "Record delete successful."
 msgstr "Wpis został pomyślnie usunięty."
 
-#: classes/PDb_List_Admin.class.php:360 participants-database.php:508
+#: classes/PDb_List_Admin.class.php:360 pacients-database.php:508
 msgid "Do you really want to delete the selected record?"
 msgstr "Czy na pewno chcesz skasować wybrany wiersz?"
 
-#: classes/PDb_List_Admin.class.php:361 participants-database.php:509
+#: classes/PDb_List_Admin.class.php:361 pacients-database.php:509
 msgid "Do you really want to delete the selected records?"
 msgstr "Czy na pewno chcesz skasować wybrane wiersze?"
 
-#: classes/PDb_List_Admin.class.php:426 participants-database.php:416
-#: participants-database.php:417
+#: classes/PDb_List_Admin.class.php:426 pacients-database.php:416
+#: pacients-database.php:417
 msgid "List Participants"
 msgstr "Lista kursantów"
 
@@ -284,11 +284,11 @@ msgstr ""
 msgid "First"
 msgstr "Pierwszy"
 
-#: classes/PDb_Pagination.class.php:365 participants-database.php:2820
+#: classes/PDb_Pagination.class.php:365 pacients-database.php:2820
 msgid "Previous"
 msgstr "Poprzedni"
 
-#: classes/PDb_Pagination.class.php:382 participants-database.php:2819
+#: classes/PDb_Pagination.class.php:382 pacients-database.php:2819
 msgid "Next"
 msgstr "Następny"
 
@@ -1244,8 +1244,8 @@ msgstr ""
 msgid "Admin"
 msgstr ""
 
-#: classes/PDb_Settings.class.php:1216 participants-database.php:452
-#: participants-database.php:453 participants-database.php:2979
+#: classes/PDb_Settings.class.php:1216 pacients-database.php:452
+#: pacients-database.php:453 pacients-database.php:2979
 msgid "Settings"
 msgstr "Ustawienia"
 
@@ -1528,8 +1528,8 @@ msgstr ""
 msgid "This name is reserved; please choose another. Reserved names are"
 msgstr ""
 
-#: manage_fields.php:236 participants-database.php:434
-#: participants-database.php:435
+#: manage_fields.php:236 pacients-database.php:434
+#: pacients-database.php:435
 msgid "Manage Database Fields"
 msgstr "Zarządzaj polami bazy danych"
 
@@ -1884,66 +1884,66 @@ msgid ""
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-#: participants-database.php:338
+#: pacients-database.php:338
 msgid "Participants Database"
 msgstr "Baza kursantów"
 
-#: participants-database.php:425 participants-database.php:426
+#: pacients-database.php:425 pacients-database.php:426
 msgid "Add Participant"
 msgstr "Dodaj kursanta"
 
-#: participants-database.php:443 participants-database.php:444
+#: pacients-database.php:443 pacients-database.php:444
 #: upload_csv.php:8
 msgid "Import CSV File"
 msgstr "Importuj plik CSV"
 
-#: participants-database.php:461 participants-database.php:462
+#: pacients-database.php:461 pacients-database.php:462
 msgid "Setup Guide"
 msgstr ""
 
-#: participants-database.php:470 participants-database.php:471
+#: pacients-database.php:470 pacients-database.php:471
 msgid "Edit Record"
 msgstr "Edytuj kursanta"
 
 #. translators: don't translate the words in brackets {}
-#: participants-database.php:520
+#: pacients-database.php:520
 msgid "You must remove all fields from the {name} group before deleting it."
 msgstr ""
 
-#: participants-database.php:521
+#: pacients-database.php:521
 msgid "Delete the \"{name}\" {thing}?"
 msgstr "Usunąć \"{name}\" {thing}?"
 
-#: participants-database.php:2383
+#: pacients-database.php:2383
 msgid ""
 "There is something wrong with the file you tried to upload. Try another."
 msgstr ""
 "Niestety jest jakaś nieprawidłowość w przysłanym pliku. Spróbuj przysłać "
 "inny."
 
-#: participants-database.php:2399 participants-database.php:2427
+#: pacients-database.php:2399 pacients-database.php:2427
 msgid "For \"%s\", you may only upload image files like JPEGs, GIFs or PNGs."
 msgstr "Dla \"%s\", możesz tylko wgrać pliki graficzne typu JPEG, GIF or PNG."
 
-#: participants-database.php:2401
+#: pacients-database.php:2401
 msgid "The file selected for \"%s\" must be one of these types: %s. "
 msgstr "Plik wybrany dla \"%s\" musi mieć jedno z tych rozszerzeń: %s. "
 
-#: participants-database.php:2433
+#: pacients-database.php:2433
 msgid ""
 "The file you tried to upload is too large. The file must be smaller than %sK."
 msgstr ""
 "Plik, który próbowałeś wgrać jest za duży. Plik musi być mniejszy niż %sK."
 
-#: participants-database.php:2440
+#: pacients-database.php:2440
 msgid "The file could not be saved."
 msgstr "Nie udało się zapisać pliku."
 
-#: participants-database.php:2468
+#: pacients-database.php:2468
 msgid "The uploads directory (%s) could not be created."
 msgstr "Nie można utworzyć kartoteki na przysyłane pliki (%s)."
 
-#: participants-database.php:2727
+#: pacients-database.php:2727
 msgid ""
 "The date for \"%s\" was invalid. Please input the date with the exact format "
 "shown"
@@ -1951,44 +1951,44 @@ msgstr ""
 "Data \"%s\" jest nieprawidłowa. Wprowadź datę dokładnie w prezentowanej "
 "formie"
 
-#: participants-database.php:2817 templates/pdb-retrieve-default.php:45
+#: pacients-database.php:2817 templates/pdb-retrieve-default.php:45
 msgid "Submit"
 msgstr "Zapisz i wróć do listy"
 
-#: participants-database.php:2818
+#: pacients-database.php:2818
 msgid "Apply"
 msgstr "Zapisz"
 
-#: participants-database.php:2821
+#: pacients-database.php:2821
 msgid "The record has been updated."
 msgstr "Wpis został zmieniony"
 
-#: participants-database.php:2822
+#: pacients-database.php:2822
 #, fuzzy
 msgid "The new record has been added."
 msgstr "Plik %s został wczytany."
 
-#: participants-database.php:2940
+#: pacients-database.php:2940
 msgid "WordPress Plugin"
 msgstr "Wtyczka WordPressa"
 
-#: participants-database.php:2941
+#: pacients-database.php:2941
 msgid ""
 "Helping organizations manage their volunteers, members and participants."
 msgstr ""
 "Pomaga organizacjom zarządzać woluntariuszami, członkami, uczestnikami i "
 "kursantami."
 
-#: participants-database.php:2944
+#: pacients-database.php:2944
 msgid "Developed by"
 msgstr "napisana przez"
 
-#: participants-database.php:2945
+#: pacients-database.php:2945
 msgid ""
 "Suggestions or crticisms of this plugin? I&#39;d love to hear them: email "
 msgstr "Sugestie albo uwagi dotyczące wtyczki? Chętnie posłucham: email "
 
-#: participants-database.php:2948
+#: pacients-database.php:2948
 msgid ""
 "Please consider contributing to the continued support and development of "
 "this software by visiting %1$sthis plugin&#39;s page,%3$s giving the plugin "
@@ -2119,8 +2119,8 @@ msgid "Upload File"
 msgstr "Wyślij plik"
 
 #. Plugin URI of the plugin/theme
-msgid "http://xnau.com/wordpress-plugins/participants-database"
-msgstr "http://xnau.com/wordpress-plugins/participants-database"
+msgid "http://xnau.com/wordpress-plugins/pacients-database"
+msgstr "http://xnau.com/wordpress-plugins/pacients-database"
 
 #. Description of the plugin/theme
 msgid "Plugin for managing a database of participants, members or volunteers"

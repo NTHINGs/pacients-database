@@ -13,7 +13,7 @@
  * @copyright  2015 xnau webdesign
  * @license    GPL2
  * @version    1.7
- * @link       http://wordpress.org/extend/plugins/participants-database/
+ * @link       http://wordpress.org/extend/plugins/pacients-database/
  */
 if ( ! defined( 'ABSPATH' ) ) die;
 class xnau_FormValidation {

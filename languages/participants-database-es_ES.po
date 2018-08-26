@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Participants Database 1.5.3\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tag/participants-database\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/pacients-database\n"
 "POT-Creation-Date: 2014-02-11 18:07:51+00:00\n"
 "PO-Revision-Date: 2015-06-13 18:17-1000\n"
 "Last-Translator: Roland Barker <webdesign@xnau.com>\n"
@@ -178,16 +178,16 @@ msgstr "Buscar"
 msgid "Record delete successful."
 msgstr "Registro eliminado correctamente."
 
-#: classes/PDb_List_Admin.class.php:368 participants-database.php:514
+#: classes/PDb_List_Admin.class.php:368 pacients-database.php:514
 msgid "Do you really want to delete the selected record?"
 msgstr "Delete this record?"
 
-#: classes/PDb_List_Admin.class.php:369 participants-database.php:515
+#: classes/PDb_List_Admin.class.php:369 pacients-database.php:515
 msgid "Do you really want to delete the selected records?"
 msgstr "Delete these records?"
 
-#: classes/PDb_List_Admin.class.php:434 participants-database.php:420
-#: participants-database.php:421
+#: classes/PDb_List_Admin.class.php:434 pacients-database.php:420
+#: pacients-database.php:421
 msgid "List Participants"
 msgstr "Lista de participantes"
 
@@ -273,11 +273,11 @@ msgstr ""
 msgid "First"
 msgstr "Primero"
 
-#: classes/PDb_Pagination.class.php:368 participants-database.php:2864
+#: classes/PDb_Pagination.class.php:368 pacients-database.php:2864
 msgid "Previous"
 msgstr "Anterior"
 
-#: classes/PDb_Pagination.class.php:385 participants-database.php:2863
+#: classes/PDb_Pagination.class.php:385 pacients-database.php:2863
 msgid "Next"
 msgstr "Siguiente"
 
@@ -367,11 +367,11 @@ msgstr "Localización de archivos subidos"
 #: classes/PDb_Settings.class.php:86
 msgid ""
 "This defines where the uploaded files will go, relative to the WordPress root. The "
-"default location is '/wp-content/uploads/participants-database'<br />Don't put it in "
+"default location is '/wp-content/uploads/pacients-database'<br />Don't put it in "
 "the plugin folder, the images and files could get deleted when the plugin is updated."
 msgstr ""
 "Esto define el lugar donde los archivos cargados irán, relativa a la raíz de "
-"WordPress. La opción por defecto es  '/wp-content/uploads/participants-database'<br /"
+"WordPress. La opción por defecto es  '/wp-content/uploads/pacients-database'<br /"
 "> No lo ponga en la carpeta de plugin, las imágenes y los archivos podrían perderse "
 "al actualizar el complemento."
 
@@ -1288,8 +1288,8 @@ msgstr "Editor"
 msgid "Admin"
 msgstr "Administrador"
 
-#: classes/PDb_Settings.class.php:1230 participants-database.php:456
-#: participants-database.php:457 participants-database.php:3023
+#: classes/PDb_Settings.class.php:1230 pacients-database.php:456
+#: pacients-database.php:457 pacients-database.php:3023
 msgid "Settings"
 msgstr "Configuración"
 
@@ -1558,7 +1558,7 @@ msgstr "No se puede agregar un campo con este nombre"
 msgid "This name is reserved; please choose another. Reserved names are"
 msgstr ""
 
-#: manage_fields.php:238 participants-database.php:438 participants-database.php:439
+#: manage_fields.php:238 pacients-database.php:438 pacients-database.php:439
 msgid "Manage Database Fields"
 msgstr "Administrar Campos"
 
@@ -1834,97 +1834,97 @@ msgid ""
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-#: participants-database.php:338
+#: pacients-database.php:338
 msgid "Participants Database"
 msgstr "Participantes"
 
-#: participants-database.php:429 participants-database.php:430
+#: pacients-database.php:429 pacients-database.php:430
 msgid "Add Participant"
 msgstr "Agregar Participante"
 
-#: participants-database.php:447 participants-database.php:448 upload_csv.php:8
+#: pacients-database.php:447 pacients-database.php:448 upload_csv.php:8
 msgid "Import CSV File"
 msgstr "Importar archivo CSV"
 
-#: participants-database.php:465 participants-database.php:466
+#: pacients-database.php:465 pacients-database.php:466
 msgid "Setup Guide"
 msgstr "Guía de Configuración"
 
-#: participants-database.php:474 participants-database.php:475
+#: pacients-database.php:474 pacients-database.php:475
 msgid "Edit Record"
 msgstr "Editar Registro"
 
 #. translators: don't translate the words in brackets {}
-#: participants-database.php:526
+#: pacients-database.php:526
 msgid "You must remove all fields from the {name} group before deleting it."
 msgstr ""
 
-#: participants-database.php:527
+#: pacients-database.php:527
 msgid "Delete the \"{name}\" {thing}?"
 msgstr "Eliminar el \"{name}\" {thing}?"
 
-#: participants-database.php:2427
+#: pacients-database.php:2427
 msgid "There is something wrong with the file you tried to upload. Try another."
 msgstr ""
 
-#: participants-database.php:2443 participants-database.php:2471
+#: pacients-database.php:2443 pacients-database.php:2471
 msgid "For \"%s\", you may only upload image files like JPEGs, GIFs or PNGs."
 msgstr ""
 
-#: participants-database.php:2445
+#: pacients-database.php:2445
 msgid "The file selected for \"%s\" must be one of these types: %s. "
 msgstr ""
 
-#: participants-database.php:2477
+#: pacients-database.php:2477
 msgid "The file you tried to upload is too large. The file must be smaller than %sK."
 msgstr ""
 
-#: participants-database.php:2484
+#: pacients-database.php:2484
 msgid "The file could not be saved."
 msgstr "El archivo no se pudo guardar."
 
-#: participants-database.php:2512
+#: pacients-database.php:2512
 msgid "The uploads directory (%s) could not be created."
 msgstr ""
 
-#: participants-database.php:2771
+#: pacients-database.php:2771
 msgid ""
 "The date for \"%s\" was invalid. Please input the date with the exact format shown"
 msgstr ""
 
-#: participants-database.php:2861 templates/pdb-retrieve-default.php:45
+#: pacients-database.php:2861 templates/pdb-retrieve-default.php:45
 msgid "Submit"
 msgstr "Enviar"
 
-#: participants-database.php:2862
+#: pacients-database.php:2862
 msgid "Apply"
 msgstr "Aplicar"
 
-#: participants-database.php:2865
+#: pacients-database.php:2865
 msgid "The record has been updated."
 msgstr "El registro fue actualizado."
 
-#: participants-database.php:2866
+#: pacients-database.php:2866
 msgid "The new record has been added."
 msgstr "Nuevo registro agregado."
 
-#: participants-database.php:2984
+#: pacients-database.php:2984
 msgid "WordPress Plugin"
 msgstr "WordPress Plugin"
 
-#: participants-database.php:2985
+#: pacients-database.php:2985
 msgid "Helping organizations manage their volunteers, members and participants."
 msgstr ""
 
-#: participants-database.php:2988
+#: pacients-database.php:2988
 msgid "Developed by"
 msgstr "Desarrollado por"
 
-#: participants-database.php:2989
+#: pacients-database.php:2989
 msgid "Suggestions or crticisms of this plugin? I&#39;d love to hear them: email "
 msgstr ""
 
-#: participants-database.php:2992
+#: pacients-database.php:2992
 msgid ""
 "Please consider contributing to the continued support and development of this "
 "software by visiting %1$sthis plugin&#39;s page,%3$s giving the plugin a %2$srating"
@@ -2037,7 +2037,7 @@ msgid "Upload File"
 msgstr "Subir Archivo"
 
 #. Plugin URI of the plugin/theme
-msgid "http://xnau.com/wordpress-plugins/participants-database"
+msgid "http://xnau.com/wordpress-plugins/pacients-database"
 msgstr ""
 
 #. Description of the plugin/theme

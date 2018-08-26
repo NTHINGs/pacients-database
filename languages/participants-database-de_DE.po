@@ -23,30 +23,30 @@ msgstr ""
 "esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
 "X-Loco-Target-Locale: de_DE"
 
-#: participants-database.php:579
+#: pacients-database.php:579
 msgid "The changes you made will be lost if you navigate away from this page."
 msgstr ""
 "Änderungen, die Sie vorgenommen haben, gehen verloren, falls Sie diese Seite "
 "verlassen."
 
-#: participants-database.php:2681
+#: pacients-database.php:2681
 #, c-format
 msgid "The file selected for \"%s\" must be one of these types: %s. "
 msgstr "Die Datei für \"%\" muss von folgendem Typ sein: %s."
 
-#: participants-database.php:2714
+#: pacients-database.php:2714
 #, c-format
 msgid "The file you tried to upload is too large. The file must be smaller than %sK."
 msgstr ""
 "Die Datei, die Sie hochladen wollten, ist zu gross: Die maximale Dateigrösse "
 "beträgt %sK."
 
-#: participants-database.php:2765
+#: pacients-database.php:2765
 #, c-format
 msgid "The uploads directory (%s) could not be created."
 msgstr "Das Verzeichnis für den Datei-Upload (%s) konnte nicht angelegt werden."
 
-#: participants-database.php:3045
+#: pacients-database.php:3045
 #, c-format
 msgid ""
 "The date for \"%s\" was invalid. Please input the date with the exact format "
@@ -55,26 +55,26 @@ msgstr ""
 "Das Datum für \"%s\" ist ungültig. Bitte geben Sie das Datum exakt im "
 "angegebenen Format ein."
 
-#: participants-database.php:3166
+#: pacients-database.php:3166
 #, c-format
 msgid "Database Error: %2$s on query: %1$s"
 msgstr "Datenbank-Fehler \"%2$s\" bei der Abfrage \"%1$s\""
 
-#: participants-database.php:3226
+#: pacients-database.php:3226
 msgid "WordPress Plugin"
 msgstr "WordPress Plug-in"
 
-#: participants-database.php:3285
+#: pacients-database.php:3285
 msgid "Submit a rating or review"
 msgstr "Bewertung oder Besprechung einreichen"
 
-#: participants-database.php:3286
+#: pacients-database.php:3286
 msgid "Free tech support and continued development relies on your support:"
 msgstr ""
 "Der kostenlose Support und die kontinuierliche Weiterentwicklung ist nur mit "
 "Ihrer Unterstützung möglich:"
 
-#: participants-database.php:3286
+#: pacients-database.php:3286
 msgid "contribute"
 msgstr "Spenden"
 
@@ -87,8 +87,8 @@ msgid "tab"
 msgstr "Register"
 
 #. Plugin URI of the plugin/theme
-msgid "http://xnau.com/wordpress-plugins/participants-database"
-msgstr "http://xnau.com/wordpress-plugins/participants-database"
+msgid "http://xnau.com/wordpress-plugins/pacients-database"
+msgstr "http://xnau.com/wordpress-plugins/pacients-database"
 
 #. Description of the plugin/theme
 msgid "Plugin for managing a database of participants, members or volunteers"
@@ -542,22 +542,22 @@ msgstr ""
 "Felds zwar sehen, aber nicht ändern können. Diese Felder sind nur im "
 "WordPress Backend bearbeitbar."
 
-#: participants-database.php:3164
+#: pacients-database.php:3164
 msgid "The new record has been added."
 msgstr "Der neue Datensatz wurde hinzugefügt."
 
-#: participants-database.php:3165
+#: pacients-database.php:3165
 #, c-format
 msgid "No record was added on query: %s"
 msgstr "Es wurde kein neuer Datensatz hinzugefügt. Query: &s"
 
-#: participants-database.php:3231
+#: pacients-database.php:3231
 msgid "Suggestions or criticisms of this plugin? I&#39;d love to hear them: email "
 msgstr ""
 "Möchten Sie Vorschläge für dieses Plug-in machen oder Kritik äussern? Ich "
 "freue mich auf Ihr Feedback per E-Mail an "
 
-#: participants-database.php:3234
+#: pacients-database.php:3234
 #, c-format
 msgid ""
 "Please consider contributing to the continued support and development of "
@@ -898,8 +898,8 @@ msgstr "Möchten Sie die markierten Datensätze wirklich löschen ?"
 msgid "Record delete successful."
 msgstr "Datensatz erfolgreich gelöscht."
 
-#: classes/PDb_List_Admin.class.php:551 participants-database.php:465
-#: participants-database.php:466
+#: classes/PDb_List_Admin.class.php:551 pacients-database.php:465
+#: pacients-database.php:466
 msgid "List Participants"
 msgstr "Mitglieder"
 
@@ -969,8 +969,8 @@ msgstr ""
 "enthaltenen Felder können Sie unter \"Datenbank-Felder\" über die Spalte \"CSV\" "
 "definieren."
 
-#: classes/PDb_Manage_Fields.class.php:82 participants-database.php:483
-#: participants-database.php:484
+#: classes/PDb_Manage_Fields.class.php:82 pacients-database.php:483
+#: pacients-database.php:484
 msgid "Manage Database Fields"
 msgstr "Datenbank-Felder"
 
@@ -1143,11 +1143,11 @@ msgstr "Beschreibung"
 msgid "First"
 msgstr "Erster"
 
-#: classes/PDb_Pagination.class.php:360 participants-database.php:3162
+#: classes/PDb_Pagination.class.php:360 pacients-database.php:3162
 msgid "Previous"
 msgstr "Zurück"
 
-#: classes/PDb_Pagination.class.php:377 participants-database.php:3161
+#: classes/PDb_Pagination.class.php:377 pacients-database.php:3161
 msgid "Next"
 msgstr "Speichern & nächster"
 
@@ -1210,7 +1210,7 @@ msgstr "Verzeichnis für Datei-Upload"
 #: classes/PDb_Settings.class.php:86
 msgid ""
 "This defines where the uploaded files will go, relative to the WordPress "
-"root. The default location is '/wp-content/uploads/participants-database'<br "
+"root. The default location is '/wp-content/uploads/pacients-database'<br "
 "/>Don't put it in the plugin folder, the images and files could get deleted "
 "when the plugin is updated."
 msgstr ""
@@ -2107,8 +2107,8 @@ msgstr "Mitarbeiter"
 msgid "Author"
 msgstr "Autor"
 
-#: classes/PDb_Settings.class.php:1310 participants-database.php:501
-#: participants-database.php:502 participants-database.php:3265
+#: classes/PDb_Settings.class.php:1310 pacients-database.php:501
+#: pacients-database.php:502 pacients-database.php:3265
 msgid "Settings"
 msgstr "Einstellungen"
 
@@ -2386,69 +2386,69 @@ msgstr ""
 "[pdb_signup] angezeigt wird."
 
 #. Plugin Name of the plugin/theme
-#: participants-database.php:365
+#: pacients-database.php:365
 msgid "Participants Database"
 msgstr "Mitglieder-Datenbank"
 
-#: participants-database.php:474 participants-database.php:475
+#: pacients-database.php:474 pacients-database.php:475
 msgid "Add Participant"
 msgstr "Mitglied hinzufügen"
 
-#: participants-database.php:492 participants-database.php:493 upload_csv.php:37
+#: pacients-database.php:492 pacients-database.php:493 upload_csv.php:37
 msgid "Import CSV File"
 msgstr "CSV-Import"
 
-#: participants-database.php:510 participants-database.php:511
+#: pacients-database.php:510 pacients-database.php:511
 msgid "Setup Guide"
 msgstr "Anleitung"
 
-#: participants-database.php:519 participants-database.php:520
+#: pacients-database.php:519 pacients-database.php:520
 msgid "Edit Record"
 msgstr "Datensatz bearbeiten"
 
 #. translators: don't translate the words in brackets {}
-#: participants-database.php:577
+#: pacients-database.php:577
 msgid "You must remove all fields from the {name} group before deleting it."
 msgstr ""
 "Sie müssen alle Felder aus der {name} Gruppe entfernen, bevor die Gruppe "
 "gelöscht werden kann."
 
-#: participants-database.php:578
+#: pacients-database.php:578
 msgid "Delete the \"{name}\" {thing}?"
 msgstr "{thing} \"{name}\" wirklich löschen?"
 
-#: participants-database.php:2663
+#: pacients-database.php:2663
 msgid "There is something wrong with the file you tried to upload. Try another."
 msgstr "Diese Upload-Datei ist fehlerhaft. Versuchen Sie eine andere Datei."
 
-#: participants-database.php:2679 participants-database.php:2707
+#: pacients-database.php:2679 pacients-database.php:2707
 #, c-format
 msgid "For \"%s\", you may only upload image files like JPEGs, GIFs or PNGs."
 msgstr "Für \"%s\", können nur JPEG, GIF oder PNG hochgeladen werden."
 
-#: participants-database.php:2721
+#: pacients-database.php:2721
 msgid "The file could not be saved."
 msgstr "Die Datei konnte nicht gespeichert werden."
 
-#: participants-database.php:3159 templates/pdb-retrieve-default.php:60
+#: pacients-database.php:3159 templates/pdb-retrieve-default.php:60
 msgid "Submit"
 msgstr "Speichern & zurück"
 
-#: participants-database.php:3160
+#: pacients-database.php:3160
 msgid "Apply"
 msgstr "Speichern"
 
-#: participants-database.php:3163
+#: pacients-database.php:3163
 msgid "The record has been updated."
 msgstr "Der Datensatz wurde aktualisiert."
 
-#: participants-database.php:3227
+#: pacients-database.php:3227
 msgid "Helping organizations manage their volunteers, members and participants."
 msgstr ""
 "Hilft Organisationen und Unternehmen, ihre Mitglieder, Mitarbieter, "
 "Teilnehmer, Kunden etc. zu verwalten."
 
-#: participants-database.php:3230
+#: pacients-database.php:3230
 msgid "Developed by"
 msgstr "Entwickelt von"
 

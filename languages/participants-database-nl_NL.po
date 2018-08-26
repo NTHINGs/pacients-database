@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Participants Database 1.4.9.2\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tag/participants-database\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/pacients-database\n"
 "POT-Creation-Date: 2014-02-11 18:07:51+00:00\n"
 "PO-Revision-Date: 2015-09-05 23:01-1000\n"
 "Last-Translator: Roland Barker <webdesign@xnau.com>\n"
@@ -175,16 +175,16 @@ msgstr "Zoek"
 msgid "Record delete successful."
 msgstr "Record succesvol verwijderd."
 
-#: classes/PDb_List_Admin.class.php:368 participants-database.php:514
+#: classes/PDb_List_Admin.class.php:368 pacients-database.php:514
 msgid "Do you really want to delete the selected record?"
 msgstr "Weet u zeker dat u het geselecteerde record wilt verwijderen?"
 
-#: classes/PDb_List_Admin.class.php:369 participants-database.php:515
+#: classes/PDb_List_Admin.class.php:369 pacients-database.php:515
 msgid "Do you really want to delete the selected records?"
 msgstr "Weet u zeker dat u de geselecteerde records wilt verwijderen?"
 
-#: classes/PDb_List_Admin.class.php:434 participants-database.php:420
-#: participants-database.php:421
+#: classes/PDb_List_Admin.class.php:434 pacients-database.php:420
+#: pacients-database.php:421
 msgid "List Participants"
 msgstr "Deelnemerslijst"
 
@@ -270,11 +270,11 @@ msgstr ""
 msgid "First"
 msgstr "Eerste"
 
-#: classes/PDb_Pagination.class.php:368 participants-database.php:2864
+#: classes/PDb_Pagination.class.php:368 pacients-database.php:2864
 msgid "Previous"
 msgstr "Vorige"
 
-#: classes/PDb_Pagination.class.php:385 participants-database.php:2863
+#: classes/PDb_Pagination.class.php:385 pacients-database.php:2863
 msgid "Next"
 msgstr "Volgende"
 
@@ -364,7 +364,7 @@ msgstr "Bestandsuploadlocatie"
 #: classes/PDb_Settings.class.php:86
 msgid ""
 "This defines where the uploaded files will go, relative to the WordPress root. The "
-"default location is '/wp-content/uploads/participants-database'<br />Don't put it in "
+"default location is '/wp-content/uploads/pacients-database'<br />Don't put it in "
 "the plugin folder, the images and files could get deleted when the plugin is updated."
 msgstr ""
 "Deze instelling regelt waar geüploade bestanden terecht komen, relatief tot de "
@@ -1354,8 +1354,8 @@ msgstr "Redacteur"
 msgid "Admin"
 msgstr "Beheerder"
 
-#: classes/PDb_Settings.class.php:1230 participants-database.php:456
-#: participants-database.php:457 participants-database.php:3023
+#: classes/PDb_Settings.class.php:1230 pacients-database.php:456
+#: pacients-database.php:457 pacients-database.php:3023
 msgid "Settings"
 msgstr "Instellingen"
 
@@ -1638,7 +1638,7 @@ msgstr "Kan geen veld toegoegen met deze naam."
 msgid "This name is reserved; please choose another. Reserved names are"
 msgstr "Deze naam is gereserveerd; kies een andere. Gereserveerde namen zijn:"
 
-#: manage_fields.php:238 participants-database.php:438 participants-database.php:439
+#: manage_fields.php:238 pacients-database.php:438 pacients-database.php:439
 msgid "Manage Database Fields"
 msgstr "Beheer databasevelden"
 
@@ -2004,104 +2004,104 @@ msgstr ""
 "door de beheerder."
 
 #. Plugin Name of the plugin/theme
-#: participants-database.php:338
+#: pacients-database.php:338
 msgid "Participants Database"
 msgstr "Deelnemers-database"
 
-#: participants-database.php:429 participants-database.php:430
+#: pacients-database.php:429 pacients-database.php:430
 msgid "Add Participant"
 msgstr "Voeg deelnemer toe"
 
-#: participants-database.php:447 participants-database.php:448 upload_csv.php:8
+#: pacients-database.php:447 pacients-database.php:448 upload_csv.php:8
 msgid "Import CSV File"
 msgstr "Importeer CSV-bestand"
 
-#: participants-database.php:465 participants-database.php:466
+#: pacients-database.php:465 pacients-database.php:466
 msgid "Setup Guide"
 msgstr "Setuphandleiding"
 
-#: participants-database.php:474 participants-database.php:475
+#: pacients-database.php:474 pacients-database.php:475
 msgid "Edit Record"
 msgstr "Bewerk record"
 
 #. translators: don't translate the words in brackets {}
-#: participants-database.php:526
+#: pacients-database.php:526
 msgid "You must remove all fields from the {name} group before deleting it."
 msgstr ""
 "U dient alle velden van de groep {naam} te verwijderen, alvorens de groep te "
 "verwijderen."
 
-#: participants-database.php:527
+#: pacients-database.php:527
 msgid "Delete the \"{name}\" {thing}?"
 msgstr "Verwijder het “{name}” {thing}?"
 
-#: participants-database.php:2427
+#: pacients-database.php:2427
 msgid "There is something wrong with the file you tried to upload. Try another."
 msgstr "Er is iets mis met bestand dat u probeerde te uploaden. Probeer een ander."
 
-#: participants-database.php:2443 participants-database.php:2471
+#: pacients-database.php:2443 pacients-database.php:2471
 msgid "For \"%s\", you may only upload image files like JPEGs, GIFs or PNGs."
 msgstr ""
 "Voor \"%s\" dient u alleen afbeeldingen te uploaden zoals JPG's, GIF's of PNG's."
 
-#: participants-database.php:2445
+#: pacients-database.php:2445
 msgid "The file selected for \"%s\" must be one of these types: %s. "
 msgstr "Het voor \"%s\" geselecteerde bestand moet een van deze typen zijn: %s. "
 
-#: participants-database.php:2477
+#: pacients-database.php:2477
 msgid "The file you tried to upload is too large. The file must be smaller than %sK."
 msgstr ""
 "Het bestand dat u probeerde te uploaden is te groot. Het bestand dient niet groter "
 "te zijn dan %sK."
 
-#: participants-database.php:2484
+#: pacients-database.php:2484
 msgid "The file could not be saved."
 msgstr "Het bestand kon niet worden opgeslagen."
 
-#: participants-database.php:2512
+#: pacients-database.php:2512
 msgid "The uploads directory (%s) could not be created."
 msgstr "De uploadbestandsfolder (%s) kon niet worden aangemaakt."
 
-#: participants-database.php:2771
+#: pacients-database.php:2771
 msgid ""
 "The date for \"%s\" was invalid. Please input the date with the exact format shown"
 msgstr ""
 "De datum voor \"%s\" is ongeldig. Voer de datum exact in volgens het formaat dat "
 "getoond wordt."
 
-#: participants-database.php:2861 templates/pdb-retrieve-default.php:45
+#: pacients-database.php:2861 templates/pdb-retrieve-default.php:45
 msgid "Submit"
 msgstr "Opslaan"
 
-#: participants-database.php:2862
+#: pacients-database.php:2862
 msgid "Apply"
 msgstr "Bijwerken"
 
-#: participants-database.php:2865
+#: pacients-database.php:2865
 msgid "The record has been updated."
 msgstr "Het record is geüpdatet."
 
-#: participants-database.php:2866
+#: pacients-database.php:2866
 msgid "The new record has been added."
 msgstr "Het nieuwe record is toegevoegd."
 
-#: participants-database.php:2984
+#: pacients-database.php:2984
 msgid "WordPress Plugin"
 msgstr "WordPress-plugin"
 
-#: participants-database.php:2985
+#: pacients-database.php:2985
 msgid "Helping organizations manage their volunteers, members and participants."
 msgstr "Helpt organisaties bij het beheren van hun vrijwilligers, leden en deelnemers."
 
-#: participants-database.php:2988
+#: pacients-database.php:2988
 msgid "Developed by"
 msgstr "Ontwikkeld door"
 
-#: participants-database.php:2989
+#: pacients-database.php:2989
 msgid "Suggestions or crticisms of this plugin? I&#39;d love to hear them: email "
 msgstr "Suggesties of kritiek over deze plugin? Ik hoor ze graag: email me "
 
-#: participants-database.php:2992
+#: pacients-database.php:2992
 msgid ""
 "Please consider contributing to the continued support and development of this "
 "software by visiting %1$sthis plugin&#39;s page,%3$s giving the plugin a %2$srating"
@@ -2247,8 +2247,8 @@ msgid "Upload File"
 msgstr "Upload bestand"
 
 #. Plugin URI of the plugin/theme
-msgid "http://xnau.com/wordpress-plugins/participants-database"
-msgstr "http://xnau.com/wordpress-plugins/participants-database "
+msgid "http://xnau.com/wordpress-plugins/pacients-database"
+msgstr "http://xnau.com/wordpress-plugins/pacients-database "
 
 #. Description of the plugin/theme
 msgid "Plugin for managing a database of participants, members or volunteers"
